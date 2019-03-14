@@ -17,6 +17,15 @@ h1 {
   font-weight: normal;
 }
 
+h3 {
+  color: #993CBA;
+}
+
+span {
+  color: #993CBA;
+  font-weight: bold;
+}
+
 header {
   position: fixed;
   display: block;
@@ -76,6 +85,21 @@ header {
 
 #slogan {
   width: 100%;
+}
+
+#store-icons {
+  position: fixed;
+  display: block;
+  width: 100%;
+  margin: 7% 50px 0px 0px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  text-align: end;
+}
+
+.small-icon {
+  cursor: pointer;
 }
 
 /* Empieza el Menu y submenus */
@@ -190,9 +214,231 @@ header {
   width: 100%;
 }
 
+#icons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 0px 0px;
+}
+
+#apple {
+  padding: 0px 20px 0px 0px;
+}
+
+/* EMPIEZA MODULO 2 */
+.module-2 {
+  background-image: url(/img/Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 90px 0px 0px 0px;
+  flex-direction: column;
+  color: white;
+}
+
+.content h1 {
+  text-align: center;
+  color: white;
+}
+
+.content p {
+  text-align: center;
+}
+
+.general-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+/* EMPIEZA MODULO 3 */
+.module-3 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 150px 50px 150px;
+  align-content: center;
+}
+
+.left-1 {
+  padding: 20px 0px 0px 0px;
+  width: 100%
+}
+
+.comercial-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0px 0px 0px;
+}
+
+.logotypes {
+  padding: 6%;
+}
+
+/* EMPIEZA MODULO 4 */
+.module-4 {
+  display: flex;
+  justify-content: center;
+  margin: 90px 0px 50px 0px;
+  flex-direction: column;
+}
+
+.content-1 {
+  background: #F6F6F6;
+}
+
+.content-1 h1 {
+  text-align: center;
+}
+
+.content-1 p {
+  text-align: center;
+}
+
+/* SEGUNDA SECCION MODULO 4 GALERIA */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  flex: 2;
+}
+
+#image-content-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#unique {
+  width: 100%;
+  height: 97.5%;
+}
+
+.image-content-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* EMPIEZA SECCION 5 */
+.module-5 {
+  display: flex;
+  justify-content: center;
+  margin: 90px 0px 0px 0px;
+  flex-direction: column;
+}
+
+.left-justify {
+  position: absolute;
+  background: #FF9E1A;
+  width: 50%;
+  padding: 50px 0px 50px 100px;
+  margin: 0px 0px 60px 0px;
+}
+
+.left-justify h1 {
+  color: white;
+}
+
+.left-justify p {
+  color: white;
+}
+
+.left-justify-1 {
+  position: absolute;
+  background: #993CBA;
+  width: 50%;
+  padding: 50px 0px 50px 100px;
+  margin: 0px 0px 60px 0px;
+  color: white;
+}
+
+.left-justify-1 h1 {
+  color: white;
+}
+
+.content-slider-general {
+  /* position: absolute; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.content-slider {
+  background: #ffffff;
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  width: 10%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
+  margin: 20px 50px;
+  z-index: 0;
+}
+
+.content-slider p {
+  text-align: center;
+}
+
+.content-slider img {
+  width: 50%;
+  text-align: center;
+
+}
+
+
+.general-1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 0px 20px 0px;
+    font-weight: 100;
+}
+
+/* EMPIEZA MODULO 6 */
+.module-6 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 100px 150px 0px 150px;
+}
+
+.left {
+  padding: 100px 0px 0px 0px;
+  width: 100%
+}
+
+.img-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
+}
+
+.asociation {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  flex: 1;
+  margin: 50px 0px 10px 50px;
+}
+
+.asociation h4 {
+  color: #9B9B9B;
+}
+
+.asociation img {
+ width: 8%;
+margin: 10px
 }
 
 .footer-about {
@@ -203,7 +449,6 @@ footer {
   color: #9B9B9B;
   justify-content: flex-start;
   text-align: left;
-
 }
 
 .footer-column {
@@ -212,7 +457,6 @@ footer {
   align-items: flex-start;
   padding: 20px 110px;
   text-align: left;
-
 }
 
 #newslatter {
@@ -237,7 +481,7 @@ footer {
   border: none;
   cursor: pointer;
   vertical-align: middle;
-min-height: 42px;
+  min-height: 42px;
 }
 
 #button-email {
@@ -246,7 +490,6 @@ min-height: 42px;
   border: none;
   vertical-align: middle;
   min-height: 40px;
-
 }
 
 .footer-below {
@@ -272,3 +515,5 @@ footer div pre {
 #logo-white {
   width: 50%;
 }
+
+/* TERMINA FOOTER */
