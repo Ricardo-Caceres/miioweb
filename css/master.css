@@ -64,7 +64,7 @@ header {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color:  #993CBA;
+  background-color: #993CBA;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -74,7 +74,9 @@ header {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -88,17 +90,9 @@ header {
     cursor: pointer;
     margin: 10px;
   }
-
-
-
 }
 
-
-
-
-
 /* TERMINA MENU MOBILE */
-
 .social {
   display: flex;
   /* width: 100%; */
@@ -117,9 +111,8 @@ header {
     margin: 8px 0px 0px 0px;
     padding-right: 50px;
   }
-
-
 }
+
 #Siguenos {
   text-align: right;
   padding: 5px 5px 5px 0px;
@@ -155,6 +148,14 @@ header {
   padding: 0px 10px 15px 0px;
 }
 
+@media only screen and (max-width: 768px) {
+  #logo {
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
 #slogan {
   width: 100%;
 }
@@ -163,18 +164,19 @@ header {
   position: fixed;
   display: inline-block;
   max-width: 100%;
-  margin: 7% 50px 0px 0px;
+  margin: 9% 50px 0px 0px;
   z-index: 1;
   top: 0;
   right: 0;
   text-align: right;
 }
-@media only screen and (max-width: 768px) {
 
+@media only screen and (max-width: 768px) {
   #slogan {
     display: none;
     width: 100%;
   }
+
   #store-icons {
     position: fixed;
     display: none;
@@ -186,6 +188,7 @@ header {
     text-align: right;
   }
 }
+
 .small-icon {
   cursor: pointer;
 }
@@ -202,6 +205,7 @@ header {
   flex-direction: row;
   justify-content: center;
 }
+
 @media only screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -288,6 +292,10 @@ header {
 /* Empieza primer modulo 1*/
 .module-1 {
   display: flex;
+  flex-direction: row;
+  /* -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; */
   margin: 11% 0% 0% 0%;
   justify-content: center;
   /* width: 100%; */
@@ -295,24 +303,30 @@ header {
   padding: 0% 5%;
 }
 
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-
+@media only screen and (max-width: 768px) {
   .module-1 {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    max-width: 100%
-    margin: 20% 0% 0% 0%;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 5% 0% 0% 0%;
     justify-content: center;
     padding: 0% 5%;
   }
-
-
 }
 
 .left {
-  padding: 100px 0px 0px 0px;
-  width: 100%
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .left {
+    padding: 100px 0px 0px 0px;
+    width: 100%:
+  }
 }
 
 #general-button {
@@ -333,6 +347,10 @@ header {
   width: 100%;
 }
 
+#mobile {
+  display: none;
+}
+
 #icons {
   display: flex;
   flex-wrap: wrap;
@@ -343,11 +361,73 @@ header {
   padding: 0px 20px 0px 0px;
 }
 
+#icons-mobile {
+  display: none;
+  flex-wrap: wrap;
+  padding: 50px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0px;
+  }
+
+  #desk {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #icons {
+    display: none;
+    flex-wrap: wrap;
+    padding: 50px 0px 0px 0px;
+  }
+
+  #icons-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 0px 0px;
+  }
+}
+
+.list-services {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .list-services {
+    display: block;
+    /* flex-direction: row; */
+
+  }
+  .list-elements {
+    display: flex;
+  }
+  .list-elements img {
+    display: flex;
+    flex-wrap: wrap;
+ width: 100%;
+  }
+
+  .list-elements p {
+    display: flex;
+    flex-wrap: wrap;
+ width: 100%;
+  }
+}
+
 /* EMPIEZA MODULO 2 */
 .module-2 {
   background-image: url(/img/Bitmap.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   margin: 90px 0px 0px 0px;
@@ -367,8 +447,49 @@ header {
 .general-icons {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   flex: 1;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  /* width: 10%; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
+  margin: 20px 50px;
+  flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .products {
+    display: block;
+    /* width: 10%; */
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.products p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .module-2 {
+    background-image: url(/img/font-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin: 90px 0px 0px 0px;
+    flex-direction: column;
+    color: white;
+  }
 }
 
 /* EMPIEZA MODULO 3 */
@@ -389,10 +510,11 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px 0px 0px 0px;
+  width: 100%;
 }
 
 .logotypes {
-  padding: 6%;
+  padding: 3%;
 }
 
 /* EMPIEZA MODULO 4 */
@@ -524,11 +646,6 @@ header {
   margin: 100px 150px 0px 150px;
 }
 
-.left {
-  padding: 100px 0px 0px 0px;
-  width: 100%
-}
-
 .img-left {
   display: flex;
   justify-content: flex-start;
@@ -561,6 +678,9 @@ footer {
 .footer-about {
   display: flex;
   flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   background: #323232;
   color: #9B9B9B;
