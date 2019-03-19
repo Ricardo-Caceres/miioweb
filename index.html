@@ -67,7 +67,7 @@
     <aside class="left">
       <h1>¿QUIERES? YA PUEDES</h1>
       <p class="general">¿Quiere unirte a la comunidad digital <br> que lo tiene todo? Con Miio ¡Ya puedes!</p>
-      <button id="general-button" type="button" name="button" <href="" </href>VER VIDEO</button> <div class="store-icon">
+      <button class="general-button" type="button" name="button" <href="" </href>VER VIDEO</button> <div class="store-icon">
 
         <div class="" id="icons">
           <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
@@ -89,17 +89,17 @@
   <div class="list-services">
     <div class="list-elements">
       <img src="assets/1.png" alt="">
-      <p>Tarjeta y cuenta financiera <br>
+      <p><span>Tarjeta y cuenta financiera</span><br>
         Obtén una cuenta financiera sin papeleo</p>
     </div>
     <div class="list-elements">
       <img src="assets/2.png" alt="">
-      <p>Telefonía gratis <br>
+      <p><span>Telefonía gratis</span><br>
         Adquiere un plan que se renueva cada semana</p>
     </div>
     <div class="list-elements">
       <img src="assets/3.png" alt="">
-      <p>¡Lanita extra! <br>
+      <p><span>¡Lanita extra!</span><br>
         Paga tus servicios y los de tus conocidos y gana dinero</p>
     </div>
   </div>
@@ -154,7 +154,7 @@
         <br>paga tus servicios o los de tus conpcidos; o
         <br>compra entretenimiento y consíguelo <span id="color">¡Así de fácil!</span>
       </P>
-      <button id="general-button" type="button" name="button">¡CONOCE MÁS!</button>
+      <button class="general-button" id="button-desktop" type="button" name="button">¡CONOCE MÁS!</button>
     </aside>
     <div class="comercial-icons">
       <div class="comercial-icons">
@@ -170,7 +170,10 @@
         <div class="logotypes"><img src="img/yMuchosMas.png" alt="Más"></div>
       </div>
     </div>
+    <button class="general-button" id="button-mobile" type="button" name="button">¡CONOCE MÁS!</button>
   </div>
+
+
 
   <!-- Termina Modulo 3 -->
 
@@ -207,6 +210,62 @@
       </div>
     </div>
   </div>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="img/foto1.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/foto2.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/foto3.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/foto4.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/foto5.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/foto6.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/foto7.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+  </div>
   <!-- Termina Modulo 4 -->
 
   <!-- EMPIEZA MODULO 5 -->
@@ -220,7 +279,7 @@
           cuenta financiera gratis, sin papeleos; además <br>
           de crear historial, podrás ser candidato para <br>
           un crédito.</p>
-        <button id="general-button" type="button" name="button">¡CONOCE MÁS!</button>
+        <button class="general-button" type="button" name="button">¡CONOCE MÁS!</button>
       </aside>
 
       <div class="content-slider-general">
@@ -260,7 +319,7 @@
           Gratis que se renueva cada semana; sin cobros <br>
           adicionales. <br>
           <br></p>
-        <button id="general-button" type="button" name="button">¡CONOCE MÁS!</button>
+        <button class="general-button" type="button" name="button">¡CONOCE MÁS!</button>
       </aside>
 
       <div class="content-slider-general">
@@ -284,6 +343,8 @@
         </div>
       </div>
     </div>
+</div>
+
 
 
     <!-- TERMINA MODULO 5.1 -->
@@ -291,7 +352,7 @@
     <!-- EMPIEZA MODULO 6 -->
     <div class="module-6">
       <div class="img-left">
-        <img src="img/info-miio.png" alt="info-miio.png">
+        <img src="img/pantallas-descarga-home.png" alt="info-miio.png">
       </div>
       <aside class="left">
 
@@ -309,7 +370,15 @@
     </div>
   </div>
 
-  <div class="store-icon" href="img/"></div>
+  <div class="" id="icons-mobile">
+    <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
+      <div id="apple"><img src="assets/apple-store.png" alt="Apple"></img>
+    </a></div>
+  <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
+    <div id="android"><img src="assets/play-store.png" alt="Android"></img>
+  </a></div>
+  </div>
+
   </aside>
 
 
@@ -321,8 +390,10 @@
   <footer>
     <div class="asociation">
       <h4>Socios Comerciales:</h4>
+      <dv class="socios">
       <img src="assets/finamigo.png" alt="">
-      <img src="assets/.png" alt="">
+      <img src="assets/spei.png" alt="">
+      </dv>
     </div>
     <div class="footer-about">
       <div class="footer-column">
@@ -351,7 +422,7 @@
           <button id="button-submit" type="submit" name="enviar" value="">></button>
         </form>
 
-        <div class="social">
+        <div class="social" id="social-mobile">
           <p id="Siguenos">Siguenos en: </p>
           <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
           <a href="" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
