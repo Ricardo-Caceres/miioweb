@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="css/master.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-
+  <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
   <title>Miio</title>
 </head>
 
@@ -16,11 +16,33 @@
   <!-- Empieza Header -->
   <header>
     <!-- Menu mobil -->
-    <div class="container" onclick="myFunction(this)">
+    <div id="show" class="container">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
+
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="text-menu" href="">¿Qué es MIIO?</a>
+    <a class="text-menu" href="">Beneficios</a>
+    <li class="submenu-mobile"><a href="">Telefonía</a></li>
+    <li class="submenu-mobile"><a href="">Tarjeta MIIO</a></li>
+    <li class="submenu-mobile"><a href="">Gana dinero</a></li>
+    <a class="text-menu" href="https://miio.com.mx/boom/">BOOM</a>
+    <a class="text-menu" href="https://miio.com.mx/blog/">Blog</a>
+    <a class="text-menu" href="contacto.html">Contacto</a>
+    <a class="text-menu" href="">Preguntas Frecuentes</a>
+    <a class="text-menu" href="">Aviso de Privacidad</a>
+    <a class="fondo" href="">Tèrminos y Condiciones</a>
+    <div class="social" id="social-mobile-menu">
+      <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
+      <a href="" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
+      <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-TW.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-IG.png" alt="Instagram"></a>
+    </div>
+  </div>
+
     <!-- termina menu mobil -->
     <div class="social">
       <p id="Siguenos">Siguenos en: </p>
@@ -51,7 +73,7 @@
           <!-- <li><a class="point">·</a></li> -->
           <li><a class="text-menu" href="https://miio.com.mx/blog/">Blog</a></li>
           <!-- <li><a class="point">·</a></li> -->
-          <li id="ultimate-li"><a class="contacto" href="">Contacto</a></li>
+          <li id="ultimate-li"><a class="contacto" href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -88,17 +110,17 @@
 
   <div class="list-services">
     <div class="list-elements">
-      <img src="assets/1.png" alt="">
+      <img src="assets/Group-1.png" alt="">
       <p><span>Tarjeta y cuenta financiera</span><br>
         Obtén una cuenta financiera sin papeleo</p>
     </div>
     <div class="list-elements">
-      <img src="assets/2.png" alt="">
+      <img src="assets/Group-2.png" alt="">
       <p><span>Telefonía gratis</span><br>
         Adquiere un plan que se renueva cada semana</p>
     </div>
     <div class="list-elements">
-      <img src="assets/3.png" alt="">
+      <img src="assets/Group-3.png" alt="">
       <p><span>¡Lanita extra!</span><br>
         Paga tus servicios y los de tus conocidos y gana dinero</p>
     </div>
@@ -216,37 +238,37 @@
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <img src="img/foto1.png" style="width:100%">
+      <img src="img/foto1-mobile.png" style="width:100%">
       <div class="text">Caption Text</div>
     </div>
 
     <div class="mySlides fade">
-      <img src="img/foto2.png" style="width:100%">
+      <img src="img/foto2-mobile.png" style="width:100%">
       <div class="text">Caption Two</div>
     </div>
 
     <div class="mySlides fade">
-      <img src="img/foto3.png" style="width:100%">
+      <img src="img/foto3-mobile.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
 
     <div class="mySlides fade">
-      <img src="img/foto4.png" style="width:100%">
+      <img src="img/foto4-mobile.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
 
     <div class="mySlides fade">
-      <img src="img/foto5.png" style="width:100%">
+      <img src="img/foto5-mobile.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
 
     <div class="mySlides fade">
-      <img src="img/foto6.png" style="width:100%">
+      <img src="img/foto6-mobile.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
 
     <div class="mySlides fade">
-      <img src="img/foto7.png" style="width:100%">
+      <img src="img/foto7-mobile.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
 
