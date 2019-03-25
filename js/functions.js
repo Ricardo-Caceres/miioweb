@@ -1,18 +1,18 @@
+$("#show").click(function() {
+  if ($(".sidenav").width() !== "0px") {
+    $(".container").addClass("change");
+    $(".sidenav").width('250px');
+
+  }
+  else {
+    $(".container").toggleClass("change");
+    $(".sidenav").width('0px');
+
+  }
+
+});
 
 
-    $ ("#show").click(function(){
-     $(".container").addClass("change");
-     // $("#mySidenav").css('width', '250px')
-    document.getElementById("mySidenav").style.width = "250px";
-
-
-
-      $ ("#show").click(function(){
-       $(".container").toggleClass("change");
-      // $("#mySidenav").attr("style" "width: 0")
-      document.getElementById("mySidenav").style.width = "0px";
-      });
-        });
 
 
 // $ ("#show").click(function(){
@@ -67,16 +67,20 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideHover = 1}
-  if (n < 1) {slideHover = slides.length}
+  if (n > slides.length) {
+    slideHover = 1
+  }
+  if (n < 1) {
+    slideHover = slides.length
+  }
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideHover-1].style.display = "block";
-  dots[slideHover-1].className += " active";
+  slides[slideHover - 1].style.display = "block";
+  dots[slideHover - 1].className += " active";
 }
 
 

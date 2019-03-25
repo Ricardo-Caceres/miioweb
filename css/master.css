@@ -3,6 +3,10 @@ body {
   margin: 0px;
 }
 
+
+.without-spacing-footer footer {
+  margin: 30px 0px 0px 0px;
+}
 .general {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -19,9 +23,9 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 35px;
+    font-size: 40px;
     color: #993CBA;
-    font-weight: normal;
+    font-weight: 700;
   }
 }
 
@@ -267,7 +271,7 @@ header {
   position: fixed;
   display: inline-block;
   max-width: 100%;
-  margin: 12% 50px 0px 0px;
+  margin: 170px 50px 0px 0px;
   z-index: 1;
   top: 0;
   right: 0;
@@ -465,13 +469,13 @@ header {
   }
 }
 
-.img-right {
-  display: flex;
+.img-right-index {
+  display: block;
   justify-content: flex-end;
   width: 100%;
 }
 
-#mobile {
+#mobile-index {
   display: none;
 }
 
@@ -479,6 +483,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding: 50px 0px 0px 0px;
+  margin: 15% 0%;
 }
 
 #apple {
@@ -1000,7 +1005,7 @@ header {
 }
 
 .img-left {
-  display: flex;
+  display: block;
   justify-content: flex-start;
   width: 100%;
 }
@@ -1023,7 +1028,7 @@ header {
 footer {
   display: flex;
   justify-content: center;
-  margin: 90px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   flex-direction: column;
   width: 100%;
 }
@@ -1197,6 +1202,7 @@ footer div pre {
 }
 
 /* TERMINA FOOTER */
+/* EMPIEZA PAGINA CONTACTO */
 .title {
   margin: 50px;
 }
@@ -1296,10 +1302,10 @@ footer div pre {
 
   .contact-module form {
     display: flex;
-  flex-direction: initial;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
+    flex-direction: initial;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .contact-module form input {
@@ -1346,4 +1352,545 @@ footer div pre {
     margin: 5px 0px 0px 0px;
   }
 }
-/* EMPIEZA PAGINA CONTACTO */
+
+/* ------------EMPIEZA TELEFONIA------------ */
+.telephone-module-1 {
+  background-image: url(/img/Banner.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 0% 5%;
+}
+
+.telephone-module-1 .left h1 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.telephone-module-1 .left p {
+  color: rgb(255, 255, 255);
+  margin: 0px 0px 20px 0px;
+}
+
+.telephone-module-1 .left h5 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 40px 0px 0px 0px;
+}
+
+
+#img-right-mobile {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  min-width: 20%;
+}
+
+.img-right p {
+  /* font-size: 15px; */
+  align-content: center;
+  color: rgb(255, 255, 255);
+  margin: 5px;
+  padding: 100px 0px 20px 0px;
+}
+
+
+
+.left-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .telephone-module-1 {
+    background-image: url(/img/Banner.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 0% 5%;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .telephone-module-1 .left h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+
+  .telephone-module-1 .left p {
+    color: rgb(255, 255, 255);
+    margin: 0px 0px 20px 0px;
+  }
+
+  .telephone-module-1 .left h5 {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 40px 0px 0px 0px;
+  }
+
+  #img-right-mobile {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 3% 0% 0% 0%;
+    align-items: center;
+  }
+
+  .img-right p img {
+    width: 100%;
+  }
+
+  .img-right p {
+    align-content: center;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 100px 0px 20px 0px;
+  }
+
+  .left-mobile {
+    background: #993CBA;
+    display: block;
+    padding: 1% 5%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+  }
+
+  .left-mobile h1 {
+    background: #993CBA;
+    display: block;
+    padding: 0% 0%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+  }
+
+  #white {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
+}
+
+/* EMPIEZA MODULO 2 TELEFONIA */
+.telephone-module-2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 0px 0px;
+  flex-direction: column;
+  color: #993CBA;
+}
+
+.telephone-module-2 h1 {
+  color: #993CBA;
+}
+
+.telephone-module-2 p {
+  color: #000000;
+}
+
+#text-yellow {
+  font-size: 30px;
+  font-weight: 700;
+  color: #F5A623;
+}
+
+#mobile {
+  display: block;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 768px) {}
+
+/* EMPIEZA MODULO 3 TELEFONIA */
+.telephone-module-3 {
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 0% 5%;
+  text-align: center;
+}
+
+#image img {
+  width: 100%
+}
+
+.content-mobile {
+  display: none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #image {
+    display: none;
+    width: 100%
+  }
+
+  .content-mobile {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .content-mobile p {
+    text-align: center;
+  }
+
+  .content-mobile h1 {
+    text-align: center;
+    color: #993CBA;
+  }
+
+  .content-mobile img {
+    margin: 0% 3%;
+  }
+}
+
+/* EMPIEZA MODULO 4 TELEFONIA */
+.telephone-module-4 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 100px 50px 100px;
+  align-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#module-center {
+  text-align: center;
+  width: 20%;
+}
+
+#module-center p, h1 {
+  text-align: left;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .telephone-module-4 {
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0% 0% 0% 0%;
+    justify-content: center;
+    padding: 0% 5%;
+    width: 100%
+  }
+
+  #module-center {
+    text-align: center;
+      width: 100%;
+  }
+
+  #module-center p, h1 {
+    text-align: center;
+  }
+}
+
+#responsive-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 4%;
+  width: 100%;
+  flex: 1;
+}
+
+.logotypes-mobile {
+  text-align: center;
+  padding: 3% 4%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+
+.logotypes-mobile h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logotypes-mobile p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #responsive-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 1%;
+    width: 100%;
+    flex: 1;
+  }
+
+  .logotypes-mobile {
+    text-align: center;
+    padding: 3% 1%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+  }
+
+  .logotypes-mobile h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logotypes-mobile p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* EMPIEZA MODULO 5 */
+
+.telephone-module-5  {
+  display: block;
+width: 100%;
+text-align: center;
+}
+
+.telephone-module-5 h1 {
+    color: #993CBA;
+}
+
+table {
+  color: rgb(147, 147, 147);
+  width: 100%;
+    border-collapse: collapse;
+}
+table tr, td, th{
+  border-collapse: collapse;
+  border: 1px solid rgb(181, 181, 181);
+}
+table thead{
+color: rgb(255, 255, 255);
+  background: #F5A623;
+}
+table tfoot{
+  font-weight: bold;
+color: rgb(255, 255, 255);
+  background: #993CBA;
+}
+
+.font-price  {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* EMPIEZA MODULO 7 */
+.telephone-module-7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 0% 5%;
+  text-align: center;
+}
+
+#dudas-image {
+  display: block;
+    width: 100%;
+  /* position: absolute; */
+}
+
+#dudas-text {
+  display: block;
+  position: absolute;
+padding: 0%;
+}
+
+#dudas-text p {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(98, 98, 98);
+}
+
+@media only screen and (max-width: 768px) {
+  #dudas-text {
+    display: block;
+    position: absolute;
+  padding: 0%;
+  width: 50%
+  }
+  #dudas-text p {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(98, 98, 98);
+    padding: 1%;
+    /* margin: 0; */
+  }
+}
+
+.telephone-module-8 {
+  background-color: #F5A623;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+  text-align: center;
+  flex: 1;
+  height: 150px;
+}
+
+
+.telephone-module-8  #icons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 0px 0px 0px;
+  margin: 0% 0%;
+  align-self: center;
+mar
+}
+
+.telephone-module-8  #smartphones img {
+  /* background-image: url(/img/descarga-telefonia.png);
+  background-repeat: no-repeat; */
+  align-self: end;
+}
+
+#smartphones{
+  display: contents;
+}
+
+#smart-logo {
+  display: block;
+  align-self: baseline;
+  margin: 1% 0%;
+}
+
+#text-center-footer  {
+  text-align: left;
+    align-self: center;
+margin: 0px;
+}
+
+#text-center-footer p {
+  color: rgb(255, 255, 255);
+  align-self: center;
+  margin: 0px;
+  padding: 0;
+  font-weight: 400;
+}
+
+#text-center-footer h2, h3 {
+  color: rgb(255, 255, 255);
+  align-self: center;
+  margin: 0px;
+  padding: 0;
+}
+
+.telephone-module-8-mobile {
+  display: none;
+}
+.icons-mobile-center {
+  display: none;
+flex-wrap: wrap;
+padding: 0px 0px 0px 0px;
+justify-content: center;
+
+}
+@media only screen and (max-width: 768px) {
+
+.telephone-module-8 {
+  display: none;
+}
+
+  .telephone-module-8-mobile {
+    background-color: #F5A623;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    flex: 1;
+    height: auto;
+    margin: 0px 0px 50px 0px;
+    flex-wrap: wrap;
+  }
+
+
+  .telephone-module-8-mobile  #icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 0px;
+    margin: 0% 0%;
+    align-self: center;
+
+  }
+
+  .telephone-module-8-mobile  #smartphones img {
+    /* background-image: url(/img/descarga-telefonia.png);
+    background-repeat: no-repeat; */
+    align-self: end;
+    margin: 0% 2%;
+  }
+
+  #smartphones{
+    display: flex;
+/* flex-wrap: wrap; */
+    font-size: 20px;
+text-align: left;
+font-weight: 200;
+  }
+
+  #smartphones h3{
+    font-size: 25px;
+text-align: left;
+font-weight: 500;
+  }
+
+  #smart-logo {
+    display: none;
+    align-self: baseline;
+    margin: 1% 0%;
+  }
+
+  #text-center-footer  {
+      display: flex;
+    text-align: center;
+      align-self: center;
+  margin: 0px;
+  }
+
+  #text-center-footer  img {
+  margin: 10px;
+  }
+
+  .icons-mobile-center {
+    display: flex;
+flex-wrap: wrap;
+padding: 0px 0px 0px 0px;
+justify-content: center;
+
+  }
+}
