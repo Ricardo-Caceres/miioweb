@@ -23,7 +23,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 40px;
+    font-size: 35px;
     color: #993CBA;
     font-weight: 500;
   }
@@ -609,6 +609,7 @@ header {
   justify-content: center;
   flex: 1;
   text-align: center;
+  align-items: center;
 }
 
 .products {
@@ -1957,6 +1958,7 @@ table tfoot {
   padding: 0% 5%;
   text-align: center;
   background: #F6F6F6;
+  align-items: center;
 }
 
 .module-3-tarjeta-desktop p {
@@ -2120,9 +2122,12 @@ height: 10%; */
   }
 
   #envia {
-      margin: 0px;
-}
+    margin: 0px;
+  }
 
+  #envia p {
+    text-align: center;
+  }
   .img-right #end-position {
     display: none;
   }
@@ -2135,6 +2140,55 @@ height: 10%; */
     display: block;
   }
 }
+
 .center {
   text-align: center;
+}
+
+/* EMPIEZA GANA DINERO  */
+#telefonia-2 {
+  background-image: url(/img/Banner-ganar.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: center;
+  padding: 0% 5%;
+}
+
+#dinero-orange {
+  background: #F5A623;
+}
+
+#dinero-orange h1 {
+  background: #F5A623;
+}
+
+@media only screen and (max-width: 768px) {
+  #telefonia-2 {
+    background-image: url(/img/Banner-ganar.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    padding: 0% 5%;
+    height: 200px;
+  }
+}
+
+/* EMPIEZA MODULO 2 GANAR  */
+#mobile-ganar {
+  display: block;
+  padding: 20px;
+}
+
+#text-yellow-ganar {
+  font-size: 20px;
+  font-weight: 700;
+  color: #F5A623;
 }
