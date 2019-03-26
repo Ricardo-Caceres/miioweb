@@ -3,10 +3,10 @@ body {
   margin: 0px;
 }
 
-
 .without-spacing-footer footer {
   margin: 30px 0px 0px 0px;
 }
+
 .general {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -25,7 +25,7 @@ h1 {
   h1 {
     font-size: 40px;
     color: #993CBA;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -424,8 +424,23 @@ header {
   }
 }
 
-.left {
+.left-home {
+  display: block;
   padding: 0px 0px 0px 0px;
+  width: 100%;
+  text-align: left;
+}
+
+.left-home h1 {
+  display: block;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  text-align: left;
+}
+
+.img-right-index {
+  display: block;
+  justify-content: center;
   width: 100%;
 }
 
@@ -459,6 +474,10 @@ header {
   display: none;
 }
 
+#mobile-index {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   #button-mobile {
     display: block;
@@ -467,16 +486,16 @@ header {
   #button-desktop {
     display: none;
   }
+
+  #mobile-index {
+    display: block;
+  }
 }
 
 .img-right-index {
-  display: block;
+  display: flex;
   justify-content: flex-end;
   width: 100%;
-}
-
-#mobile-index {
-  display: none;
 }
 
 #icons {
@@ -667,6 +686,14 @@ header {
     margin: 5% 0% 0% 0%;
     justify-content: center;
     padding: 0% 5%;
+  }
+
+  .module-3 .left-home p br {
+    display: none;
+  }
+
+  .module-3 .left-home p {
+    text-align: left;
   }
 
   .comercial-icons {
@@ -1008,6 +1035,7 @@ header {
   display: block;
   justify-content: flex-start;
   width: 100%;
+  padding: 20px 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1361,7 +1389,7 @@ footer div pre {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   padding: 0% 5%;
 }
@@ -1385,7 +1413,6 @@ footer div pre {
   margin: 40px 0px 0px 0px;
 }
 
-
 #img-right-mobile {
   display: -webkit-flex;
   display: -ms-flex;
@@ -1400,8 +1427,6 @@ footer div pre {
   margin: 5px;
   padding: 100px 0px 20px 0px;
 }
-
-
 
 .left-mobile {
   display: none;
@@ -1469,6 +1494,7 @@ footer div pre {
     width: 100%;
     color: rgb(255, 255, 255);
     margin: 0;
+    text-align: left;
   }
 
   .left-mobile h1 {
@@ -1478,11 +1504,16 @@ footer div pre {
     width: 100%;
     color: rgb(255, 255, 255);
     margin: 0;
+    text-align: left;
+  }
+
+  .left-mobile p {
+    text-align: left;
   }
 
   #white {
     color: rgb(255, 255, 255);
-    font-weight: 500;
+    font-weight: 800;
   }
 }
 
@@ -1578,11 +1609,9 @@ footer div pre {
   width: 20%;
 }
 
-#module-center p, h1 {
+#module-center p, h1, {
   text-align: left;
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .telephone-module-4 {
@@ -1600,7 +1629,7 @@ footer div pre {
 
   #module-center {
     text-align: center;
-      width: 100%;
+    width: 100%;
   }
 
   #module-center p, h1 {
@@ -1623,7 +1652,6 @@ footer div pre {
   display: flex;
   flex-direction: column;
   flex: 1;
-
 }
 
 .logotypes-mobile h1 {
@@ -1654,7 +1682,6 @@ footer div pre {
     display: flex;
     flex-direction: column;
     flex: 1;
-
   }
 
   .logotypes-mobile h1 {
@@ -1671,37 +1698,39 @@ footer div pre {
 }
 
 /* EMPIEZA MODULO 5 */
-
-.telephone-module-5  {
+.telephone-module-5 {
   display: block;
-width: 100%;
-text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .telephone-module-5 h1 {
-    color: #993CBA;
+  color: #993CBA;
 }
 
 table {
   color: rgb(147, 147, 147);
   width: 100%;
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
-table tr, td, th{
+
+table tr, td, th {
   border-collapse: collapse;
   border: 1px solid rgb(181, 181, 181);
 }
-table thead{
-color: rgb(255, 255, 255);
+
+table thead {
+  color: rgb(255, 255, 255);
   background: #F5A623;
 }
-table tfoot{
+
+table tfoot {
   font-weight: bold;
-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   background: #993CBA;
 }
 
-.font-price  {
+.font-price {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
@@ -1718,14 +1747,14 @@ color: rgb(255, 255, 255);
 
 #dudas-image {
   display: block;
-    width: 100%;
+  width: 100%;
   /* position: absolute; */
 }
 
 #dudas-text {
   display: block;
   position: absolute;
-padding: 0%;
+  padding: 0%;
 }
 
 #dudas-text p {
@@ -1738,9 +1767,10 @@ padding: 0%;
   #dudas-text {
     display: block;
     position: absolute;
-  padding: 0%;
-  width: 50%
+    padding: 0%;
+    width: 50%
   }
+
   #dudas-text p {
     font-size: 20px;
     font-weight: 500;
@@ -1762,23 +1792,22 @@ padding: 0%;
   height: 150px;
 }
 
-
-.telephone-module-8  #icons {
+.telephone-module-8 #icons {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 0px 0px 0px;
   margin: 0% 0%;
   align-self: center;
-mar
+  mar
 }
 
-.telephone-module-8  #smartphones img {
+.telephone-module-8 #smartphones img {
   /* background-image: url(/img/descarga-telefonia.png);
   background-repeat: no-repeat; */
   align-self: end;
 }
 
-#smartphones{
+#smartphones {
   display: contents;
 }
 
@@ -1788,10 +1817,10 @@ mar
   margin: 1% 0%;
 }
 
-#text-center-footer  {
+#text-center-footer {
   text-align: left;
-    align-self: center;
-margin: 0px;
+  align-self: center;
+  margin: 0px;
 }
 
 #text-center-footer p {
@@ -1812,18 +1841,18 @@ margin: 0px;
 .telephone-module-8-mobile {
   display: none;
 }
+
 .icons-mobile-center {
   display: none;
-flex-wrap: wrap;
-padding: 0px 0px 0px 0px;
-justify-content: center;
-
+  flex-wrap: wrap;
+  padding: 0px 0px 0px 0px;
+  justify-content: center;
 }
+
 @media only screen and (max-width: 768px) {
-
-.telephone-module-8 {
-  display: none;
-}
+  .telephone-module-8 {
+    display: none;
+  }
 
   .telephone-module-8-mobile {
     background-color: #F5A623;
@@ -1838,35 +1867,33 @@ justify-content: center;
     flex-wrap: wrap;
   }
 
-
-  .telephone-module-8-mobile  #icons {
+  .telephone-module-8-mobile #icons {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 0px 0px 0px;
     margin: 0% 0%;
     align-self: center;
-
   }
 
-  .telephone-module-8-mobile  #smartphones img {
+  .telephone-module-8-mobile #smartphones img {
     /* background-image: url(/img/descarga-telefonia.png);
     background-repeat: no-repeat; */
     align-self: end;
     margin: 0% 2%;
   }
 
-  #smartphones{
+  #smartphones {
     display: flex;
-/* flex-wrap: wrap; */
+    /* flex-wrap: wrap; */
     font-size: 20px;
-text-align: left;
-font-weight: 200;
+    text-align: left;
+    font-weight: 200;
   }
 
-  #smartphones h3{
+  #smartphones h3 {
     font-size: 25px;
-text-align: left;
-font-weight: 500;
+    text-align: left;
+    font-weight: 500;
   }
 
   #smart-logo {
@@ -1875,22 +1902,239 @@ font-weight: 500;
     margin: 1% 0%;
   }
 
-  #text-center-footer  {
-      display: flex;
+  #text-center-footer {
+    display: flex;
     text-align: center;
-      align-self: center;
-  margin: 0px;
+    align-self: center;
+    margin: 0px;
   }
 
-  #text-center-footer  img {
-  margin: 10px;
+  #text-center-footer img {
+    margin: 10px;
   }
 
   .icons-mobile-center {
     display: flex;
-flex-wrap: wrap;
-padding: 0px 0px 0px 0px;
-justify-content: center;
-
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 0px;
+    justify-content: center;
   }
+}
+
+/* -------EMPIEZA TARJETA-------- */
+#telefonia-1 {
+  background-image: url(/img/banner-dinero.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: center;
+  padding: 0% 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  #telefonia-1 {
+    background-image: url(/img/banner-dinero.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 0% 5%;
+    height: 200px;
+  }
+}
+
+/* MODULO 3 TARJETA */
+.module-3-tarjeta-desktop {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+  padding: 0% 5%;
+  text-align: center;
+  background: #F6F6F6;
+}
+
+.module-3-tarjeta-desktop p {
+  text-align: left;
+}
+
+.list-services-desktop {
+  display: block;
+  padding: 0px 90px;
+}
+
+.content-mobile-left {
+  display: none;
+  text-align: center;
+}
+
+.list-elements {
+  display: flex;
+  text-align: left;
+}
+
+.list-elements img {
+  display: flex;
+  /* width: 10%;
+height: 10%; */
+  margin: 5px;
+  align-self: center;
+  width: 32px;
+  height: 32px;
+}
+
+.list-elements img:last-child {
+  display: flex;
+  width: 10%;
+  height: 10%;
+  margin: 5px;
+  align-self: center;
+}
+
+.text-right {
+  width: 100%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .module-3-tarjeta-desktop {
+    display: none;
+    justify-content: center;
+    margin: 50px 150px 0px 150px;
+    background: #F6F6F6;
+  }
+
+  .content-mobile-left {
+    display: block;
+    text-align: center;
+  }
+
+  .content-mobile-left p {
+    display: block;
+    text-align: center;
+  }
+
+  .content-mobile-left .list-services p {
+    text-align: left;
+  }
+
+  .list-elements pre {
+    align-content: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .content-mobile-left #resize-image {
+    width: 100%;
+  }
+}
+
+/* Modulo 4 tarjeta  */
+#module-center-tarjeta {
+  text-align: left;
+  width: 30%;
+}
+
+#module-center-tarjeta h2 {
+  color: #993CBA;
+  text-align: left;
+  /* width: 20%; */
+  padding: 0px 40px;
+  margin: 0;
+}
+
+#module-center-tarjeta p {
+  text-align: left;
+}
+
+.flex-title {
+  display: flex;
+  align-items: baseline;
+}
+
+.flex-title h1 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #module-center-tarjeta {
+    text-align: center;
+    width: 100%;
+    margin: 10% 0%;
+  }
+
+  #module-center-tarjeta h2 {
+    color: #993CBA;
+    text-align: center;
+    /* width: 20%; */
+    padding: 0px 40px;
+    margin: 0;
+  }
+
+  #module-center-tarjeta p {
+    text-align: center;
+  }
+}
+
+/* MODULO 5 TARJETA */
+.module-5-tarjeta-desktop {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+  padding: 0% 5%;
+  text-align: center;
+  background: #F6F6F6;
+}
+
+#envia {
+  margin: 20px;
+  align-self: center;
+}
+
+#end-position {
+  align-self: flex-end;
+}
+
+#flex-title-mobile {
+  display: flex;
+}
+
+#flex-title-mobile-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .module-5-tarjeta-desktop {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+    padding: 0% 5%;
+    text-align: center;
+    background: #F6F6F6;
+  }
+
+  #envia {
+      margin: 0px;
+}
+
+  .img-right #end-position {
+    display: none;
+  }
+
+  #flex-title-mobile {
+    display: none;
+  }
+
+  #flex-title-mobile-icon {
+    display: block;
+  }
+}
+.center {
+  text-align: center;
 }
