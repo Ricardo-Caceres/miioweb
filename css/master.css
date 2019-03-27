@@ -2245,3 +2245,63 @@ height: 10%; */
     display: block;
   }
 }
+
+/* EMPIEZA PREGUNTAS FRECUENTES */
+#mobile-answers {
+  padding: 0;
+  flex-direction: column;
+}
+/* EMPIEZA MODULO 2 PREGUNTAS */
+.cuestions {
+  margin: 20px 150px;
+}
+
+#subtitle-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* EMPIEZA DESPLEGABLES */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+    border-radius: 10px;
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+/* TERMINA ACORDEON */
