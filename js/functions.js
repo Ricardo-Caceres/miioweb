@@ -1,50 +1,11 @@
+
+
 $("#show").click(function() {
-  if ($(".sidenav").width() !== "0px") {
-    $(".container").addClass("change");
-    $(".sidenav").width('250px');
-
-  }
-  else {
-    $(".container").toggleClass("change");
-    $(".sidenav").width('0px');
-
-  }
-
+  let width = $("#mySidenav").width()
+  let total = (width > 0) ? 0 : 250
+  $("#show").toggleClass("change");
+  $("#mySidenav").width(total.toString(), "px");
 });
-
-
-
-
-// $ ("#show").click(function(){
-//  $(".container").addClass("change");
-//  // $("#mySidenav").css('width', '250px')
-// document.getElementById("mySidenav").style.width = "250px";
-// });
-//
-//
-//   $ ("#show").click(function(){
-//    $(".container").toggleClass("change");
-//   // $("#mySidenav").attr("style" "width: 0")
-//   document.getElementById("mySidenav").style.width = "0px";
-//   });
-
-
-// $ (".change").click(function(){
-//   console.log("kjkj");
-//  $(".container").toggleClass("change");
-// document.getElementById("mySidenav").style.width = "0";
-// });
-
-// function myFunction(x) {
-//   document.getElementById("mySidenav").style.width = "250px";
-//   x.classList.toggle("change");
-// }
-//
-//
-// function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";
-// }
-
 
 
 
