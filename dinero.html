@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/master.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-  <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <title>Gana Dinero</title>
 </head>
 
@@ -53,7 +53,7 @@
     </div>
 
     <div class="logo-menu">
-      <img id="logo" src="assets/logo-MIIO-negro.png" alt="Miio">
+      <a href="index.html"><p><img id="logo" src="assets/logo-MIIO-negro.png" alt="Miio"></p></a>
       <h5 id="slogan">La App donde puedes<br>tenerlo todo.</h5>
 
 
@@ -302,6 +302,27 @@ ENTRETENIMIENTO</h1> <br>
       <p class="general">*Aplica hasta el 4to recomendado, sólo en recargas <b>Miio</b></p>
     </div>
   </div>
+
+  <div class="slideshow-container-marcas">
+    <div class="mySlides3">
+        <img src="assets/miio.png" alt="">
+    </div>
+
+    <div class="mySlides3">
+        <img src="assets/farmacias-ahorro.png" alt="">
+    </div>
+
+    <div class="mySlides3">
+        <img src="assets/7-eleven.png" alt="">
+    </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a> -->
+  </div>
   <!-- TERMINA MODULO 6 -->
 
 
@@ -396,12 +417,18 @@ ENTRETENIMIENTO</h1> <br>
       </div>
       <div class="footer-column">
         <p id="subcribe-text">Suscríbete a nuestro newsletter</p>
-        <form id="newslatter" action="" method="post">
-          <!-- <label for="email" id="label-email"></label> -->
-          <input id="button-email" type="email" name="email" value="">
+        <!-- EMPIEZA FORMULARIO NEWSLATTER -->
+        <form id="newslatter" action="https://miio.us18.list-manage.com/subscribe/post" method="POST">
+          <input type="hidden" name="u" value="1dde760baa387ec40ebb3a8b3">
+          <input type="hidden" name="id" value="79f76fc945">
 
-          <button id="button-submit" type="submit" name="enviar" value="">></button>
+          <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+          <input id="button-submit" type="submit" class="formEmailButton" name="submit" value=">">
+
+          <input type="hidden" name="ht" value="58ec1f35566d6aae1b5fcdc8ffdf120ed33d6769:MTU1MzcyNDA1NC4xMTEx">
+          <input type="hidden" name="mc_signupsource" value="hosted">
         </form>
+        <!-- TERMINA FORMULARIO NEWSLATTER -->
 
         <div class="social" id="social-mobile">
           <p id="Siguenos">Siguenos en: </p>
@@ -426,6 +453,6 @@ ENTRETENIMIENTO</h1> <br>
 <!-- TERMINA FOOTER -->
 
 
-<script src="js/functions.js" charset="utf-8"></script>
+<script src="js/slide-dinero.js" charset="utf-8"></script>
 
 </html>
