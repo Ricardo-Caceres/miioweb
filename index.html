@@ -9,6 +9,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
   <title>Miio</title>
 </head>
 
@@ -90,7 +92,7 @@
   <div class="module-1">
     <aside class="left-home">
       <h1>¿QUIERES? <br> YA PUEDES</h1>
-      <p class="general">¿Quiere unirte a la comunidad digital <br> que lo tiene todo? Con Miio ¡Ya puedes!</p>
+      <p class="general">¿Quieres unirte a la comunidad digital <br> que lo tiene todo? Con Miio ¡Ya puedes!</p>
       <button class="general-button" id="myBtn" type="button" name="button" <href="" </href>VER VIDEO</button> <div class="store-icon">
 
         <div class="" id="icons">
@@ -142,11 +144,13 @@
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
+
     <!-- Modal content -->
     <div class="modal-content">
-      <span class="close">&otimes;</span>
-      <iframe height="500px" src="https://www.youtube.com/embed/CLrNGD4nGiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <span class="close">&times;</span>
+      <iframe id="modal-video" width="560" height="315" src="https://www.youtube.com/embed/CLrNGD4nGiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
   </div>
   <!-- MODAL VIDEO  -->
 
@@ -156,7 +160,7 @@
   <div class="module-2">
     <div class="content">
       <h1>UN MUNDO DE POSIBILIDADES</h1>
-      <p class="general">Tus finazas y telefonía en una sola aplicación</p>
+      <p class="general">Tus finanzas y telefonía en una sola aplicación</p>
     </div>
     <div class="general-icons-posibilities">
       <div class="products">
@@ -221,51 +225,140 @@
     <div id="gallery">
 
       <div id="image-content-column">
-        <img src="img/foto1.png" alt="" class="gallery">
-        <img src="img/foto2.png" alt="" class="gallery">
-
+        <div class="hover"><img src="img/foto1.png" alt="" class="image">
+          <div class="overlay">
+            <div class="text">
+              <h3 class="white-subtitles">Adriana Pérez</h3>
+              <p>"Con Miio puedo ayudar mi mamá a pagar la luz, el gas y el agua en unos instantes. Y además me gano un dinero extra."</p>
+            </div>
+          </div>
+        </div>
+        <div class="hover"><img src="img/foto2.png" alt="" class="image">
+          <div class="overlay">
+            <div class="text">
+              <h3 class="white-subtitles">Oscar López</h3>
+              <p>"Tengo un pequeño negocio en un pueblo. Con Miio, puedo recibir los pagos de mis clientes sin tener que lidiar con ningún banco."</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="image-content-column-1">
-        <img src="img/foto3.png" alt="" id="unique" class="gallery">
+        <div class="hover"><img src="img/foto3.png" alt="" id="unique" class="image">
+          <div class="overlay">
+            <div class="text">
+              <h3 class="white-subtitles">Mario Pulido</h3>
+              <p>"Desde que uso Miio tengo un plan de telefonía gratis y puedo mantenerme comunicado con mi mamá, que vive lejos de aquí."</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="image-content-column">
-
         <div class="image-content-row">
-          <img src="img/foto4.png" alt="" class="gallery">
-          <img src="img/foto6.png" alt="" class="gallery">
+          <div class="hover"><img src="img/foto4.png" alt="" class="image">
+            <div class="overlay">
+              <div class="text">
+                <h3 class="white-subtitles">Fernanda González</h3>
+                <p>"Soy mamá soltera, tengo 3 hijos y un trabajo de tiempo completo. Pagar todos mis servicios con Miio me ahorra mucho tiempo."</p>
+              </div>
+            </div>
+          </div>
+          <div class="hover"><img src="img/foto6.png" alt="" class="image">
+            <div class="overlay">
+              <div class="text">
+                <h3 class="white-subtitles">Felipe Sánchez</h3>
+                <p>"Con Miio, puedo ayudar a mi esposa a hacer sus recargas de telefonía."</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="image-content-row">
-          <img src="img/foto5.png" alt="" class="gallery">
-          <img src="img/foto7.png" alt="" class="gallery">
+          <div class="hover"><img src="img/foto5.png" alt="" class="image">
+            <div class="overlay">
+              <div class="text">
+                <h3 class="white-subtitles">María Rodriguez</h3>
+                <p>"Gracias a mi microcrédito Miio, puedo comprar los ingredientes de la comida que vendo todos los días en mi puesto."</p>
+              </div>
+            </div>
+          </div>
+          <div class="hover"><img src="img/foto7.png" alt="" class="image">
+            <div class="overlay">
+              <div class="text">
+                <h3 class="white-subtitles">Alejandra Hernández</h3>
+                <p>"Con mi tarjeta Miio, nunca me falta dinero para mi tarjeta de EcoBici."</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-<div class="testimonios">
-    <!-- main image slider container -->
-    <div id="slider-main">
-        <!-- previous button -->
-    <!-- <button id="prev"><i class="fa fa-angle-double-left"></i>&lt;</button> -->
-        <!-- image container -->
-    <div id="slider"></div>
-        <!-- next button -->
-        <!-- <button id="next"><i class="fa fa-angle-double-right"></i>&gt;</button> -->
-        <!-- small circles container -->
-        <!-- <div id="circles"></div> -->
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container-first">
+
+      <!-- Full-width slides/quotes -->
+      <div class="mySlider">
+        <img src="img/foto1-mobile.png" alt="">
+        <h3 class="white-subtitles">Adriana Pérez</h3>
+        <p class="general">"Con Miio puedo ayudar mi mamá a pagar la luz, el gas y el agua en unos instantes. Y además me gano un dinero extra."</p>
+      </div>
+
+      <div class="mySlider">
+        <img src="img/foto2-mobile.png" alt="">
+        <h3 class="white-subtitles">Oscar López</h3>
+        <p class="general">"Tengo un pequeño negocio en un pueblo. Con Miio, puedo recibir los pagos de mis clientes sin tener que lidiar con ningún banco."</p>
+      </div>
+
+      <div class="mySlider">
+        <img src="img/foto3-mobile.png" alt="">
+        <h3 class="white-subtitles">Mario Pulido</h3>
+        <p class="general">"Desde que uso Miio tengo un plan de telefonía gratis y puedo mantenerme comunicado con mi mamá, que vive lejos de aquí."</p>
+      </div>
+
+      <div class="mySlider">
+        <img src="img/foto4-mobile.png" alt="">
+        <h3 class="white-subtitles">Fernanda González</h3>
+        <p class="general">"Soy mamá soltera, tengo 3 hijos y un trabajo de tiempo completo. Pagar todos mis servicios con Miio me ahorra mucho tiempo."</p>
+      </div>
+
+      <div class="mySlider">
+        <img src="img/foto5-mobile.png" alt="">
+        <h3 class="white-subtitles">Felipe Sánchez</h3>
+        <p class="general">"Con Miio, puedo ayudar a mi esposa a hacer sus recargas de telefonía."</p>
+      </div>
+
+      <div class="mySlider">
+        <img src="img/foto6-mobile.png" alt="">
+        <h3 class="white-subtitles">María Rodriguez</h3>
+        <p class="general">"Gracias a mi microcrédito Miio, puedo comprar los ingredientes de la comida que vendo todos los días en mi puesto."</p>
+      </div>
+
+      <div class="mySlider">
+        <img src="img/foto7-mobile.png" alt="">
+        <h3 class="white-subtitles">Alejandra Hernández</h3>
+        <p class="general">"Con mi tarjeta Miio, nunca me falta dinero para mi tarjeta de EcoBici."</p>
+      </div>
+
+      <!-- Next/prev buttons -->
+      <a class="prev" onclick="plusSlider(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlider(1)">&#10095;</a>
     </div>
-    <!-- end of main image slider container -->
-<div id="circles"></div>
-    <!--jquery javascript library -->
+
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlider(1)"></span>
+      <span class="dot" onclick="currentSlider(2)"></span>
+      <span class="dot" onclick="currentSlider(3)"></span>
+      <span class="dot" onclick="currentSlider(4)"></span>
+      <span class="dot" onclick="currentSlider(5)"></span>
+      <span class="dot" onclick="currentSlider(6)"></span>
+      <span class="dot" onclick="currentSlider(7)"></span>
+    </div>
 
 
-  <p class="general">
-
-  </p>
-</div>
-
-
-</div>
+  </div>
 
 
   <!-- Termina Modulo 4 -->
@@ -292,16 +385,14 @@
         </div>
         <div class="content-slider">
           <img src="assets/icon-pagaServicios.png" alt="">
-          <h3>Paga servicios</h3>
-          <p class="general-1">Paga tu luz, agua
-            o teléfono y
-            <span>más de 160 servicios.</span></p>
+          <h3>Envía y recibe dinero</h3>
+          <p class="general-1">Haz transferencias sin costo desde
+            tu celular.</span></p>
         </div>
         <div class="content-slider">
           <img src="assets/icon-trasnferencias.png" alt="">
-          <h3>Haz transferencias</h3>
-          <p class="general-1">Obtén una cuenta financiera Miio y <span>envía o recibe dinero</span> desde
-            tu celular.</p>
+          <h3>Pide créditos</h3>
+          <p class="general-1">Solicita tu crédito desde la app y recíbelo al instante.</p>
         </div>
       </div>
     </div>
@@ -313,34 +404,32 @@
         <div class="content-slider">
           <img src="assets/icon-compras.png" alt="">
           <h3>Realiza compras</h3>
-          <p class="general-1">Paga por internet o en cualquier establecimiento que acepte Mastercard.</p>
-        </div>
-      </div>
-
-      <div class="mySlides1">
-        <div class="content-slider">
-          <img src="assets/icon-pagaServicios.png" alt="">
-          <h3>Paga servicios</h3>
-          <p class="general-1">Paga tu luz, agua
-            o teléfono y
-            <span>más de 160 servicios.</span></p>
+          <p class="general-1">Paga por <span>internet</span> o en cualquier establecimiento que acepte <span>Mastercard.</span></p>
         </div>
       </div>
 
       <div class="mySlides1">
         <div class="content-slider">
           <img src="assets/icon-trasnferencias.png" alt="">
-          <h3>Haz transferencias</h3>
-          <p class="general-1">Obtén una cuenta financiera Miio y <span>envía o recibe dinero</span> desde
-            tu celular.</p>
+          <h3>Envía y recibe dinero</h3>
+          <p class="general-1">Haz transferencias sin costo desde
+            tu celular.</span></p>
+        </div>
+      </div>
+
+      <div class="mySlides1">
+        <div class="content-slider">
+          <img src="assets/icon-pagaServicios.png" alt="">
+          <h3>Pide créditos</h3>
+          <p class="general-1">Solicita tu crédito desde la app y recíbelo al instante.</p>
         </div>
       </div>
 
       <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
       <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-<div class="button-center">
-            <a href="tarjeta.html" target="_blank" rel="noopener noreferrer"><button id="mobilebutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
-            </div>
+      <div class="button-center">
+        <a href="tarjeta.html" target="_blank" rel="noopener noreferrer"><button id="mobilebutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
+      </div>
     </div>
 
 
@@ -368,22 +457,19 @@
 
       <div class="content-slider-general">
         <div class="content-slider">
-          <img src="assets/icon-compras.png" alt="">
-          <h3>Realiza compras</h3>
-          <p class="general-1">Paga por internet o en cualquier establecimiento que acepte Mastercard.</p>
+          <img src="assets/icon-planGratis.png">
+          <h3>Plan Gratis</h3>
+          <p class="general-1">Te regalamos a la semana: <span>100 minutos, 50 megas y 10 SMS.</span></p>
         </div>
         <div class="content-slider">
-          <img src="assets/icon-pagaServicios.png" alt="">
-          <h3>Paga servicios</h3>
-          <p class="general-1">Paga tu luz, agua
-            o teléfono y
-            <span>más de 160 servicios.</span></p>
+          <img src="assets/icon-cobertura.png">
+          <h3>Planes Miio</h3>
+          <p class="general-1">Si se te acaba tu <span>Plan Gratis</span>, ¡elige uno a tu medida!</p>
         </div>
         <div class="content-slider">
           <img src="assets/icon-trasnferencias.png" alt="">
-          <h3>Haz transferencias</h3>
-          <p class="general-1">Obtén una cuenta financiera Miio y <span>envía o recibe dinero</span> desde
-            tu celular.</p>
+          <h3>Cobertura</h3>
+          <p class="general-1">Contamos con amplia cobertura por todo México.</p>
         </div>
       </div>
     </div>
@@ -393,32 +479,33 @@
       <div class="mySlides2">
         <div class="content-slider">
           <img src="assets/icon-planGratis.png">
-          <h3>Realiza compras</h3>
-          <p class="general-1">Te regalamos a la semana: 100 minutos, 50 megas y 10 SMS.</p>
+          <h3>Plan Gratis</h3>
+          <p class="general-1">Te regalamos a la semana: <span>100 minutos, 50 megas y 10 SMS.</span></p>
         </div>
       </div>
 
       <div class="mySlides2">
         <div class="content-slider">
           <img src="assets/icon-cobertura.png">
-          <h3>Realiza compras</h3>
-          <p class="general-1">Paga por internet o en cualquier establecimiento que acepte Mastercard.</p>
+          <h3>Planes Miio</h3>
+          <p class="general-1">Si se te acaba tu <span>Plan Gratis</span>, ¡elige uno
+            a tu medida!</p>
         </div>
       </div>
 
       <div class="mySlides2">
         <div class="content-slider">
           <img src="assets/icon-planGratis.png">
-          <h3>Realiza compras</h3>
-          <p class="general-1">Paga por internet o en cualquier establecimiento que acepte Mastercard.</p>
+          <h3>Cobertura</h3>
+          <p class="general-1">Contamos con amplia cobertura por todo México.</p>
         </div>
       </div>
 
       <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-<div class="button-center">
+      <div class="button-center">
         <a href="telefonia.html" target="_blank" rel="noopener noreferrer"><button id="mobilebutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
-        </div>
+      </div>
     </div>
 
   </div>
@@ -480,15 +567,15 @@
           San Angel. CP. 01090 CDMX</p>
       </div>
       <div class="footer-column">
-        <pre>Home <br> Nosotros <br>¿Quienes somos?<br>Beneficios<br>  Telefonía<br>  Tarjeta MIIO<br>  Gana dinero<br>BOOM</pre>
+        <pre><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a><a href="" target="_blank" rel="noopener noreferrer">Nosotros</a><a href="about.html" target="_blank" rel="noopener noreferrer">¿Quienes somos?</a>Beneficios<a href="telefonia.html" target="_blank" rel="noopener noreferrer">  Telefonía</a><a href="tarjeta.html" target="_blank" rel="noopener noreferrer">  Tarjeta MIIO</a><a href="dinero.html" target="_blank" rel="noopener noreferrer">  Gana dinero</a><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></pre>
       </div>
 
       <div class="footer-column">
-        <p>Blog <br>
-          Contacto <br>
-          Preguntas frecuentes <br>
-          Aviso de Prívacidad <br>
-          Términos y condiciones</p>
+        <p><a href="https://miio.com.mx/blog/">Blog</a>
+          <a href="contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a>
+          <a href="preguntas.html" target="_blank" rel="noopener noreferrer">Preguntas frecuentes</a>
+          <a href="" target="_blank" rel="noopener noreferrer">Aviso de Prívacidad</a>
+          <a href="" target="_blank" rel="noopener noreferrer">Términos y condiciones</a></p>
       </div>
       <div class="footer-column">
         <p id="subcribe-text">Suscríbete a nuestro newsletter</p>
@@ -539,17 +626,5 @@
 
 <script src="js/slide-zero.js" charset="utf-8"></script>
 <script src="js/functions.js" charset="utf-8"></script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 
 </html>

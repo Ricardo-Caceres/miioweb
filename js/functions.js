@@ -25,7 +25,6 @@ for (i = 0; i < acc.length; i++) {
 
 // Get the modal
 var modal = document.getElementById('myModal');
-
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
@@ -36,11 +35,18 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+$('.close').click(function() {
+      modal.style.display = "none";
+      $('#modal-video').each(function(){
+        var el_src = $(this).attr("src");
+        $(this).attr("src",el_src);
+      });
+});
+// span.onclick = function() {
+//   modal.style.display = "none";
+//   frame.style.display = "none";
+// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
