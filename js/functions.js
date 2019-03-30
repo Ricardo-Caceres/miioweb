@@ -43,18 +43,17 @@ $('.close').click(function() {
         $(this).attr("src",el_src);
       });
 });
-// span.onclick = function() {
-//   modal.style.display = "none";
-//   frame.style.display = "none";
-// }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    $('#modal-video').each(function(){
+      var el_src = $(this).attr("src");
+      $(this).attr("src",el_src);
+    });
   }
 }
-
 
 
 // EMPIEZA SLIDER 2 Y 3

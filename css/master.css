@@ -21,6 +21,8 @@ a {
   text-align: left;
   padding: 20px 0px 20px 0px;
   font-weight: 100;
+  color: #4A4A4A;
+  margin: 0;
 }
 
 h1 {
@@ -1630,6 +1632,7 @@ footer div pre {
   }
 
   .address-mobile {
+    display: block;
     padding: 1% 5%;
   }
 
@@ -1865,15 +1868,43 @@ footer div pre {
 }
 
 #module-center {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   width: 20%;
+}
+
+#module-center br {
+  display: none;
 }
 
 #module-center p, h1, {
   text-align: left;
 }
 
+#logo-pegado {
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+  align-items: baseline;
+}
+
+#logo-pegado p {
+margin: 0;
+}
+
+#titulo-pegado {
+  padding: 0px 0px 0px 25px;
+}
+
+.slideshow-container-telefonia {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  .slideshow-container-telefonia {
+    display: block;
+  }
   .telephone-module-4 {
     display: flex;
     flex-direction: row;
@@ -1962,31 +1993,31 @@ footer div pre {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 50px;
+  padding: 0px 50px;
 }
 
 .telephone-module-5 h1 {
   color: #993CBA;
 }
 
-table {
+#table-desktop {
   color: rgb(147, 147, 147);
   width: 100%;
   border-collapse: collapse;
 }
 
-table tr, td, th {
+#table-desktop tr, td, th {
   border-collapse: collapse;
   border: 1px solid rgb(181, 181, 181);
   padding: 20px;
 }
 
-table thead {
+#table-desktop thead {
   color: rgb(255, 255, 255);
   background: #F5A623;
 }
 
-table tfoot {
+#table-desktop tfoot {
   font-weight: bold;
   color: rgb(255, 255, 255);
   background: #993CBA;
@@ -2003,12 +2034,22 @@ table tfoot {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  padding: 0% 5%;
+  padding: 0% 0% 0% 5%;
   text-align: center;
 }
 
 #dudas-image {
   display: block;
+  width: 100%;
+  /* position: absolute; */
+}
+
+#dudas-image img{
+  width: 100%;
+}
+
+#dudas-image-mobile {
+  display: none;
   width: 100%;
   /* position: absolute; */
 }
@@ -2029,8 +2070,20 @@ table tfoot {
   #dudas-text {
     display: block;
     position: absolute;
-    padding: 0%;
-    width: 50%
+    padding: 0% 0% 0% 10%;
+    width: 60%;
+  }
+
+  #dudas-image {
+    display: none;
+    width: 100%;
+    /* position: absolute; */
+  }
+
+  #dudas-image-mobile {
+    display: block;
+    width: 100%;
+    /* position: absolute; */
   }
 
   table {
@@ -2233,6 +2286,11 @@ table tfoot {
   text-align: left;
 }
 
+#align-paddind-text {
+  margin: 0px 0px 30px 0px;
+padding: 0% 0% 0% 10%;
+}
+
 .list-services-desktop {
   display: block;
   padding: 0px 90px;
@@ -2314,7 +2372,7 @@ height: 10%; */
   color: #993CBA;
   text-align: left;
   /* width: 20%; */
-  padding: 0px 40px;
+  padding: 0px 53px;
   margin: 0;
 }
 
@@ -2324,11 +2382,19 @@ height: 10%; */
 
 .flex-title {
   display: flex;
-  align-items: baseline;
+  /* align-items: baseline; */
+}
+
+.flex-title p {
+margin: 0;
 }
 
 .flex-title h1 {
   margin: 0;
+}
+
+#titulo-pegado-mas {
+  padding: 0px 0px 0px 50px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2708,9 +2774,13 @@ height: 10%; */
         margin-left: 36%;
     } */
 }
-
-/* ---------------SLIDESHOW TELEFONIA---------------- */
 .plan {
+  display: none;
+}
+/* ---------------SLIDESHOW TELEFONIA---------------- */
+@media only screen and (max-width: 768px) {
+.plan {
+  display: block;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
@@ -2819,7 +2889,7 @@ flex: 1;
 text-align: center;
 align-items: center;
 }
-
+}
 @media only screen and (max-width: 768px) {
   .slideshow-container-telefonia {
     display: block;
@@ -2833,9 +2903,9 @@ align-items: center;
     margin: auto;
     text-align: center;
   }
-  .general-icons {
+  /* .general-icons {
     display: none;
-  }
+  } */
 
   .general-icons-posibilities {
     display: flex;
@@ -2944,8 +3014,15 @@ q {font-style: italic;}
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
 
+.slideshow-container-marcas {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
+
+  .slideshow-container-marcas {
+    display: block;
+  }
   .slideshow-container-first {
     display: block;
    position: relative;
@@ -2957,4 +3034,8 @@ q {font-style: italic;}
    text-align: center;
    padding: 10px;
   }
+}
+
+#telefonia-module-6 {
+  margin: 50px 0px;
 }
