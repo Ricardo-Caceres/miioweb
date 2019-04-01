@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -91,8 +92,8 @@
   <!-- Empieza Modulo 1 -->
   <div class="module-1">
     <aside class="left-home">
-      <h1>¿QUIERES? <br> YA PUEDES</h1>
-      <p class="general">¿Quieres unirte a la comunidad digital <br> que lo tiene todo? Con Miio ¡Ya puedes!</p>
+      <h1><span id="space-title">¿QUIERES?</span> <br> <span id="bold-title">YA PUEDES</span></h1>
+      <p class="general">¿Quieres unirte a la comunidad digital <br> que lo tiene todo? <b>Con Miio ¡Ya puedes!</b></p>
       <button class="general-button" id="myBtn" type="button" name="button" <href="" </href>VER VIDEO</button> <div class="store-icon">
 
         <div class="" id="icons">
@@ -108,25 +109,25 @@
   </aside>
 
   <div class="img-right-index">
-    <img id="desk" src="img/info-miio.png" alt="info-miio.png">
+    <img id="desk" src="img/celular-HOME.png" alt="info-miio.png">
     <img id="mobile-index" src="img/celular-mobile.png" alt="info-miio.png">
   </div>
 
   <div class="list-services">
     <div class="list-elements">
       <img src="assets/Group-1.png" alt="">
-      <p><span>Tarjeta y cuenta financiera</span><br>
-        Obtén una cuenta financiera sin papeleo</p>
+      <p><span>Dinero</span><br>
+        Obtén una cuenta financiera y una <br> tarjeta MasterCard sin papeleo</p>
     </div>
     <div class="list-elements">
       <img src="assets/Group-2.png" alt="">
-      <p><span>Telefonía gratis</span><br>
-        Adquiere un plan que se renueva cada semana</p>
+      <p><span>¡Ganancias!</span><br>
+        Gana pagando servicios, <br> comprando entretenimiento y <br> mucho más…</p>
     </div>
     <div class="list-elements">
       <img src="assets/Group-3.png" alt="">
-      <p><span>¡Lanita extra!</span><br>
-        Paga tus servicios y los de tus conocidos y gana dinero</p>
+      <p><span>Telefonía</span><br>
+        Disfruta de un plan gratis semanal</p>
     </div>
   </div>
 
@@ -148,7 +149,7 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <iframe id="modal-video" width="560" height="315" src="https://www.youtube.com/embed/CLrNGD4nGiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="modal-video" width="560" height="415" src="https://www.youtube.com/embed/lse0AosiQi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
   </div>
@@ -187,25 +188,35 @@
   <div class="module-3">
     <aside class="left-home">
       <h1>GANA DINERO<br>¿CÓMO LOGRARLO?</h1>
-      <P class="general">Haz recargas a Telefonía Miio y otras compañías;
+      <P class="general">Haz recargas a Telefonía <b>Miio</b> y otras compañías;
         <br>paga tus servicios o los de tus conocidos; o
-        <br>compra entretenimiento y consíguelo <span id="color">¡Así de fácil!</span>
+        <br>compra entretenimiento y consíguelo. <br> <span id="color">¡Así de fácil!</span>
       </P>
       <a href="dinero.html" target="_blank" rel="noopener noreferrer"><button class="general-button" id="button-desktop" type="button" name="button">¡CONOCE MÁS!</button></a>
     </aside>
     <div class="comercial-icons">
       <div class="comercial-icons">
-        <div class="logotypes"><img src="img/dish.png" alt="Dish"></div>
-        <div class="logotypes"><img src="img/CFE.png" alt="CFE"></div>
-        <div class="logotypes"><img src="img/cinepolis.png" alt="Cinepolis"></div>
-        <div class="logotypes"><img src="img/netflix.png" alt="Netflix"></div>
+        <div class="logotypes"><img src="assets/CFE.png" alt="CFE"></div>
+        <div class="logotypes"><img src="assets/blim.png" alt="Blim"></div>
+        <div class="logotypes"><img src="assets/avon.png" alt="Avon"></div>
       </div>
       <div class="comercial-icons">
-        <div class="logotypes"><img src="img/xbox.png" alt="Xbox"></div>
-        <div class="logotypes"><img src="img/blim.png" alt="Blim"></div>
-        <div class="logotypes"><img src="img/avon.png" alt="Avon"></div>
-        <div class="logotypes"><img src="img/yMuchosMas.png" alt="Más"></div>
+        <div class="logotypes"><img src="assets/cinepolis.png" alt="Cinepolis"></div>
+        <div class="logotypes"><img src="assets/dish.png" alt="Dish"></div>
+        <div class="logotypes"><img src="assets/xbox.png" alt="Xbox"></div>
       </div>
+    </div>
+
+
+    <div class="comercial-icons-mobile">
+      <div class="logotypes"><img src="assets/CFE.png" alt="CFE"></div>
+      <div class="logotypes"><img src="assets/blim.png" alt="Blim"></div>
+      <div class="logotypes"><img src="assets/avon.png" alt="Avon"></div>
+
+      <div class="logotypes"><img src="assets/cinepolis.png" alt="Cinepolis"></div>
+      <div class="logotypes"><img src="assets/dish.png" alt="Dish"></div>
+      <div class="logotypes"><img src="assets/xbox.png" alt="Xbox"></div>
+
     </div>
     <a href="dinero.html" target="_blank" rel="noopener noreferrer"><button class="general-button" id="button-mobile" type="button" name="button">¡CONOCE MÁS!</button></a>
   </div>
@@ -217,8 +228,8 @@
   <!-- Empieza Modulo 4 -->
   <div class="module-4">
     <div class="content-1">
-      <h1>MIIO ES PARA TODOS</h1>
-      <p class="general">Trabajamos cada día para brindarte herramientas que mejoren tu calidad de vida,
+      <h1>Miio ES PARA TODOS</h1>
+      <p class="general">Trabajamos cada día para brindarte herramientas que mejoren tu calidad de vida, <br>
         para que tengas tranquilidad y estabilidad financiera.</p>
     </div>
 
@@ -292,246 +303,199 @@
           </div>
         </div>
       </div>
+
+
+
+
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/foto1-mobile.png" alt="" class="image"></div>
+        <div class="swiper-slide"><img src="img/foto2-mobile.png" alt="" class="image"></div>
+        <div class="swiper-slide"><img src="img/foto3-mobile.png" alt="" class="image"></div>
+        <div class="swiper-slide"><img src="img/foto4-mobile.png" alt="" class="image"></div>
+        <div class="swiper-slide"><img src="img/foto5-mobile.png" alt="" class="image"></div>
+        <div class="swiper-slide"><img src="img/foto6-mobile.png" alt="" class="image"></div>
+        <div class="swiper-slide"><img src="img/foto7-mobile.png" alt="" class="image"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
 
 
-    <!-- Slideshow container -->
-    <div class="slideshow-container-first">
+</div>
+    <!-- Termina Modulo 4 -->
 
-      <!-- Full-width slides/quotes -->
-      <div class="mySlider">
-        <img src="img/foto1-mobile.png" alt="">
-        <h3 class="white-subtitles">Adriana Pérez</h3>
-        <p class="general">"Con Miio puedo ayudar mi mamá a pagar la luz, el gas y el agua en unos instantes. Y además me gano un dinero extra."</p>
+    <!-- EMPIEZA MODULO 5 -->
+
+    <div class="module-5">
+
+      <div class="services">
+        <aside class="left-justify">
+          <h1><img src="assets/icons-home.png" alt=""> <span class="white-30"> DINERO</span></h1>
+          <h3><span id="subtitles-white">Tu cuenta financiera y tu tarjeta</span></h3>
+          <p class="general">Obtén una cuenta financiera gratis, sin papeleos ni filas. Además, pide tu tarjeta Miio MasterCard directamente desde la app.</p>
+          <img src="img/tarjeta.png" alt=""><br>
+          <a href="dinero.html" target="_blank" rel="noopener noreferrer"><button id="desktopbutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
+        </aside>
+
+
+        <div class="content-slider-general">
+          <div class="content-slider">
+            <img src="assets/icon-compras.png" alt="">
+            <h3>Realiza compras</h3>
+            <p class="general">Paga por <span>internet</span> o en cualquier establecimiento que acepte <span>Mastercard.</span></p>
+          </div>
+          <div class="content-slider">
+            <img src="assets/icon-trasnferencias-grande.png" alt="">
+            <h3>Envía y recibe dinero</h3>
+            <p class="general">Haz transferencias <span>sin costo</span> desde <br>
+              tu celular.</span></p>
+          </div>
+          <div class="content-slider">
+            <img src="assets/icon-pagaServicios.png" alt="">
+            <h3>Pide créditos</h3>
+            <p class="general">Solicita tu crédito desde la app y recíbelo al instante.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="mySlider">
-        <img src="img/foto2-mobile.png" alt="">
-        <h3 class="white-subtitles">Oscar López</h3>
-        <p class="general">"Tengo un pequeño negocio en un pueblo. Con Miio, puedo recibir los pagos de mis clientes sin tener que lidiar con ningún banco."</p>
+
+
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <div class="content-slider">
+            <img src="assets/icon-compras.png" alt="">
+            <h3>Realiza compras</h3>
+            <p class="general">Paga por <span>internet</span> o en cualquier establecimiento que acepte <span>Mastercard.</span></p>
+          </div>
+        </div>
+
+        <div class="mySlides1">
+          <div class="content-slider">
+            <img src="assets/icon-trasnferencias.png" alt="">
+            <h3>Envía y recibe dinero</h3>
+            <p class="general">Haz transferencias sin costo desde
+              tu celular.</span></p>
+          </div>
+        </div>
+
+        <div class="mySlides1">
+          <div class="content-slider">
+            <img src="assets/icon-pagaServicios.png" alt="">
+            <h3>Pide créditos</h3>
+            <p class="general">Solicita tu crédito desde la app y recíbelo al instante.</p>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        <div class="button-center">
+          <a href="dinero.html" target="_blank" rel="noopener noreferrer"><button id="mobilebutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
+        </div>
       </div>
 
-      <div class="mySlider">
-        <img src="img/foto3-mobile.png" alt="">
-        <h3 class="white-subtitles">Mario Pulido</h3>
-        <p class="general">"Desde que uso Miio tengo un plan de telefonía gratis y puedo mantenerme comunicado con mi mamá, que vive lejos de aquí."</p>
-      </div>
 
-      <div class="mySlider">
-        <img src="img/foto4-mobile.png" alt="">
-        <h3 class="white-subtitles">Fernanda González</h3>
-        <p class="general">"Soy mamá soltera, tengo 3 hijos y un trabajo de tiempo completo. Pagar todos mis servicios con Miio me ahorra mucho tiempo."</p>
-      </div>
 
-      <div class="mySlider">
-        <img src="img/foto5-mobile.png" alt="">
-        <h3 class="white-subtitles">Felipe Sánchez</h3>
-        <p class="general">"Con Miio, puedo ayudar a mi esposa a hacer sus recargas de telefonía."</p>
-      </div>
 
-      <div class="mySlider">
-        <img src="img/foto6-mobile.png" alt="">
-        <h3 class="white-subtitles">María Rodriguez</h3>
-        <p class="general">"Gracias a mi microcrédito Miio, puedo comprar los ingredientes de la comida que vendo todos los días en mi puesto."</p>
-      </div>
 
-      <div class="mySlider">
-        <img src="img/foto7-mobile.png" alt="">
-        <h3 class="white-subtitles">Alejandra Hernández</h3>
-        <p class="general">"Con mi tarjeta Miio, nunca me falta dinero para mi tarjeta de EcoBici."</p>
-      </div>
-
-      <!-- Next/prev buttons -->
-      <a class="prev" onclick="plusSlider(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlider(1)">&#10095;</a>
     </div>
 
-    <!-- Dots/bullets/indicators -->
-    <div class="dot-container">
-      <span class="dot" onclick="currentSlider(1)"></span>
-      <span class="dot" onclick="currentSlider(2)"></span>
-      <span class="dot" onclick="currentSlider(3)"></span>
-      <span class="dot" onclick="currentSlider(4)"></span>
-      <span class="dot" onclick="currentSlider(5)"></span>
-      <span class="dot" onclick="currentSlider(6)"></span>
-      <span class="dot" onclick="currentSlider(7)"></span>
-    </div>
+    <!-- TERMINA MODULO 5 -->
 
+    <!-- MODULO 5.1 -->
+    <div class="module-5">
 
-  </div>
+      <div class="services">
+        <aside class="left-justify-1">
+          <h1><img src="assets/icons-home3.png" alt=""> <span class="white-30"> TELEFONÍA</span></h1>
+          <h3></h3>
+          <p class="general">Pide tu chip con telefonía Miio y obtén un Plan <br>
+            Gratis que se renueva cada semana; sin cobros <br>
+            adicionales. <br>
+            <br></p>
+          <a href="telefonia.html" target="_blank" rel="noopener noreferrer"><button id="desktopbutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
+        </aside>
 
-
-  <!-- Termina Modulo 4 -->
-
-  <!-- EMPIEZA MODULO 5 -->
-
-  <div class="module-5">
-
-    <div class="services">
-      <aside class="left-justify">
-        <h1><img src="" alt="">DINERO</h1>
-        <h3>Tu cuenta financiera y tu tarjeta</h3>
-        <p class="general">Obtén una cuenta financiera gratis, sin papeleos ni filas. Además, pide tu tarjeta Miio MasterCard directamente desde la app.</p>
-        <img src="img/tarjeta.png" alt=""><br>
-        <a href="tarjeta.html" target="_blank" rel="noopener noreferrer"><button id="desktopbutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
-      </aside>
-
-
-      <div class="content-slider-general">
-        <div class="content-slider">
-          <img src="assets/icon-compras.png" alt="">
-          <h3>Realiza compras</h3>
-          <p class="general-1">Paga por internet o en cualquier establecimiento que acepte Mastercard.</p>
-        </div>
-        <div class="content-slider">
-          <img src="assets/icon-pagaServicios.png" alt="">
-          <h3>Envía y recibe dinero</h3>
-          <p class="general-1">Haz transferencias sin costo desde
-            tu celular.</span></p>
-        </div>
-        <div class="content-slider">
-          <img src="assets/icon-trasnferencias.png" alt="">
-          <h3>Pide créditos</h3>
-          <p class="general-1">Solicita tu crédito desde la app y recíbelo al instante.</p>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="slideshow-container">
-      <div class="mySlides1">
-        <div class="content-slider">
-          <img src="assets/icon-compras.png" alt="">
-          <h3>Realiza compras</h3>
-          <p class="general-1">Paga por <span>internet</span> o en cualquier establecimiento que acepte <span>Mastercard.</span></p>
+        <div class="content-slider-general">
+          <div class="content-slider">
+            <img src="assets/icon-planGratis.png">
+            <h3>Plan Gratis</h3>
+            <p class="general">Te regalamos a la semana: <span>100 minutos, 50 megas y 10 SMS.</span></p>
+          </div>
+          <div class="content-slider">
+            <img src="assets/icon-home2.png">
+            <h3>Planes Miio</h3>
+            <p class="general">Si se te acaba tu <span>Plan Gratis</span>, ¡elige uno a tu medida!</p>
+          </div>
+          <div class="content-slider">
+            <img src="assets/icon-cobertura.png" alt="">
+            <h3>Cobertura</h3>
+            <p class="general">Contamos con amplia cobertura por todo México.</p>
+          </div>
         </div>
       </div>
 
-      <div class="mySlides1">
-        <div class="content-slider">
-          <img src="assets/icon-trasnferencias.png" alt="">
-          <h3>Envía y recibe dinero</h3>
-          <p class="general-1">Haz transferencias sin costo desde
-            tu celular.</span></p>
+
+      <div class="slideshow-container-2">
+        <div class="mySlides2">
+          <div class="content-slider">
+            <img src="assets/icon-planGratis.png">
+            <h3>Plan Gratis</h3>
+            <p class="general">Te regalamos a la semana: <span>100 minutos, 50 megas y 10 SMS.</span></p>
+          </div>
+        </div>
+
+        <div class="mySlides2">
+          <div class="content-slider">
+            <img src="assets/icon-home2.png">
+            <h3>Planes Miio</h3>
+            <p class="general">Si se te acaba tu <span>Plan Gratis</span>, ¡elige uno
+              a tu medida!</p>
+          </div>
+        </div>
+
+        <div class="mySlides2">
+          <div class="content-slider">
+            <img src="assets/icon-cobertura.png">
+            <h3>Cobertura</h3>
+            <p class="general">Contamos con amplia cobertura por todo México.</p>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        <div class="button-center">
+          <a href="telefonia.html" target="_blank" rel="noopener noreferrer"><button id="mobilebutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
         </div>
       </div>
 
-      <div class="mySlides1">
-        <div class="content-slider">
-          <img src="assets/icon-pagaServicios.png" alt="">
-          <h3>Pide créditos</h3>
-          <p class="general-1">Solicita tu crédito desde la app y recíbelo al instante.</p>
-        </div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-      <div class="button-center">
-        <a href="tarjeta.html" target="_blank" rel="noopener noreferrer"><button id="mobilebutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
-      </div>
-    </div>
-
-
-
-
-
-
-  </div>
-
-  <!-- TERMINA MODULO 5 -->
-
-  <!-- MODULO 5.1 -->
-  <div class="module-5">
-
-    <div class="services">
-      <aside class="left-justify-1">
-        <h1><img src="assets/.png" alt="">TELEFONÍA</h1>
-        <h3></h3>
-        <p class="general">Pide tu chip con telefonía Miio y obtén un Plan <br>
-          Gratis que se renueva cada semana; sin cobros <br>
-          adicionales. <br>
-          <br></p>
-        <a href="telefonia.html" target="_blank" rel="noopener noreferrer"><button id="desktopbutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
-      </aside>
-
-      <div class="content-slider-general">
-        <div class="content-slider">
-          <img src="assets/icon-planGratis.png">
-          <h3>Plan Gratis</h3>
-          <p class="general-1">Te regalamos a la semana: <span>100 minutos, 50 megas y 10 SMS.</span></p>
-        </div>
-        <div class="content-slider">
-          <img src="assets/icon-cobertura.png">
-          <h3>Planes Miio</h3>
-          <p class="general-1">Si se te acaba tu <span>Plan Gratis</span>, ¡elige uno a tu medida!</p>
-        </div>
-        <div class="content-slider">
-          <img src="assets/icon-trasnferencias.png" alt="">
-          <h3>Cobertura</h3>
-          <p class="general-1">Contamos con amplia cobertura por todo México.</p>
-        </div>
-      </div>
     </div>
 
 
-    <div class="slideshow-container-2">
-      <div class="mySlides2">
-        <div class="content-slider">
-          <img src="assets/icon-planGratis.png">
-          <h3>Plan Gratis</h3>
-          <p class="general-1">Te regalamos a la semana: <span>100 minutos, 50 megas y 10 SMS.</span></p>
-        </div>
-      </div>
 
-      <div class="mySlides2">
-        <div class="content-slider">
-          <img src="assets/icon-cobertura.png">
-          <h3>Planes Miio</h3>
-          <p class="general-1">Si se te acaba tu <span>Plan Gratis</span>, ¡elige uno
-            a tu medida!</p>
-        </div>
-      </div>
+    <!-- TERMINA MODULO 5.1 -->
 
-      <div class="mySlides2">
-        <div class="content-slider">
-          <img src="assets/icon-planGratis.png">
-          <h3>Cobertura</h3>
-          <p class="general-1">Contamos con amplia cobertura por todo México.</p>
-        </div>
+    <!-- EMPIEZA MODULO 6 -->
+    <div class="module-6">
+      <div class="img-left">
+        <img src="img/pantallas-descarga-home.png" alt="info-miio.png">
       </div>
-
-      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-      <div class="button-center">
-        <a href="telefonia.html" target="_blank" rel="noopener noreferrer"><button id="mobilebutton" class="general-button" type="button" name="button">¡CONOCE MÁS!</button></a>
-      </div>
+      <aside class="left-mobile-home">
+        <p class="general"><span>¡No somos banco, Miio es la comunidad digital!</span>
+          Llegó el momento de pertenecer a la comunidad que lo tiene todo.</p>
+        <h1>DESCARGA LA APP</h1>
+        <p class="general">Y comienza a ganar</p>
+        <div class="" id="icons">
+          <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
+            <div id="apple"><img src="assets/apple-store.png" alt=""></img>
+          </a></div>
+        <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
+          <div id="android"><img src="assets/play-store.png" alt=""></img>
+        </a>
     </div>
-
-  </div>
-
-
-
-  <!-- TERMINA MODULO 5.1 -->
-
-  <!-- EMPIEZA MODULO 6 -->
-  <div class="module-6">
-    <div class="img-left">
-      <img src="img/pantallas-descarga-home.png" alt="info-miio.png">
-    </div>
-    <aside class="left-mobile-home">
-      <p class="general"><span>¡No somos banco, Miio es la comunidad digital!</span>
-        Llegó el momento de pertenecer a la comunidad que lo tiene todo.</p>
-      <h1>DESCARGA LA APP</h1>
-      <p class="general">Y comienza a ganar</p>
-      <div class="" id="icons">
-        <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
-          <div id="apple"><img src="assets/apple-store.png" alt=""></img>
-        </a></div>
-      <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
-        <div id="android"><img src="assets/play-store.png" alt=""></img>
-      </a>
-  </div>
   </div>
 
   <div class="" id="icons-mobile">
@@ -586,9 +550,7 @@
           <input type="hidden" name="id" value="79f76fc945">
 
           <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
-          <input id="button-submit" type="submit" class="formEmailButton" name="submit" value=">">
-
-          <input type="hidden" name="ht" value="58ec1f35566d6aae1b5fcdc8ffdf120ed33d6769:MTU1MzcyNDA1NC4xMTEx">
+          <input id="button-submit" type="submit" class="formEmailButton" name="submit" value=">" &gt; <input type="hidden" name="ht" value="58ec1f35566d6aae1b5fcdc8ffdf120ed33d6769:MTU1MzcyNDA1NC4xMTEx">
           <input type="hidden" name="mc_signupsource" value="hosted">
         </form>
         <!-- TERMINA FORMULARIO NEWSLATTER -->
@@ -624,8 +586,20 @@
 </footer>
 <!-- TERMINA FOOTER -->
 
-<script src="js/slide-zero.js" charset="utf-8"></script>
+<!-- <script src="js/slide-zero.js" charset="utf-8"></script> -->
 <script src="js/functions.js" charset="utf-8"></script>
-<script src="js/hammer.js" charset="utf-8"></script>
+<script src="js/swiper.js" charset="utf-8"></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 
 </html>

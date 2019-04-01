@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -181,45 +182,56 @@
   <div class="telephone-module-4">
 
     <aside class="left-1" id="module-center">
-      <div id="logo-pegado"><p><img src="assets/tel-icon.png" alt=""></p><h1>Pide tu Chip Miio</h1> </div>
-      <div id="titulo-pegado"><p class="general">Para tener todos los beneficios, <br>
-        ¡sigue este proceso!
-      </p></div>
+      <div id="logo-pegado">
+        <p><img src="assets/tel-icon.png" alt=""></p>
+        <h1>Pide tu <br> Chip Miio</h1>
+      </div>
+      <div id="titulo-pegado">
+        <p class="general">Para tener todos los beneficios, <br>
+          ¡sigue este proceso!
+        </p>
+      </div>
     </aside>
     <div class="comercial-icons" id="responsive-icons">
       <div class="comercial-icons" id="responsive-icons">
         <div class="logotypes-mobile">
           <h1><img src="assets/Icono-descarga.png" alt="Dish"> <br>
-            1</h1> <br>
-          <p class="general">Descarga la App </p>
+          </h1> <br>
+          <span class="numeros-grandes-mobile">1</span>
+          <p class="general"><span class="numeros-grandes">1</span> Descarga la App </p>
         </div>
         <div class="logotypes-mobile">
           <h1><img src="assets/Icono-chip.png" alt="CFE"> <br>
-            2</h1> <br>
-          <p class="general">Solicita tu chip;
+          </h1> <br>
+          <span class="numeros-grandes-mobile">2</span>
+          <p class="general"><span class="numeros-grandes">2</span> Solicita tu chip;
             te regalamos el envío</p>
         </div>
         <div class="logotypes-mobile">
           <h1><img src="assets/portavilidad.png" alt="Cinepolis"> <br>
-            3</h1> <br>
-          <p class="general">Realiza tu Portabilidad
+          </h1> <br>
+          <span class="numeros-grandes-mobile">3</span>
+          <p class="general"><span class="numeros-grandes">3</span> Realiza tu Portabilidad
             y conserva tu número</p>
         </div>
         <div class="logotypes-mobile">
           <h1><img src="assets/cel-miio.png" alt="Netflix"> <br>
-            4</h1> <br>
-          <p class="general">Instálalo en tu celular</p>
+          </h1> <br>
+          <span class="numeros-grandes-mobile">4</span>
+          <p class="general"><span class="numeros-grandes">4</span> Instálalo en tu celular</p>
         </div>
 
         <div class="logotypes-mobile">
           <h1><img src="assets/Icon-user.png" alt="Xbox"> <br>
-            5</h1> <br>
-          <p class="general">Regístrate</p>
+          </h1> <br>
+          <span class="numeros-grandes-mobile">5</span>
+          <p class="general"><span class="numeros-grandes">5</span> Regístrate</p>
         </div>
         <div class="logotypes-mobile">
           <h1><img src="assets/disfruta.png" alt="Blim"> <br>
-            6</h1> <br>
-          <p class="general">Afíliate <br> <span>* Disfruta los beneficios de la app Miio</span></p>
+          </h1> <br>
+          <span class="numeros-grandes-mobile">6</span>
+          <p class="general"><span class="numeros-grandes">6</span> Afíliate <br> <span>* Disfruta los beneficios de la app Miio</span></p>
         </div>
       </div>
     </div>
@@ -234,7 +246,7 @@
   <div class="telephone-module-5">
     <div class="content">
       <h1><img src="assets/Icono-elige-plan.png" alt="">ELIJE TU PLAN</h1>
-      <p class="general">Si necesitas más tiempo aire contamos con <b> diferentes planes </b></p>
+      <p class="general-black">Si necesitas más tiempo aire contamos con <b> diferentes planes </b></p>
     </div>
     <table id="table-desktop">
       <thead>
@@ -342,535 +354,523 @@
       </tfoot>
     </table>
 
-    <div class="slideshow-container-telefonia">
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan Gratis</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">100</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt="">
-                  </td>
-                  <td><span class="yellow">10</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 0.00</p>
-              <p class="days">Para 7 días</p>
+
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan Gratis</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">100</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt="">
+                    </td>
+                    <td><span class="yellow">10</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 0.00</p>
+                <p class="days">Para 7 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 10</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">30</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">10</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 10.00</p>
-              <p class="days">Para 5 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 10</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">30</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">10</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 10.00</p>
+                <p class="days">Para 5 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 20</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">100</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 20.00</p>
-              <p class="days">Para 5 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 20</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">100</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 20.00</p>
+                <p class="days">Para 5 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 30</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 30.00</p>
-              <p class="days">Para 15 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 30</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 30.00</p>
+                <p class="days">Para 15 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 50</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">100</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">15</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 50.00</p>
-              <p class="days">Para 15 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 50</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">100</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">15</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 50.00</p>
+                <p class="days">Para 15 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 100</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">300</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 100.00</p>
-              <p class="days">Para 15 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 100</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">300</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 100.00</p>
+                <p class="days">Para 15 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 150</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">1000</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 150.00</p>
-              <p class="days">Para 30 días</p>
+
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 150</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">1000</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 150.00</p>
+                <p class="days">Para 30 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 200</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">1500</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 200.00</p>
-              <p class="days">Para 30 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 200</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">1500</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 200.00</p>
+                <p class="days">Para 30 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 300</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">2000</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 300.00</p>
-              <p class="days">Para 30 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 300</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">2000</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 300.00</p>
+                <p class="days">Para 30 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 500</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">3000</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 500.00</p>
-              <p class="days">Para 30 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan 500</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">3000</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">50</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 500.00</p>
+                <p class="days">Para 30 días</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-
-      <div class="mySlides1">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan Premium</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">8192</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 1000.00</p>
-              <p class="days">Para 30 días</p>
+        <div class="swiper-slide">
+          <div class="plan">
+            <div id="planes">
+              <p>
+                <img src="assets/phone-small.png" alt=""></p>
+              <pre> </pre>
+              <h2 id="text-yellow">Plan Premium</h2>
+            </div>
+            <div id="items">
+              <table class="mobile-table">
+                <tbody>
+                  <tr>
+                    <td><img src="assets/icono-megas.png" alt=""></td>
+                    <td><span class="yellow">8192</span></td>
+                    <td>
+                      <p class="yellow-left">MB</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/Icono-minutos.png" alt=""></td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">minutos</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="assets/SMS.png" alt="">
+                    </td>
+                    <td><span class="yellow">Ilimitados</span></td>
+                    <td>
+                      <p class="general">sms</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="price-plan">
+              <div class="precio">
+                <p><img src="assets/galleta-02.png" alt=""></p>
+                <p class="black">$ 1000.00</p>
+                <p class="days">Para 30 días</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-          <span class="dot" onclick="currentSlide(6)"></span>
-          <span class="dot" onclick="currentSlide(7)"></span>
-          <span class="dot" onclick="currentSlide(8)"></span>
-          <span class="dot" onclick="currentSlide(9)"></span>
-          <span class="dot" onclick="currentSlide(10)"></span>
-          <span class="dot" onclick="currentSlide(11)"></span>
-        </div>
-        <div>
-        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
         </div>
       </div>
-
-
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
 
-    <!-- <div class="slideshow-container-telefonia">
+
+
+  </div>
+
+  <!-- <div class="slideshow-container-telefonia">
       <div class="mySlides3">
 
       </div>
@@ -887,7 +887,7 @@
   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a> -->
 
 
-    </div>
+  </div>
   <!-- TERMINA MODULO 5 -->
 
 
@@ -899,7 +899,7 @@
       <p class="general">Lo mejor de todo: ¡recarga desde la app ganando dinero extra! <br>
         O en puntos de recarga sin costo.</p>
     </div>
-    <div class="general-icons">
+    <div class="general-icons-desktop">
       <div class="products" id="mobile">
         <img src="assets/miio.png" alt="">
       </div>
@@ -913,26 +913,18 @@
   </div>
 
 
-  <div class="slideshow-container-marcas">
-    <div class="mySlides3">
-        <img src="assets/miio.png" alt="">
-    </div>
 
-    <div class="mySlides3">
-        <img src="assets/farmacias-ahorro.png" alt="">
-    </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/miio.png" alt=""></div>
+      <div class="swiper-slide"> <img src="assets/farmacias-ahorro.png" alt=""></div>
+      <div class="swiper-slide"> <img src="assets/7-eleven.png" alt=""></div>
 
-    <div class="mySlides3">
-        <img src="assets/7-eleven.png" alt="">
     </div>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-    <!-- <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a> -->
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
   </div>
+
   <!-- TERMINA MODULO 6 -->
 
 
@@ -941,7 +933,7 @@
   <div class="telephone-module-7">
     <div id="dudas-text">
       <p class="general">¿Tienes dudas? <br>
-        Ingresa a nuestra sección de  <a href="preguntas.html" target="_blank" rel="noopener noreferrer"><span>Preguntas frecuentes</span></a></p>
+        Ingresa a nuestra sección de <a href="preguntas.html" target="_blank" rel="noopener noreferrer"><span>Preguntas frecuentes</span></a></p>
     </div>
     <div id="dudas-image">
       <img src="img/dudas-telefonia.png" alt="">
@@ -1066,6 +1058,20 @@
 <!-- TERMINA FOOTER -->
 
 <script src="js/slide-telefonia.js" charset="utf-8"></script>
-<!-- <script src="js/functions.js" charset="utf-8"></script> -->
+<!-- <script src="js/swar.js" charset="utf-8"></script> -->
+<script src="js/swiper.js" charset="utf-8"></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
 
 </html>
