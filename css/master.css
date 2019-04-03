@@ -25,6 +25,10 @@ a {
   margin: 0;
 }
 
+.text-legal {
+  padding: 75px;
+}
+
 .content .general-black {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -63,11 +67,11 @@ span {
 }
 
 header {
-  position: sticky;
-  display: flex;
+  position: fixed;
+  display: block;
   background: #ffffff;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   z-index: 10;
   margin: 0 auto;
@@ -75,10 +79,10 @@ header {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.56);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   header {
     position: fixed;
-    display: block;
+    display: flex;
     background: #ffffff;
     top: 0;
     width: 100%;
@@ -861,7 +865,7 @@ b {
   }
 
   .logotypes {
-    padding: 3%;
+    padding: 1%;
   }
 }
 
@@ -1254,7 +1258,7 @@ b {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-width: 100%;
+    width: 100%;
     margin: 5% 0% 350px 0%;
     justify-content: center;
     padding: 0% 0%;
@@ -1390,7 +1394,11 @@ b {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 20px 0px;
+  padding: 20px 10px;
+}
+
+.module-6 .img-left img {
+  /* width: 100%; */
 }
 
 .left-mobile-home {
@@ -1415,6 +1423,10 @@ b {
     justify-content: center;
     padding: 0% 5%;
     background: #F6F6F6;
+  }
+
+  .module-6 .img-left img {
+    width: 100%;
   }
 
   /*
@@ -1638,7 +1650,7 @@ footer div pre {
 /* TERMINA FOOTER */
 /* EMPIEZA PAGINA CONTACTO */
 .title {
-  margin: 50px;
+  margin: 150px 70px 0px 70px;
 }
 
 .module-contact-left {
@@ -1710,7 +1722,7 @@ footer div pre {
 
 @media only screen and (max-width: 768px) {
   .title {
-    margin: 16px;
+    margin: 100px 10px;
   }
 
   .module-contact-left {
@@ -2720,12 +2732,13 @@ height: 10%; */
 /* EMPIEZA MODULO 2 GANAR  */
 #mobile-ganar {
   display: block;
-  padding: 20px;
+  padding: 70px;
 }
 
 #mobile-about {
   display: flex;
   padding: 20px 50px;
+  align-self: baseline;
 }
 
 #text-yellow-ganar {
@@ -2760,6 +2773,10 @@ height: 10%; */
   padding: 0% 5%;
 }
 
+#version-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   #about {
     background-image: url(/img/Banner-about.png);
@@ -2772,6 +2789,14 @@ height: 10%; */
     align-content: center;
     padding: 0% 5%;
     height: 200px;
+  }
+  #version-mobile {
+    display: block;;
+  }
+
+  #mobile-ganar {
+    display: block;
+    padding: 20px;
   }
 
   #mobile-ganar {
@@ -2811,7 +2836,7 @@ height: 10%; */
 
 /* EMPIEZA PREGUNTAS FRECUENTES */
 #mobile-answers {
-  padding: 0;
+  padding: 20px;
   flex-direction: column;
 }
 
@@ -2831,10 +2856,10 @@ height: 10%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #eee;
+  background-color: #F6F6F6;
   color: #444;
   cursor: pointer;
-  padding: 20px;
+  padding: 25px;
   width: 100%;
   border: none;
   text-align: left;
@@ -3025,8 +3050,9 @@ margin: 0;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
-    min-width: 260px;
+    /* min-width: 260px; */
     height: 350px;
+    margin: 20px;
   }
 
   .mobile-table {
@@ -3308,7 +3334,7 @@ q {
    -ms-flex-align: center;
    -webkit-align-items: center;
    align-items: center;
-   padding: 10px;
+   /* padding: 10px; */
  }
  .swiper-slide #con-padding{
 padding: 20px;

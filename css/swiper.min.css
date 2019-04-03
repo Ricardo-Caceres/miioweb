@@ -81,6 +81,10 @@
   transition-property: transform, -webkit-transform
 }
 
+.swiper-slide p {
+text-align: center;
+}
+
 .swiper-slide-invisible-blank {
   visibility: hidden
 }
@@ -226,7 +230,7 @@
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 10px;
+  bottom: 0px;
   left: 0;
   width: 100%
 }
