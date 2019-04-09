@@ -11,11 +11,16 @@ a {
   text-decoration: none;
 }
 
+
 .without-spacing-footer footer {
   margin: 30px 0px 0px 0px;
 }
 
-.general {
+.color-li {
+  color: #993CBA;
+}
+
+.general, textarea, input {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   text-align: left;
@@ -26,7 +31,8 @@ a {
 }
 
 .text-legal {
-  padding: 75px;
+  font-size: 20px;
+  padding: 0px 75px;
 }
 
 .content .general-black {
@@ -50,6 +56,9 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
+  .text-legal {
+    padding: 0px 20px;
+  }
   h1 {
     font-size: 35px;
     color: #993CBA;
@@ -462,7 +471,7 @@ b {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 100%;
-    margin: 5% 0% 0% 0%;
+    margin: 16% 0% 0% 0%;
     justify-content: center;
     padding: 0% 5%;
   }
@@ -1398,7 +1407,12 @@ b {
 }
 
 .module-6 .img-left img {
+  display: block;
   /* width: 100%; */
+}
+
+.img-left-mobile-home {
+  display: none
 }
 
 .left-mobile-home {
@@ -1437,6 +1451,16 @@ b {
     padding: 20px 0px 0px 0px;
     width: 100%:;
   }
+
+  .module-6 .img-left img {
+    display: none;
+    /* width: 100%; */
+  }
+
+  .img-left-mobile-home {
+    display: block;
+  }
+
 }
 
 /* FOOTER */
@@ -1694,7 +1718,7 @@ footer div pre {
   height: 450px;
 }
 
-#coments {
+#comentarios {
   background: #f0ecec;
   /* background: #ff0000; */
   font-size: 15px;
@@ -1715,6 +1739,11 @@ footer div pre {
   margin: 5px 0px 0px 0px;
 }
 
+#resultado {
+  color: black;
+  font-size: 20px;
+}
+
 .address-mobile {
   display: none;
   padding: 1% 5%;
@@ -1722,9 +1751,11 @@ footer div pre {
 
 @media only screen and (max-width: 768px) {
   .title {
-    margin: 100px 10px;
+    margin: 100px 10px 10px 0px;
   }
-
+  .title h1{
+    margin: 0;
+  }
   .module-contact-left {
     display: flex;
     flex-direction: column;
@@ -1863,7 +1894,7 @@ footer div pre {
     justify-content: center;
     align-content: center;
     padding: 0% 5%;
-    margin: 0px;
+    margin: 60px 0px 0px 0px;
   }
 
   .left {
@@ -1949,7 +1980,7 @@ footer div pre {
 }
 
 #preguntas {
-  margin: 10% 0px 0px 0px;
+margin: 80px 0px 0px 0px;
 }
 
 #cuestion-padding {
@@ -2471,6 +2502,7 @@ footer div pre {
     align-content: center;
     padding: 0% 5%;
     height: 200px;
+    margin: 60px 0px 0px 0px;
   }
 }
 
@@ -2726,6 +2758,7 @@ height: 10%; */
     align-content: center;
     padding: 0% 5%;
     height: 200px;
+    margin: 60px 0px 0px 0px;
   }
 }
 

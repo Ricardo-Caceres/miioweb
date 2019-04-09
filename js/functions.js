@@ -77,3 +77,8 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "flex";
 }
+
+
+$("#submit").click(function() {
+alert("¡Muchas gracias por tu mensaje! Te daremos una respuesta en breve.");
+});

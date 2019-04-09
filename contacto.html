@@ -9,7 +9,19 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <title>Miio</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123153296-1');
+  </script>
+  <title>Contacto</title>
 </head>
 
 <body>
@@ -33,8 +45,7 @@
       <a class="text-menu" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
       <a class="text-menu" href="contacto.html" rel="noopener noreferrer">Contacto</a>
       <a class="text-menu" href="preguntas.html" rel="noopener noreferrer">Preguntas Frecuentes</a>
-      <a class="text-menu" href="" rel="noopener noreferrer">Aviso de Privacidad</a>
-      <a class="fondo" href="" rel="noopener noreferrer">Tèrminos y Condiciones</a>
+      <a class="fondo" href="legal.html" rel="noopener noreferrer">Legal</a>
       <div class="social" id="social-mobile-menu">
         <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
         <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
@@ -55,7 +66,7 @@
     <div class="logo-menu">
       <a href="index.html">
         <p><img id="logo" src="assets/logo-MIIO-negro.png" alt="Miio"></p>
-        </a>
+      </a>
 
       <h5 id="slogan"><a href="index.html">La app donde puedes<br>tenerlo todo.</a></h5>
 
@@ -94,40 +105,40 @@
 
 
     <div class="contact-module">
-      <form action="" method="post">
-        <input type="text" name="Nombre" placeholder="Nombre">
-        <input type="email" name="Correo" placeholder="Correo" required>
-        <input type="text" id="coments" name="Comentario" placeholder="Comentario">
-        <button class="general-button" id="submit" type="submit" name="button">ENVIAR</button>
+      <form id="formulario" role="form" action="php/enviar.php" method="post">
+        <input id="nombre" type="text" name="nombre" placeholder="Nombre">
+        <input id="asunto" type="hidden" name="asunto" value="Miioweb">
+        <input id="email" type="email" name="correo" placeholder="Correo" required>
+        <textarea type="" id="comentarios" name="mensaje" placeholder="Comentario"></textarea>
+        <button class="general-button" id="submit" type="submit" name="enviar" value="send">ENVIAR</button>
+        <div id="resultado"></div>
       </form>
     </div>
 
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7529.604750877271!2d-99.20392136908775!3d19.334380016332908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdfff86abaff2f%3A0xa3e26b1f870c7223!2sFinanciera+Mexicana!5e0!3m2!1ses!2smx!4v1553215942716"
-         frameborder="0" style="border:0" allowfullscreen></iframe>
+        frameborder="0" style="border:0" allowfullscreen></iframe>
       <div class="address">
         <p class="general">
           Oficinas: Iglesia No. 2. Edificio E. Piso 13 Col. Tizapán, San Angel. CP. 01090 CDMX.
         </p>
-        <p class="general">
-          <img src="assets/tel.png" alt=""> 01800 953 0319 I Desde tu celular *5050
-          <img src="assets/correo.png" alt=""> hola@miio.mx
-        </p>
+        <pre class="general"><img src="assets/telefono.png" alt=""> 01800 953 0319 I Desde tu celular *5050    <img src="assets/correo.png" alt=""> hola@miio.mx
+        </pre>
       </div>
     </div>
   </div>
 
 
   <div class="address-mobile">
-  <p class="general">
-    Oficinas: Iglesia No. 2. Edificio E. Piso 13 Col. Tizapán, San Angel. CP. 01090 CDMX.
-  </p>
-  <p class="general">
-  <img src="assets/tel.png" alt="">   01800 953 0319   I  Desde tu celular *5050 <br> <br>
-  <img src="assets/correo.png" alt=""> hola@miio.mx
-  </p>
-</div>
+    <p class="general">
+      Oficinas: Iglesia No. 2. Edificio E. Piso 13 Col. Tizapán, San Angel. CP. 01090 CDMX.
+    </p>
+    <p class="general">
+      <img src="assets/telefono.png" alt=""> 01800 953 0319 I Desde tu celular *5050 <br> <br>
+      <img src="assets/correo.png" alt=""> hola@miio.mx
+    </p>
+  </div>
 
   <!-- FOOTER -->
   <footer>
@@ -145,11 +156,10 @@
       </div>
 
       <div class="footer-column">
-        <p><a href="https://miio.com.mx/blog/">Blog</a>
-          <a href="contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a>
-          <a href="preguntas.html" target="_blank" rel="noopener noreferrer">Preguntas frecuentes</a>
-          <a href="" target="_blank" rel="noopener noreferrer">Aviso de Prívacidad</a>
-          <a href="" target="_blank" rel="noopener noreferrer">Términos y condiciones</a></p>
+        <p><a href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
+          <a href="contacto.html" rel="noopener noreferrer">Contacto</a>
+          <a href="preguntas.html" rel="noopener noreferrer">Preguntas frecuentes</a>
+          <a href="legal.html" rel="noopener noreferrer">Legal</a>
       </div>
       <div class="footer-column">
         <p id="subcribe-text">Suscríbete a nuestro newsletter</p>
@@ -190,5 +200,9 @@
 
 
 <script src="js/functions.js" charset="utf-8"></script>
+
+  <!-- Start of miio2018 Zendesk Widget script -->
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af"> </script>
+  <!-- End of miio2018 Zendesk Widget script -->
 
 </html>

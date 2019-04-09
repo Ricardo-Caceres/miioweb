@@ -10,7 +10,15 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
 
+   gtag('config', 'UA-123153296-1');
+  </script>
 
   <title>Miio</title>
 </head>
@@ -36,8 +44,7 @@
       <a class="text-menu" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
       <a class="text-menu" href="contacto.html" rel="noopener noreferrer">Contacto</a>
       <a class="text-menu" href="preguntas.html" rel="noopener noreferrer">Preguntas Frecuentes</a>
-      <a class="text-menu" href="cumplimiento.html" rel="noopener noreferrer">Aviso de Privacidad</a>
-      <a class="fondo" href="" rel="noopener noreferrer">Tèrminos y Condiciones</a>
+      <a class="fondo" href="legal.html" rel="noopener noreferrer">Legal</a>
       <div class="social" id="social-mobile-menu">
         <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
         <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
@@ -59,7 +66,7 @@
       <a href="index.html">
         <p><img id="logo" src="assets/logo-MIIO-negro.png" alt="Miio"></p>
       </a>
-      <h5 id="slogan"><a href="index.html">La App donde puedes<br>tenerlo todo.</a></h5>
+      <h5 id="slogan"><a href="index.html">La app donde puedes<br>tenerlo todo.</a></h5>
 
 
       <nav class="menu">
@@ -74,7 +81,7 @@
             </ul>
           </li>
           <!-- <li><a class="point">·<a></li> -->
-          <li><a class="text-menu" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></li>
+          <li><a class="text-menu" href="index" target="_blank" rel="noopener noreferrer">BOOM</a></li>
           <!-- <li><a class="point">·</a></li> -->
           <li><a class="text-menu" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a></li>
           <!-- <li><a class="point">·</a></li> -->
@@ -149,7 +156,7 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <iframe id="modal-video" width="560" height="415" src="https://www.youtube.com/embed/lse0AosiQi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="modal-video" width="560" height="415" src="https://www.youtube.com/embed/fHdpz318QBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
   </div>
@@ -192,7 +199,7 @@
         <br>paga tus servicios o los de tus conocidos; o
         <br>compra entretenimiento y consíguelo. <br> <span id="color">¡Así de fácil!</span>
       </P>
-      <a href="dinero.html" target="_blank" rel="noopener noreferrer"><button class="general-button" id="button-desktop" type="button" name="button">¡CONOCE MÁS!</button></a>
+      <a href="ganancias.html" target="_blank" rel="noopener noreferrer"><button class="general-button" id="button-desktop" type="button" name="button">¡CONOCE MÁS!</button></a>
     </aside>
     <div class="comercial-icons">
       <div class="comercial-icons">
@@ -218,7 +225,7 @@
       <div class="logotypes"><img src="assets/xbox.png" alt="Xbox"></div>
 
     </div>
-    <a href="dinero.html" target="_blank" rel="noopener noreferrer"><button class="general-button" id="button-mobile" type="button" name="button">¡CONOCE MÁS!</button></a>
+    <a href="ganancias.html" target="_blank" rel="noopener noreferrer"><button class="general-button" id="button-mobile" type="button" name="button">¡CONOCE MÁS!</button></a>
   </div>
 
 
@@ -483,6 +490,10 @@
       <div class="img-left">
         <img src="img/pantallas-descarga-home.png" alt="info-miio.png">
       </div>
+      <div class="img-left-mobile-home">
+        <img src="img/pantallas-descarga-home-mobile.png" alt="info-miio.png">
+      </div>
+
       <aside class="left-mobile-home">
         <p class="general"><span>¡No somos banco, Miio es la comunidad digital!</span>
           Llegó el momento de pertenecer a la comunidad que lo tiene todo.</p>
@@ -535,11 +546,10 @@
       </div>
 
       <div class="footer-column">
-        <p><a href="https://miio.com.mx/blog/">Blog</a>
-          <a href="contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a>
-          <a href="preguntas.html" target="_blank" rel="noopener noreferrer">Preguntas frecuentes</a>
-          <a href="" target="_blank" rel="noopener noreferrer">Aviso de Prívacidad</a>
-          <a href="" target="_blank" rel="noopener noreferrer">Términos y condiciones</a></p>
+        <p><a href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
+          <a href="contacto.html" rel="noopener noreferrer">Contacto</a>
+          <a href="preguntas.html" rel="noopener noreferrer">Preguntas frecuentes</a>
+          <a href="legal.html" rel="noopener noreferrer">Legal</a>
       </div>
       <div class="footer-column">
         <p id="subcribe-text">Suscríbete a nuestro newsletter</p>
@@ -601,5 +611,9 @@
     },
   });
 </script>
+
+<!-- Start of miio2018 Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af"> </script>
+<!-- End of miio2018 Zendesk Widget script -->
 
 </html>
