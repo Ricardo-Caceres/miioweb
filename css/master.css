@@ -20,7 +20,7 @@ a {
   color: #993CBA;
 }
 
-.general, textarea, input {
+.general {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   text-align: left;
@@ -28,6 +28,17 @@ a {
   font-weight: 100;
   color: #4A4A4A;
   margin: 0;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: #4A4A4A;
+}
+
+#submenu-footer {
+  color: #636363;
 }
 
 .text-legal {

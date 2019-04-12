@@ -105,25 +105,23 @@
 
 
     <div class="contact-module">
-      <form id="formulario" role="form" action="php/enviar.php" method="post">
-        <input id="nombre" type="text" name="nombre" placeholder="Nombre">
-        <input id="asunto" type="hidden" name="asunto" value="Miioweb">
-        <input id="email" type="email" name="correo" placeholder="Correo" required>
-        <textarea type="" id="comentarios" name="mensaje" placeholder="Comentario"></textarea>
-        <button class="general-button" id="submit" type="submit" name="enviar" value="send">ENVIAR</button>
+      <form id="formulario"  action="enviar.php" method="post">
+        <input id="nombre" type="text" name="name" placeholder="Nombre" required>
+        <input id="asunto" type="text" name="subject" value="Miioweb">
+        <input id="email" type="text" name="email" placeholder="Correo" required>
+        <textarea id="comentarios" name="message" placeholder="Comentario" required></textarea>
+        <button class="general-button" id="submit" type="submit" name="enviar" value="Enviar">ENVIAR</button>
         <div id="resultado"></div>
       </form>
     </div>
 
     <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7529.604750877271!2d-99.20392136908775!3d19.334380016332908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdfff86abaff2f%3A0xa3e26b1f870c7223!2sFinanciera+Mexicana!5e0!3m2!1ses!2smx!4v1553215942716"
-        frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.8022594147274!2d-99.20173268570935!3d19.33438504882545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdfff86abaff2f%3A0xe909686406c8402f!2sMIIO!5e0!3m2!1ses!2smx!4v1554848242380!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div class="address">
         <p class="general">
           Oficinas: Iglesia No. 2. Edificio E. Piso 13 Col. Tizapán, San Angel. CP. 01090 CDMX.
         </p>
-        <pre class="general"><img src="assets/telefono.png" alt=""> 01800 953 0319 I Desde tu celular *5050    <img src="assets/correo.png" alt=""> hola@miio.mx
+        <pre class="general"><img src="assets/telefono-contacto.png" alt=""> 01800 953 0319 I Desde tu celular *5050    <img src="assets/correo.png" alt=""> hola@miio.mx
         </pre>
       </div>
     </div>
@@ -152,7 +150,7 @@
           San Angel. CP. 01090 CDMX</p>
       </div>
       <div class="footer-column">
-        <pre><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a><a href="" target="_blank" rel="noopener noreferrer">Nosotros</a><a href="about.html" target="_blank" rel="noopener noreferrer">¿Qué es Miio?</a>Beneficios<a href="telefonia.html" target="_blank" rel="noopener noreferrer">  Telefonía</a><a href="dinero.html" target="_blank" rel="noopener noreferrer">  Dinero</a><a href="ganancias.html" target="_blank" rel="noopener noreferrer">  Ganancias</a><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></pre>
+        <pre><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a><a href="" target="_blank" rel="noopener noreferrer">Nosotros</a><a href="about.html" target="_blank" rel="noopener noreferrer">¿Qué es Miio?</a>Beneficios<a id="submenu-footer" href="telefonia.html" target="_blank" rel="noopener noreferrer">  Telefonía</a><a id="submenu-footer" href="dinero.html" target="_blank" rel="noopener noreferrer">  Dinero</a><a id="submenu-footer" href="ganancias.html" target="_blank" rel="noopener noreferrer">  Ganancias</a><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></pre>
       </div>
 
       <div class="footer-column">
