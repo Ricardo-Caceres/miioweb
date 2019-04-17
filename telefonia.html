@@ -13,11 +13,14 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-   gtag('config', 'UA-123153296-1');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123153296-1');
   </script>
   <title>Telefonia</title>
 </head>
@@ -259,7 +262,7 @@
     <table id="table-desktop">
       <thead>
         <tr>
-          <th>PLAN</th>
+          <th colspan="2">PLAN</th>
           <th>MEGAS</th>
           <th>MINUTOS</th>
           <th>SMS</th>
@@ -270,7 +273,8 @@
       <tbody>
 
         <tr>
-          <td>Plan Gratis</td>
+          <td class="pdf"><a href="pdf/PLAN-FREE-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan Gratis</td>
           <td>50</td>
           <td>100</td>
           <td>10</td>
@@ -278,7 +282,8 @@
           <td class="font-price">$0</td>
         </tr>
         <tr>
-          <td>Plan 10</td>
+          <td class="pdf"><a href="pdf/PLAN-10-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 10</td>
           <td>30</td>
           <td>50</td>
           <td>10</td>
@@ -286,7 +291,8 @@
           <td class="font-price">$10</td>
         </tr>
         <tr>
-          <td>Plan 20</td>
+          <td class="pdf"><a href="pdf/PLAN-20-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 20</td>
           <td>50</td>
           <td>100</td>
           <td>50</td>
@@ -294,7 +300,8 @@
           <td class="font-price">$20</td>
         </tr>
         <tr>
-          <td>Plan 30</td>
+          <td class="pdf"><a href="pdf/PLAN-30-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 30</td>
           <td>50</td>
           <td>Ilimitados</td>
           <td>50</td>
@@ -302,7 +309,8 @@
           <td class="font-price">$30</td>
         </tr>
         <tr>
-          <td>Plan 50</td>
+          <td class="pdf"><a href="pdf/PLAN-50-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 50</td>
           <td>100</td>
           <td>Ilimitados</td>
           <td>50</td>
@@ -310,7 +318,8 @@
           <td class="font-price">$50</td>
         </tr>
         <tr>
-          <td>Plan 100</td>
+          <td class="pdf"><a href="pdf/PLAN-100-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 100</td>
           <td>300</td>
           <td>Ilimitados</td>
           <td>50</td>
@@ -318,7 +327,8 @@
           <td class="font-price">$100</td>
         </tr>
         <tr>
-          <td>Plan 150</td>
+          <td class="pdf"><a href="pdf/PLAN-150-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 150</td>
           <td>1000</td>
           <td>Ilimitados</td>
           <td>50</td>
@@ -326,7 +336,8 @@
           <td class="font-price">$150</td>
         </tr>
         <tr>
-          <td>Plan 200</td>
+          <td class="pdf"><a href="pdf/PLAN-200-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 200</td>
           <td>1500</td>
           <td>Ilimitados</td>
           <td>50</td>
@@ -334,7 +345,8 @@
           <td class="font-price">$200</td>
         </tr>
         <tr>
-          <td>Plan 300</td>
+          <td class="pdf"><a href="pdf/PLAN-300-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 300</td>
           <td>2000</td>
           <td>Ilimitados</td>
           <td>50</td>
@@ -342,7 +354,8 @@
           <td class="font-price">$300</td>
         </tr>
         <tr>
-          <td>Plan 500</td>
+          <td class="pdf"><a href="pdf/PLAN-500-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan 500</td>
           <td>3000</td>
           <td>Ilimitados</td>
           <td>50</td>
@@ -352,7 +365,8 @@
       </tbody>
       <tfoot>
         <tr>
-          <td>Plan Premium</td>
+          <td class="pdf"><a href="pdf/PLAN-PREMIUM-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
+          <td class="border-pdf">Plan Premium</td>
           <td>8192</td>
           <td>Ilimitados</td>
           <td>Ilimitados</td>
@@ -1015,7 +1029,7 @@
           San Angel. CP. 01090 CDMX</p>
       </div>
       <div class="footer-column">
-        <pre><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a><a href="" target="_blank" rel="noopener noreferrer">Nosotros</a><a href="about.html" target="_blank" rel="noopener noreferrer">¿Qué es Miio?</a>Beneficios<a href="telefonia.html" target="_blank" rel="noopener noreferrer">  Telefonía</a><a href="dinero.html" target="_blank" rel="noopener noreferrer">  Dinero</a><a href="ganancias.html" target="_blank" rel="noopener noreferrer">  Ganancias</a><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></pre>
+        <pre><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a><a href="" target="_blank" rel="noopener noreferrer">Nosotros</a><a href="about.html" target="_blank" rel="noopener noreferrer">¿Qué es Miio?</a>Beneficios<a id="submenu-footer" href="telefonia.html" target="_blank" rel="noopener noreferrer">  Telefonía</a><a id="submenu-footer" href="dinero.html" target="_blank" rel="noopener noreferrer">  Dinero</a><a id="submenu-footer" href="ganancias.html" target="_blank" rel="noopener noreferrer">  Ganancias</a><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></pre>
       </div>
 
       <div class="footer-column">

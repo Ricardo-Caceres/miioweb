@@ -20,7 +20,7 @@ a {
   color: #993CBA;
 }
 
-.general, textarea, input {
+.general {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   text-align: left;
@@ -28,6 +28,17 @@ a {
   font-weight: 100;
   color: #4A4A4A;
   margin: 0;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: #4A4A4A;
+}
+
+#submenu-footer {
+  color: #636363;
 }
 
 .text-legal {
@@ -2219,8 +2230,8 @@ margin: 80px 0px 0px 0px;
   width: 100%;
   text-align: center;
   padding: 0px 50px;
-  border-top: 0.5px solid rgb(147, 147, 147);
-  border-bottom: 0.5px solid rgb(147, 147, 147);
+  border-top: 0.5px solid #4A4A4A;
+  border-bottom: 0.5px solid #4A4A4A;
 }
 
 .telephone-module-5 h1 {
@@ -2228,15 +2239,23 @@ margin: 80px 0px 0px 0px;
 }
 
 #table-desktop {
-  color: rgb(147, 147, 147);
+  color: #4A4A4A;
   width: 100%;
   border-collapse: collapse;
 }
 
 #table-desktop tr, td, th {
   border-collapse: collapse;
-  border: 1px solid rgb(181, 181, 181);
-  padding: 20px;
+  border: 1px solid #4A4A4A;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#table-desktop th {
+  border-collapse: collapse;
+  border: 1px solid #4A4A4A;
+  padding: 30px;
+  font-size: 20px;
 }
 
 #table-desktop thead {
@@ -2249,6 +2268,18 @@ margin: 80px 0px 0px 0px;
   color: rgb(255, 255, 255);
   background: #993CBA;
 }
+
+.pdf {
+  border: none;
+  padding: 10px 0px 10px 20px;
+}
+
+.border-pdf {
+  border: none;
+  padding: 10px 0px 10px 0px;
+  text-align: left;
+}
+
 
 .font-price {
   color: rgb(0, 0, 0);
