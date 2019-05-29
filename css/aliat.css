@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*clases*/
+.left-align{text-align: left;}
+.social{position: absolute;right: 0px;}
+.semi-bold{font-weight:600 !Important;}
+.bold-500{font-weight:500 !Important;}
+.bold-900{font-weight:900 !Important;}
+
+/*finclases*/
+
+/*header*/
+header{box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.46);}
+#header{padding: 20px 0;}
+#logo{margin-right: 24px;}
+.icon-social{height: 56px; margin-left: 30px;}
+
+/*fin header*/
+
+/*seccion message*/
+#message{margin-top: 10%;padding-top: 30px;padding-bottom: 50px;padding-left: 50px; padding-right: 50px;}
+#message{margin-top: 10%;padding-top: 30px;padding-bottom: 50px;}
+.img-aliat{}
+/*fin seccion message*/
+
+
+
+/*sección steps*/
+
+#steps{padding-top: 30px;padding-bottom: 50px;background-color: #F6F6F6;padding-left: 50px; padding-right: 50px;}
+.img-steps{margin: 0 auto; margin-bottom: 10px;}
+.text-steps{width: 190px;margin: 0 auto;}
+/*#div-dudas{background-image: url('../assets/dudas.png'); background-position: right; height: 169px; width: 100%; background-repeat: no-repeat; margin-right: 0; padding-top: 25px;    margin-left: 0;}*/
+#div-dudas{background-image: url('../assets/dudas.png'); background-position: left; height: 169px; width: 100%; background-repeat: no-repeat; margin-right: 0;    margin-left: 0;}
+#div-download{background-color: #F5F5F5;height: 169px;padding-top: 33px;}
+a{color: #9842B7;}
+.a-contacto{font-size: 25px;}
+.a-contacto:hover{color: #924EA2;}
+#p-dudas{font-size: 25px; color: #414141;padding-bottom: 0;}
+#p-ingresa{padding-top: 0;font-size: 25px;}
+.steps-span-1{font-size: 18px;}
+.descarga-la-app{font-size: 18px;color: #4A4A4A;}
+.img-chat{float: right;margin-right: 50px;margin-bottom: 20px;}
+#img-chat-desktop{display: block;}
+#img-chat-mobile{display: none;}
+#p-miio{padding-bottom: 0;margin-bottom: 20px;}
+.img-stores{margin-bottom: 20px;}
+/*finsección messtepssage*/
+
+
+@media only screen and (max-width: 768px) {
+/*    header*/
+    #header{padding: 10px 0;}
+/*    menu*/
+    #show{display: none;}
+/*    .logo-menu{padding-left: 0;}*/
+    .logo-menu{padding-left: 105px;}
+    #logo {margin: 5px 5px 0px 0px;width: 35%;}
+/*    #store-icons {position: absolute;display: block;top: 39px;right: -30px;text-align: right;}*/
+/*    sections*/
+    #message{padding-top: 64px;}
+    #h1-messages span{font-size: 27px;}
+    #p-messages{font-weight: 100; color: #949494;}
+/*    steps*/
+    #steps{    padding-left: 20px;padding-right: 20px;}
+    #row-steps h1{width: 70%;margin: 0 auto;}
+    .steps-span-1{letter-spacing: 1px !Important;}
+    .steps-span-2{font-size: 29px !important;font-weight: 900 !important;}
+/*    #row-steps{padding-left: 15px;}*/
+    .text-steps{width: auto;font-size: 15px}
+    #div-dudas{background-position: left;}
+    .col-xs-6{width: 50% !important;}
+    .col-xs-8{width: 60% !important;}
+    .col-xs-9{width: 70% !important;}
+    .col-xs-4{width: 40% !important;}
+    .col-xs-3{width: 30% !important;}
+    .col-xs-25{width: 25% !important;}
+    .col-xs-12{width: 100% !important;}
+    #h1-download span{font-size: 28px;}
+    #img-chat-desktop{display: none;}
+    #img-chat-mobile{display: block; margin-right: 20px;}    
+/*    #p-dudas{text-align: left;}*/
+/*    a .img-stores:last-child{margin-bottom: 20px;}*/
+    #div-download{padding-top: 0px;}
+    #h1-download{text-align: center;}
+    #p-dudas{font-size: 20px;padding-top: 10px;}
+    #p-ingresa{font-size: 20px;}
+/*    footer*/
+    .social{position: relative;}
+    #newslatter{display: none;}
+    #subcribe-text{display: none;}
+    #pre{display: none;}
+    .footer-below{padding-top: 30px;padding-bottom: 30px;}
+    .footer-below p{font-size: 12px;}
+    #ul-contact-footer{padding-left: 0;}
+    .col-xs-footer{padding-left: 30px;}
+    .footer-about{margin-left: 0;}
+}

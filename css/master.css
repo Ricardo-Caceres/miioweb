@@ -11,7 +11,6 @@ a {
   text-decoration: none;
 }
 
-
 .without-spacing-footer footer {
   margin: 30px 0px 0px 0px;
 }
@@ -35,6 +34,9 @@ textarea {
   font-size: 18px;
   text-align: left;
   color: #4A4A4A;
+  background: #f0ecec;
+  border-radius: 12px;
+  border-bottom: none;
 }
 
 #submenu-footer {
@@ -70,6 +72,7 @@ h1 {
   .text-legal {
     padding: 0px 20px;
   }
+
   h1 {
     font-size: 35px;
     color: #993CBA;
@@ -83,7 +86,7 @@ h3 {
 
 span {
   color: #993CBA;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 
 header {
@@ -315,6 +318,7 @@ b {
     /* padding-left: 105px; */
     padding-right: 80px;
     text-align: center;
+    padding-top: 5px;
   }
 
   #Siguenos {
@@ -434,6 +438,16 @@ b {
   border-top: .02px solid #993CBA;
 }
 
+.submenu a:hover {
+  color: #ffff;
+  background-color: #993CBA;
+}
+
+.submenu:hover {
+  color: #ffff;
+  background-color: #993CBA;
+}
+
 .submenu a {
   text-decoration: none;
   padding: 8px 0px 8px 0px;
@@ -527,16 +541,27 @@ b {
 .general-button {
   background: #ffffff;
   font-size: 17px;
-  font-weight: 600;
-  border-radius: 19px;
-  border: 1.5px solid #993CBA;
+  font-weight: bold;
+  border-radius: 18px;
+  border: none;
   /* border-color: #993CBA; */
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.26);
-  padding: 15px 35px;
+  padding: 15px 30px;
   margin: 5% 0%;
   color: #993CBA;
   cursor: pointer;
+}
+
+.separed-buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.separed-buttons a {
+  padding: 0px 20px;
 }
 
 /* EMPIEZA MODAL VIDEO */
@@ -568,7 +593,7 @@ b {
   margin: 5% auto;
   /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  /* border: 1px solid #888; */
   width: 60%;
   /* Could be more or less, depending on screen size */
 }
@@ -580,7 +605,7 @@ b {
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #993CBA;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -593,6 +618,203 @@ b {
   cursor: pointer;
 }
 
+.modal-miio {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 11;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+#myModal-form-miio {
+  width: 100%;
+  height: 100% auto;
+}
+
+/* Modal Content/Box */
+.modal-content-miio {
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #fefefe;
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 5px 10px;
+  /* border: 1px solid #888; */
+  width: 60%;
+  /* Could be more or less, depending on screen size */
+}
+
+.modal-content-miio h1 {
+  text-align: center;
+  padding: 40px 80px 0px 80px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.modal-content-miio p {
+  text-align: center;
+  padding: 0px 120px;
+  color: #9B9B9B;
+  font-size: 25px;
+}
+
+.close-miio {
+  color: #993CBA;
+  float: right;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.close-miio:hover,
+.close-miio:focus {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close-tarjeta {
+  color: #993CBA;
+  float: right;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.close-tarjeta:hover,
+.close-tarjeta:focus {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close-telefonia {
+  color: #993CBA;
+  float: right;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.close-telefonia:hover,
+.close-telefonia:focus {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-miio {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 120px;
+  text-align: center;
+}
+
+.form-miio input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+  font-weight: 100;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.form-miio select {
+  padding: 6px;
+  border: none;
+  background: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  color: rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+  font-weight: 100;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 18% 5% auto;
+    /* 15% from the top and centered */
+    padding: 5px;
+    /* border: 1px solid #888; */
+    width: 90%;
+    /* Could be more or less, depending on screen size */
+  }
+
+  .form-miio {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+
+  .form-miio input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .modal-content-miio {
+    background-color: #fefefe;
+    margin: 18% 5% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 90%;
+    /* Could be more or less, depending on screen size */
+  }
+
+  .modal-content-miio h1 {
+    text-align: center;
+    padding: 40px 10px 0px 10px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .modal-content-miio p {
+    text-align: center;
+    padding: 0px 10px;
+    color: #9B9B9B;
+    font-size: 20px;
+  }
+
+  #form-miio {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  #form-miio input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px 0px;
+  }
+}
+
 /* TERMINA MODAL VIDEO  */
 #button-desktop {
   display: block;
@@ -602,7 +824,53 @@ b {
   display: none;
 }
 
+.form-launch-button {
+  background: #F5A623;
+  font-weight: bold;
+  padding: 15px 14px;
+  border-radius: 18px;
+  -ms-align-self: center;
+  align-self: center;
+  color: #FFFFFF;
+  border: none;
+  font-size: 19px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  letter-spacing: -1px;
+}
+
+#mybtn, #myBtn-1 {
+  font-size: 18px;
+}
+
+#myBtn-2 {
+  background: #ffff;
+  letter-spacing: -1px;
+  color: #F5A623;
+}
+
+#myBtn-3 {
+  background: #ffff;
+  letter-spacing: -1px;
+  color: #F5A623;
+  padding: 15px 30px;
+}
+
+#myBtn-11 {
+  display: none;
+}
+
+#myBtn-31 {
+  /* display: none; */
+  padding: 15px 35px;
+}
+
 #mobile-index {
+  display: none;
+}
+
+.form-launch-button-mobile {
   display: none;
 }
 
@@ -617,6 +885,38 @@ b {
 
   #mobile-index {
     display: block;
+  }
+
+  .button-center {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .form-launch-button {
+    display: none;
+  }
+
+  .form-launch-button-mobile {
+    display: block;
+    background: #F5A623;
+    font-weight: bold;
+    padding: 15px 14px;
+    border-radius: 18px;
+    -ms-align-self: center;
+    align-self: center;
+    color: #FFFFFF;
+    border: none;
+    font-size: 19px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 1.5px 1.5px 5px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    letter-spacing: -1px;
   }
 }
 
@@ -711,7 +1011,7 @@ b {
 
 /* EMPIEZA MODULO 2 */
 .module-2 {
-  background-image: url(/img/Bitmap.png);
+  background-image: url(https://miio.com.mx/img/Bitmap.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -805,7 +1105,7 @@ b {
 
 @media only screen and (max-width: 768px) {
   .module-2 {
-    background-image: url(/img/font-mobile.png);
+    background-image: url(https://miio.com.mx/img/font-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -1017,7 +1317,7 @@ b {
     display: block;
     max-width: 100%;
     position: absolute;
-    margin: 470px auto;
+    margin: 400px auto;
   }
 
   .slideshow-container-telefonia {
@@ -1030,7 +1330,7 @@ b {
     display: block;
     max-width: 100%;
     position: absolute;
-    margin: 250px auto;
+    margin: 270px auto;
   }
 
   .button-center {
@@ -1177,7 +1477,7 @@ b {
   color: white;
   text-align: center;
   text-align: -moz-center;
-  width: 60%;
+  /* width: 60%; */
 }
 
 .left-justify-1 {
@@ -1195,7 +1495,7 @@ b {
 
 .left-justify-1 p {
   color: white;
-  padding: 20px 0px 10px 45px;
+  padding: 20px 0px 10px 35px;
 }
 
 #subtitles-white {
@@ -1213,6 +1513,10 @@ b {
   text-align: center;
 }
 
+.services {
+  padding: 20px 0px;
+}
+
 .content-slider {
   background: #ffffff;
   display: block;
@@ -1221,7 +1525,7 @@ b {
   justify-content: center;
   align-content: center;
   padding: 30px 10px;
-  margin: 60px 30px;
+  margin: 20px 20px;
   z-index: 0;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.22);
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.22);
@@ -1269,6 +1573,7 @@ b {
 
 #desktopbutton {
   display: block;
+  color: #F5A623;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1279,9 +1584,13 @@ b {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-    margin: 5% 0% 350px 0%;
+    margin: 5% 0% 250px 0%;
     justify-content: center;
     padding: 0% 0%;
+  }
+
+  #myBtn-11 {
+    display: block;
   }
 
   .left-justify-1 p {
@@ -1375,7 +1684,7 @@ b {
     padding: 50px 10px 50px 10px;
     margin: 0px 0px 60px 0px;
     text-align: left;
-    /* height: 600px; */
+    height: 400px;
   }
 
   .left-justify-1 br {
@@ -1471,7 +1780,6 @@ b {
   .img-left-mobile-home {
     display: block;
   }
-
 }
 
 /* FOOTER */
@@ -1717,11 +2025,13 @@ footer div pre {
 .contact-module form input {
   background: #f0ecec;
   /* background: #ff0000; */
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   padding: 12px 10px 12px 10px;
   border: 0;
   margin: 10px 0px;
   border-radius: 12px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .map iframe {
@@ -1729,14 +2039,28 @@ footer div pre {
   height: 450px;
 }
 
-#comentarios {
-  background: #f0ecec;
+.form-miio #comentarios {
+  /* background: #f0ecec; */
   /* background: #ff0000; */
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+  font-weight: 100;
+  margin: 20px 0px;
+  width: 100%;
+  color: rgba(#000000, 0.2);
+}
+
+#formulario #comentarios {
+  /* background: #f0ecec; */
+  /* background: #ff0000; */
+  padding: 10px;
+  border: none;
   font-size: 15px;
-  padding: 12px 10px 150px 10px;
-  border: 0;
-  margin: 10px 0px;
-  border-radius: 12px;
+  font-weight: 100;
+  margin: 20px 0px;
+  width: 100%;
 }
 
 .address {
@@ -1764,9 +2088,11 @@ footer div pre {
   .title {
     margin: 100px 10px 10px 0px;
   }
-  .title h1{
+
+  .title h1 {
     margin: 0;
   }
+
   .module-contact-left {
     display: flex;
     flex-direction: column;
@@ -1844,7 +2170,7 @@ footer div pre {
 
 /* ------------EMPIEZA TELEFONIA------------ */
 .telephone-module-1 {
-  background-image: url(/img/Banner.png);
+  background-image: url(https://miio.com.mx/img/Banner.png);
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1896,7 +2222,7 @@ footer div pre {
 
 @media only screen and (max-width: 768px) {
   .telephone-module-1 {
-    background-image: url(/img/Banner.png);
+    background-image: url(https://miio.com.mx/img/Banner.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1991,7 +2317,7 @@ footer div pre {
 }
 
 #preguntas {
-margin: 80px 0px 0px 0px;
+  margin: 150px 0px 0px 0px;
 }
 
 #cuestion-padding {
@@ -2280,7 +2606,6 @@ margin: 80px 0px 0px 0px;
   text-align: left;
 }
 
-
 .font-price {
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -2510,7 +2835,7 @@ margin: 80px 0px 0px 0px;
 
 /* -------EMPIEZA TARJETA-------- */
 #telefonia-1 {
-  background-image: url(/img/banner-dinero.png);
+  background-image: url(https://miio.com.mx/img/banner-dinero.png);
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2523,7 +2848,7 @@ margin: 80px 0px 0px 0px;
 
 @media only screen and (max-width: 768px) {
   #telefonia-1 {
-    background-image: url(/img/banner-dinero.png);
+    background-image: url(https://miio.com.mx/img/banner-dinero.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2758,7 +3083,7 @@ height: 10%; */
 
 /* EMPIEZA GANA DINERO  */
 #telefonia-2 {
-  background-image: url(/img/Banner-ganar.png);
+  background-image: url(https://miio.com.mx/img/Banner-ganar.png);
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2779,7 +3104,7 @@ height: 10%; */
 
 @media only screen and (max-width: 768px) {
   #telefonia-2 {
-    background-image: url(/img/Banner-ganar.png);
+    background-image: url(https://miio.com.mx/img/Banner-ganar.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2826,7 +3151,7 @@ height: 10%; */
 
 /* EMPIEZA QUE ES MIIO */
 #about {
-  background-image: url(/img/Banner-about.png);
+  background-image: url(https://miio.com.mx/img/Banner-about.png);
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2843,7 +3168,7 @@ height: 10%; */
 
 @media only screen and (max-width: 768px) {
   #about {
-    background-image: url(/img/Banner-about.png);
+    background-image: url(https://miio.com.mx/img/Banner-about.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2854,8 +3179,10 @@ height: 10%; */
     padding: 0% 5%;
     height: 200px;
   }
+
   #version-mobile {
-    display: block;;
+    display: block;
+    ;
   }
 
   #mobile-ganar {
@@ -2941,8 +3268,8 @@ height: 10%; */
 }
 
 .accordion p {
-padding: 0px 50px 0px 0px;
-margin: 0;
+  padding: 0px 50px 0px 0px;
+  margin: 0;
 }
 
 .accordion:after {
@@ -3374,41 +3701,50 @@ q {
   margin: 50px 0px;
 }
 
-
-
 .swiper-container {
   display: none;
-   width: 100%;
-   height: 100%;
- }
- .swiper-slide {
-   text-align: center;
-   font-size: 18px;
-   background: #fff;
-   /* Center slide text vertically */
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   -webkit-align-items: center;
-   align-items: center;
-   /* padding: 10px; */
- }
- .swiper-slide #con-padding{
-padding: 20px;
- }
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  /* background: #fff; */
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* padding: 10px; */
+  align-self: baseline;
+  color: #4A4A4A;
+}
+
+.swiper-slide #con-padding {
+  padding: 20px;
+}
+
+.padding-20px {
+  padding: 0px 25px;
+}
 
 @media only screen and (max-width: 768px) {
   .swiper-container {
     display: block;
-     width: 100%;
-     height: 100%;
-   }
+    width: 100%;
+    height: 100%;
+  }
 }
+
+/* ------------DESARROLLO VICTOR------------- */
