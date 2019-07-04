@@ -11,6 +11,30 @@ a {
   text-decoration: none;
 }
 
+dd {
+  display: block;
+  margin-left: 10px;
+}
+
+.flex-div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-div {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .without-spacing-footer footer {
   margin: 30px 0px 0px 0px;
 }
@@ -102,7 +126,7 @@ header {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.56);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   header {
     position: fixed;
     display: flex;
@@ -149,7 +173,7 @@ header {
 }
 
 /* MOBILE */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .container {
     display: none;
     cursor: pointer;
@@ -240,7 +264,7 @@ header {
   padding-right: 50px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .social {
     display: none;
     width: 100%;
@@ -272,7 +296,7 @@ b {
   margin: 0px;
   color: #FF9E1A;
   align-self: center;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .icons-size {
@@ -304,6 +328,23 @@ b {
   margin: 0px 5px 0px 0px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .logo-menu {
+    display: flex;
+    display: -webkit-flex;
+    /* Safari */
+    align-items: center;
+    -webkit-align-items: center;
+    /* width: 100%; */
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    color: #993CBA;
+    padding-left: 350px;
+    padding-right: 50px;
+    align-items: center;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .logo-menu {
     display: block;
@@ -316,6 +357,7 @@ b {
     /* justify-content: flex-start; */
     color: #993CBA;
     /* padding-left: 105px; */
+        padding-left: 50px;
     padding-right: 80px;
     text-align: center;
     padding-top: 5px;
@@ -345,7 +387,7 @@ b {
   text-align: right;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   #slogan {
     display: none;
     width: 100%;
@@ -380,7 +422,7 @@ b {
   justify-content: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .menu {
     display: none;
     width: 100%;
@@ -496,7 +538,7 @@ b {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 100%;
-    margin: 16% 0% 0% 0%;
+    margin: 20% 0% 0% 0%;
     justify-content: center;
     padding: 0% 5%;
   }
@@ -1808,7 +1850,7 @@ footer {
 
 .asociation img {
   /* width: 1%; */
-  margin: 10px
+  margin: 5px
 }
 
 .footer-about {
@@ -2346,31 +2388,20 @@ footer div pre {
 }
 
 .numeros-grandes {
-  /* display: block; */
+  display: block;
   font-size: 40px;
   font-weight: bold;
 }
 
-.numeros-grandes-mobile {
-  display: none;
-  font-size: 40px;
-  font-weight: bold;
+.center-sub {
+  width: 75%;
 }
 
 @media only screen and (max-width: 768px) {
-  .numeros-grandes {
-    display: none;
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  .numeros-grandes-mobile {
-    display: block;
-    font-size: 40px;
-    font-weight: bold;
+  .center-sub {
+    /* width: 75%; */
   }
 }
-
 /* EMPIEZA MODULO 3 TELEFONIA */
 .telephone-module-3 {
   background: #F6F6F6;
@@ -2440,6 +2471,10 @@ footer div pre {
 }
 
 #module-center p, h1, {
+  text-align: left;
+}
+
+#left-cuestions {
   text-align: left;
 }
 
@@ -3261,6 +3296,7 @@ height: 10%; */
   margin: 5px 0px;
   -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+  align-items: center;
 }
 
 .active, .accordion:hover {
@@ -3277,8 +3313,9 @@ height: 10%; */
   color: #993CBA;
   font-weight: lighter;
   float: right;
-  margin-left: 5px;
+  margin-left: 10px;
   transform: rotate(90deg);
+  align-items: center;
 }
 
 .active:after {
@@ -3739,12 +3776,91 @@ q {
   padding: 0px 25px;
 }
 
+.CLABE {
+  margin: 100px 100px;
+}
+
+.img-clabe {
+  text-align: center;
+}
+
+.img-clabe img {
+  width: 40%;
+}
+
+.black-text {
+  color: #000;
+}
+
+.spacing {
+  display: block;
+}
+
+.banner-center {
+  width: 100%;
+  text-align: center;
+}
+
+.banner-center img {
+  margin: 100px 0px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .CLABE {
+    margin: 50px 10px;
+    padding: 0px 10px;
+  }
+
+  .spacing {
+    display: none;
+  }
+
+  .img-clabe {
+    text-align: center;
+  }
+
+  .img-clabe img {
+    width: 60%;
+  }
+
+  .text-clabe p dl dd br {
+    display: none;
+  }
+
+  .text-clabe p dl dd span br {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .swiper-container {
     display: block;
     width: 100%;
     height: 100%;
   }
+
+  .img-clabe img {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+  margin: 0;
+}
+
+.text-center h4{
+  margin: 0;
+}
+
+.h3-black {
+  color: #000;
+}
+.h3-black {
+  color: #000;
+  margin: 0;
 }
 
 /* ------------DESARROLLO VICTOR------------- */

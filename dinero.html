@@ -2,24 +2,18 @@
 <html lang="en">
 
 <head>
+  <meta name="theme-color" content="#993CBA">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una sola App: telefonía celular, cuenta financiera digital, tarjeta MasterCard, envía y recibe dinero y paga tus servicios de forma fácil y segura. ¡Descárgala!">
+  <meta name="robots" content="index">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
-  <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-123153296-1');
-  </script>
-  <title>Dinero</title>
+  <link rel="stylesheet" href="css/master.css" media="all">
+  <link rel="stylesheet" href="css/swiper.min.css" media="screen">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/Miio-ico/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link rel="manifest" href="manifest.json">
+  <title>Cambio: Miio | Cuenta financiera con MasterCard</title>
 </head>
 
 <body class="without-spacing-footer">
@@ -89,8 +83,8 @@
       </nav>
     </div>
     <div id="store-icons">
-      <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer"><img src="assets/apple.png" alt="Apple" class="small-icon"></a>
-      <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer"><img src="assets/playstore.png" alt="Android" class="small-icon"></a>
+      <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer"><img src="assets/apple-fixed.png" alt="Apple" class="small-icon"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer"><img src="assets/playstore-fixed.png" alt="Android" class="small-icon"></a>
     </div>
   </header>
   <!-- Termina Header -->
@@ -172,7 +166,7 @@
 
   <div class="module-3-tarjeta-desktop">
     <div class="img-left">
-      <img src="img/abona.png" alt="info-miio.png">
+      <img src="img/abona.png" alt="como hacer una transferencia">
     </div>
 
     <div class="text-right">
@@ -207,7 +201,7 @@
     <div class="content-mobile-left">
       <h1><img src="assets/Group-13.png" alt="">ABONA DINERO A TU CUENTA</h1>
       <p class="general">Conoce las opciones para hacerlo:</p>
-      <img id="resize-image" src="img/dine_phone1.png" alt="">
+      <img id="resize-image" src="img/abona.png" alt="">
 
       <div class="list-services">
         <div class="list-elements">
@@ -254,34 +248,70 @@
       <div class="comercial-icons" id="responsive-icons">
         <div class="logotypes-mobile">
           <p><img src="assets/Icono-descarga.png" alt="Dish"> </p><br>
-          <span class="numeros-grandes-mobile">1</span>
-          <p class="general"><span class="numeros-grandes">1</span> Descarga la app </p>
+          <div class="flex-div">
+            <div>
+              <span class="numeros-grandes">1</span>
+            </div>
+            <div>
+              <p class="general">Descarga la app </p>
+            </div>
+          </div>
         </div>
         <div class="logotypes-mobile">
           <p><img src="assets/afiliate.png" alt="CFE"></p> <br>
-          <span class="numeros-grandes-mobile">2</span>
-          <p class="general"><span class="numeros-grandes">2</span> Regístrate</p>
+          <div class="flex-div">
+            <div>
+              <span class="numeros-grandes">2</span>
+            </div>
+            <div class="center-sub">
+              <p class="general">Regístrate</p>
+            </div>
+          </div>
         </div>
         <div class="logotypes-mobile">
           <p> <img src="assets/Icon-user.png" alt="Cinepolis"></p> <br>
-          <span class="numeros-grandes-mobile">3</span>
-          <p class="general"><span class="numeros-grandes">3</span> Completa tu perfil financiero</p>
+          <div class="flex-div">
+            <div>
+              <span class="numeros-grandes">3</span>
+            </div>
+            <div>
+              <p class="general">Completa tu perfil financiero</p>
+            </div>
+          </div>
         </div>
         <div class="logotypes-mobile">
           <p><img src="assets/envia.png" alt="Netflix"> </p><br>
-          <span class="numeros-grandes-mobile">4</span>
-          <p class="general"><span class="numeros-grandes">4</span> Pide tu tarjeta; ¡sin costo de envío!</p>
+          <div class="flex-div">
+            <div>
+              <span class="numeros-grandes">4</span>
+            </div>
+            <div>
+              <p class="general">Pide tu tarjeta; ¡sin costo de envío!</p>
+            </div>
+          </div>
         </div>
 
         <div class="logotypes-mobile">
           <p> <img src="assets/activala.png" alt="Xbox"></p> <br>
-          <span class="numeros-grandes-mobile">5</span>
-          <p class="general"><span class="numeros-grandes">5</span> Actívala</p>
+          <div class="flex-div">
+            <div>
+              <span class="numeros-grandes">5</span>
+            </div>
+            <div class="center-sub">
+              <p class="general">Actívala</p>
+            </div>
+          </div>
         </div>
         <div class="logotypes-mobile">
           <p> <img src="assets/tarjeta.png" alt="Blim"></p> <br>
-          <span class="numeros-grandes-mobile">6</span>
-          <p class="general"><span class="numeros-grandes">6</span> Empieza a utilizarla</span></p>
+          <div class="flex-div">
+            <div>
+              <span class="numeros-grandes">6</span>
+            </div>
+            <div>
+              <p class="general">Empieza a utilizarla</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -358,9 +388,15 @@
 
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"> <img src="img/monto.png" alt="">  <p class="general">Selecciona el monto</p></div>
-      <div class="swiper-slide"><img src="img/dinero-pide.png" alt="">  <p class="general">Pide tu crédito</p></div>
-      <div class="swiper-slide"> <img src="img/dinero-disfruta.png" alt="">  <p class="general">Disfruta de este beneficio</p></div>
+      <div class="swiper-slide"> <img src="img/monto.png" alt="">
+        <p class="general">Selecciona el monto</p>
+      </div>
+      <div class="swiper-slide"><img src="img/dinero-pide.png" alt="">
+        <p class="general">Pide tu crédito</p>
+      </div>
+      <div class="swiper-slide"> <img src="img/dinero-disfruta.png" alt="">
+        <p class="general">Disfruta de este beneficio</p>
+      </div>
 
     </div>
     <!-- Add Pagination -->
@@ -452,7 +488,15 @@
           San Angel. CP. 01090 CDMX</p>
       </div>
       <div class="footer-column">
-        <pre><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a><a href="" target="_blank" rel="noopener noreferrer">Nosotros</a><a href="about.html" target="_blank" rel="noopener noreferrer">¿Qué es Miio?</a>Beneficios<a id="submenu-footer" href="telefonia.html" target="_blank" rel="noopener noreferrer">  Telefonía</a><a id="submenu-footer" href="dinero.html" target="_blank" rel="noopener noreferrer">  Dinero</a><a id="submenu-footer" href="ganancias.html" target="_blank" rel="noopener noreferrer">  Ganancias</a><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></pre>
+        <dl>
+          <dt><a href="index.html" rel="noopener noreferrer">Home</a></dt>
+          <dt><a href="about.html" rel="noopener noreferrer">¿Qué es Miio?</a></dt>
+          <dt>Beneficios</dt>
+          <dd><a id="submenu-footer" href="dinero.html" rel="noopener noreferrer">Dinero</a></dd>
+          <dd><a id="submenu-footer" href="ganancias.html" rel="noopener noreferrer">Ganancias</a></dd>
+          <dd><a id="submenu-footer" href="telefonia.html" rel="noopener noreferrer">Telefonía</a></dd>
+          <dt><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>
+        </dl>
       </div>
 
       <div class="footer-column">
@@ -499,9 +543,21 @@
 <!-- TERMINA FOOTER -->
 
 
-<script src="js/slide-tarjeta.js" charset="utf-8"></script>
 <script src="js/swiper.js" charset="utf-8"></script>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123153296-1');
+</script>
 
 <!-- Initialize Swiper -->
 <script>
@@ -513,17 +569,8 @@
     },
   });
 </script>
-Jesús Ismael Ramírez Ledesma <ismael@miio.mx>
-
-vie., 25 ene. 12:11
-
-para mí, Israel, America
-
-Traducir mensaje
-Desactivar para: inglés
-Comparto
-
 <!-- Start of miio2018 Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af"> </script>
 <!-- End of miio2018 Zendesk Widget script -->
+
 </html>

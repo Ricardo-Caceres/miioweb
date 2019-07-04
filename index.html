@@ -2,28 +2,19 @@
 <html lang="en">
 
 <head>
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#993CBA">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una sola App: telefonía celular, cuenta financiera digital, tarjeta MasterCard, envía y recibe dinero y paga tus servicios de forma fácil y segura. ¡Descárgala!">
+  <meta name="robots" content="index">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-123153296-1');
-  </script>
-
-  <title>Miio</title>
+  <link rel="stylesheet" href="css/master.css" media="all">
+  <link rel="stylesheet" href="css/swiper.min.css" media="screen">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/Miio-ico/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link rel="manifest" href="manifest.json">
+  <title>Miio | Telefonía celular y cuenta financiera digital</title>
 </head>
 
 <body>
@@ -93,61 +84,14 @@
       </nav>
     </div>
     <div id="store-icons">
-      <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer"><img src="assets/apple.png" alt="Apple" class="small-icon"></a>
-      <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer"><img src="assets/playstore.png" alt="Android" class="small-icon"></a>
+      <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer"><img src="assets/apple-fixed.png" alt="Apple" class="small-icon"></a>
+      <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer"><img src="assets/playstore-fixed.png" alt="Android" class="small-icon"></a>
     </div>
   </header>
   <!-- Termina Header -->
 
   <!-- Empieza Modulo 1 -->
   <div class="module-1">
-    <aside class="left-home">
-      <h1><span id="space-title">¿QUIERES?</span> <br> <span id="bold-title">YA PUEDES</span></h1>
-      <p class="general">¿Quieres unirte a la comunidad digital <br> que lo tiene todo? <b>Con Miio ¡Ya puedes!</b></p>
-      <button id="myBtn-1" type="button" name="button" class="form-launch-button">CREAR CUENTA</button>
-      <div class="store-icon">
-        <button class="general-button" id="myBtn" type="button" name="button">VER VIDEO</button>
-        <button id="myBtn-11" type="button" name="button" class="form-launch-button-mobile">CREAR CUENTA</button>
-
-</div>
-        <!-- <div class="store-icon"> -->
-
-
-          <div class="" id="icons">
-            <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
-              <div id="apple"><img src="assets/apple-store.png" alt="Apple"></img>
-            </a></div>
-          <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
-            <div id="android"><img src="assets/play-store.png" alt="Android"></img>
-          </a>
-        </div>
-      </div>
-
-    </aside>
-
-    <div class="img-right-index">
-      <img id="desk" src="img/celular-HOME.png" alt="info-miio.png">
-      <img id="mobile-index" src="img/celular-mobile.png" alt="info-miio.png">
-    </div>
-
-    <div class="list-services">
-      <div class="list-elements">
-        <img src="assets/Group-1.png" alt="">
-        <p><span>Dinero</span><br>
-          Obtén una cuenta financiera y una <br> tarjeta MasterCard sin papeleo</p>
-      </div>
-      <div class="list-elements">
-        <img src="assets/Group-2.png" alt="">
-        <p><span>¡Ganancias!</span><br>
-          Gana pagando servicios, <br> comprando entretenimiento y <br> mucho más…</p>
-      </div>
-      <div class="list-elements">
-        <img src="assets/Group-3.png" alt="">
-        <p><span>Telefonía</span><br>
-          Disfruta de un plan gratis semanal</p>
-      </div>
-    </div>
-
     <div class="" id="icons-mobile">
       <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
         <div id="apple"><img src="assets/apple-store.png" alt="Apple"></img>
@@ -157,6 +101,54 @@
     </a>
   </div>
   </div>
+  <aside class="left-home">
+    <h1><span id="space-title">¿QUIERES?</span> <br> <span id="bold-title">YA PUEDES</span></h1>
+    <p class="general">¿Quieres unirte a la comunidad digital <br> que lo tiene todo? <b>Con Miio ¡Ya puedes!</b></p>
+    <button id="myBtn-1" type="button" name="button" class="form-launch-button">CREAR CUENTA</button>
+    <div class="store-icon">
+      <button class="general-button" id="myBtn" type="button" name="button">VER VIDEO</button>
+      <button id="myBtn-11" type="button" name="button" class="form-launch-button-mobile">CREAR CUENTA</button>
+
+    </div>
+    <!-- <div class="store-icon"> -->
+
+
+    <div class="" id="icons">
+      <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
+        <div id="apple"><img src="assets/apple-store.png" alt="Apple"></img>
+      </a></div>
+    <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
+      <div id="android"><img src="assets/play-store.png" alt="Android"></img>
+    </a>
+    </div>
+    </div>
+
+  </aside>
+
+  <div class="img-right-index">
+    <img id="desk" src="img/celular-HOME.png" alt="Miio telefonia celular">
+    <img id="mobile-index" src="img/celular-mobile.png" alt="Miio telefonia celular">
+  </div>
+
+  <div class="list-services">
+    <div class="list-elements">
+      <img src="assets/Group-1.png" alt="">
+      <p><span>Dinero</span><br>
+        Obtén una cuenta financiera y una <br> tarjeta MasterCard sin papeleo</p>
+    </div>
+    <div class="list-elements">
+      <img src="assets/Group-2.png" alt="">
+      <p><span>¡Ganancias!</span><br>
+        Gana pagando servicios, <br> comprando entretenimiento y <br> mucho más…</p>
+    </div>
+    <div class="list-elements">
+      <img src="assets/Group-3.png" alt="">
+      <p><span>Telefonía celular</span><br>
+        Disfruta de un plan gratis semanal</p>
+    </div>
+  </div>
+
+
   </div>
 
   <!-- MODAL VIDEO  -->
@@ -240,26 +232,26 @@
     </aside>
     <div class="comercial-icons">
       <div class="comercial-icons">
-        <div class="logotypes"><img src="assets/CFE.png" alt="CFE"></div>
-        <div class="logotypes"><img src="assets/blim.png" alt="Blim"></div>
-        <div class="logotypes"><img src="assets/avon.png" alt="Avon"></div>
+        <div class="logotypes"><img src="img/CFE.png" alt="CFE"></div>
+        <div class="logotypes"><img src="img/blim.png" alt="Blim"></div>
+        <div class="logotypes"><img src="img/avon.png" alt="Avon"></div>
       </div>
       <div class="comercial-icons">
-        <div class="logotypes"><img src="assets/cinepolis.png" alt="Cinepolis"></div>
-        <div class="logotypes"><img src="assets/dish.png" alt="Dish"></div>
-        <div class="logotypes"><img src="assets/xbox.png" alt="Xbox"></div>
+        <div class="logotypes"><img src="img/cinepolis.png" alt="Cinepolis"></div>
+        <div class="logotypes"><img src="img/dish.png" alt="Dish"></div>
+        <div class="logotypes"><img src="img/xbox.png" alt="Xbox"></div>
       </div>
     </div>
 
 
     <div class="comercial-icons-mobile">
-      <div class="logotypes"><img src="assets/CFE.png" alt="CFE"></div>
-      <div class="logotypes"><img src="assets/blim.png" alt="Blim"></div>
-      <div class="logotypes"><img src="assets/avon.png" alt="Avon"></div>
+      <div class="logotypes"><img src="img/CFE.png" alt="CFE"></div>
+      <div class="logotypes"><img src="img/blim.png" alt="Blim"></div>
+      <div class="logotypes"><img src="img/avon.png" alt="Avon"></div>
 
-      <div class="logotypes"><img src="assets/cinepolis.png" alt="Cinepolis"></div>
-      <div class="logotypes"><img src="assets/dish.png" alt="Dish"></div>
-      <div class="logotypes"><img src="assets/xbox.png" alt="Xbox"></div>
+      <div class="logotypes"><img src="img/cinepolis.png" alt="Cinepolis"></div>
+      <div class="logotypes"><img src="img/dish.png" alt="Dish"></div>
+      <div class="logotypes"><img src="img/xbox.png" alt="Xbox"></div>
 
     </div>
     <a href="ganancias.html" rel="noopener noreferrer"><button class="general-button" id="button-mobile" type="button" name="button">¡CONOCE MÁS!</button></a>
@@ -280,7 +272,7 @@
     <div id="gallery">
 
       <div id="image-content-column">
-        <div class="hover"><img src="img/foto1.png" alt="" class="image">
+        <div class="hover"><img src="img/foto1.wdp" alt="" class="image">
           <div class="overlay">
             <div class="text">
               <h3 class="white-subtitles">Adriana Pérez</h3>
@@ -288,7 +280,7 @@
             </div>
           </div>
         </div>
-        <div class="hover"><img src="img/foto2.png" alt="" class="image">
+        <div class="hover"><img src="img/foto2.wdp" alt="" class="image">
           <div class="overlay">
             <div class="text">
               <h3 class="white-subtitles">Oscar López</h3>
@@ -299,7 +291,7 @@
       </div>
 
       <div id="image-content-column-1">
-        <div class="hover"><img src="img/foto3.png" alt="" id="unique" class="image">
+        <div class="hover"><img src="img/foto3.wdp" alt="" id="unique" class="image">
           <div class="overlay">
             <div class="text">
               <h3 class="white-subtitles">Mario Pulido</h3>
@@ -311,7 +303,7 @@
 
       <div id="image-content-column">
         <div class="image-content-row">
-          <div class="hover"><img src="img/foto4.png" alt="" class="image">
+          <div class="hover"><img src="img/foto4.wdp" alt="" class="image">
             <div class="overlay">
               <div class="text">
                 <h3 class="white-subtitles">Fernanda González</h3>
@@ -319,7 +311,7 @@
               </div>
             </div>
           </div>
-          <div class="hover"><img src="img/foto6.png" alt="" class="image">
+          <div class="hover"><img src="img/foto6.wdp" alt="" class="image">
             <div class="overlay">
               <div class="text">
                 <h3 class="white-subtitles">María Rodriguez</h3>
@@ -329,7 +321,7 @@
           </div>
         </div>
         <div class="image-content-row">
-          <div class="hover"><img src="img/foto5.png" alt="" class="image">
+          <div class="hover"><img src="img/foto5.wdp" alt="" class="image">
             <div class="overlay">
               <div class="text">
                 <h3 class="white-subtitles">Felipe Sánchez</h3>
@@ -337,7 +329,7 @@
               </div>
             </div>
           </div>
-          <div class="hover"><img src="img/foto7.png" alt="" class="image">
+          <div class="hover"><img src="img/foto7.wdp" alt="" class="image">
             <div class="overlay">
               <div class="text">
                 <h3 class="white-subtitles">Alejandra Hernández</h3>
@@ -356,31 +348,31 @@
     <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/foto1-mobile.png" alt="" class="image">
+        <div class="swiper-slide"><img src="img/foto1-mobile.wdp" alt="" class="image">
           <h3>Adriana Pérez</h3>
           <p class="padding-20px">"Con Miio puedo ayudar mi mamá a pagar la luz, el gas y el agua en unos instantes. Y además me gano un dinero extra."</p>
         </div>
-        <div class="swiper-slide"><img src="img/foto2-mobile.png" alt="" class="image">
+        <div class="swiper-slide"><img src="img/foto2-mobile.wdp" alt="" class="image">
           <h3>Oscar López</h3>
           <p class="padding-20px">"Tengo un pequeño negocio en un pueblo. Con Miio, puedo recibir los pagos de mis clientes sin tener que lidiar con ningún banco."</p>
         </div>
-        <div class="swiper-slide"><img src="img/foto3-mobile.png" alt="" class="image">
+        <div class="swiper-slide"><img src="img/foto3-mobile.wdp" alt="" class="image">
           <h3>Mario Pulido</h3>
           <p class="padding-20px">"Desde que uso Miio tengo un plan de telefonía gratis y puedo mantenerme comunicado con mi mamá, que vive lejos de aquí."</p>
         </div>
-        <div class="swiper-slide"><img src="img/foto4-mobile.png" alt="" class="image">
+        <div class="swiper-slide"><img src="img/foto4-mobile.wdp" alt="" class="image">
           <h3>Fernanda González</h3>
           <p class="padding-20px">"Soy mamá soltera, tengo 3 hijos y un trabajo de tiempo completo. Pagar todos mis servicios con Miio me ahorra mucho tiempo."</p>
         </div>
-        <div class="swiper-slide"><img src="img/foto5-mobile.png" alt="" class="image">
+        <div class="swiper-slide"><img src="img/foto5-mobile.wdp" alt="" class="image">
           <h3>María Rodriguez</h3>
           <p class="padding-20px">"Gracias a mi microcrédito Miio, puedo comprar los ingredientes de la comida que vendo todos los días en mi puesto."</p>
         </div>
-        <div class="swiper-slide"><img src="img/foto6-mobile.png" alt="" class="image">
+        <div class="swiper-slide"><img src="img/foto6-mobile.wdp" alt="" class="image">
           <h3>Felipe Sánchez</h3>
           <p class="padding-20px">"Con Miio, puedo ayudar a mi esposa a hacer sus recargas de telefonía."</p>
         </div>
-        <div class="swiper-slide"><img src="img/foto7-mobile.png" alt="" class="image">
+        <div class="swiper-slide"><img src="img/foto7-mobile.wdp" alt="" class="image">
           <h3>Alejandra Hernández</h3>
           <p class="padding-20px">"Con mi tarjeta Miio, nunca me falta dinero para mi tarjeta de EcoBici."</p>
         </div>
@@ -613,7 +605,15 @@
           San Angel. CP. 01090 CDMX</p>
       </div>
       <div class="footer-column">
-        <pre><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a><a href="" target="_blank" rel="noopener noreferrer">Nosotros</a><a href="about.html" target="_blank" rel="noopener noreferrer">¿Qué es Miio?</a>Beneficios<a id="submenu-footer" href="telefonia.html" target="_blank" rel="noopener noreferrer">  Telefonía</a><a id="submenu-footer" href="dinero.html" target="_blank" rel="noopener noreferrer">  Dinero</a><a id="submenu-footer" href="ganancias.html" target="_blank" rel="noopener noreferrer">  Ganancias</a><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></pre>
+        <dl>
+          <dt><a href="index.html" rel="noopener noreferrer">Home</a></dt>
+          <dt><a href="about.html" rel="noopener noreferrer">¿Qué es Miio?</a></dt>
+          <dt>Beneficios</dt>
+          <dd><a id="submenu-footer" href="dinero.html" rel="noopener noreferrer">Dinero</a></dd>
+          <dd><a id="submenu-footer" href="ganancias.html" rel="noopener noreferrer">Ganancias</a></dd>
+          <dd><a id="submenu-footer" href="telefonia.html" rel="noopener noreferrer">Telefonía</a></dd>
+          <dt><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>
+        </dl>
       </div>
 
       <div class="footer-column">
@@ -658,19 +658,50 @@
     <!-- Footer de bajo -->
 
     <div class="footer-below">
+      <p>La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural, S.A. de C.V., Sociedad Financiera Popular, ésta
+        última
+        autorizada para operar y supervisada por la Comisión Nacional Bancaria y de Valores. MIIO es una aplicación para smartphones mediante la cual se pueden administrar las tarjetas bajo la marca "MIIO". King David Mobile, S.A.P.I. de C.V. no es
+        un
+        banco ni una entidad financiera.</p>
+      <p>© 2019. Miio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- TERMINA FOOTER -->
 </body>
-<p>La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural, S.A. de C.V., Sociedad Financiera Popular, ésta última
-  autorizada para operar y supervisada por la Comisión Nacional Bancaria y de Valores. MIIO es una aplicación para smartphones mediante la cual se pueden administrar las tarjetas bajo la marca "MIIO". King David Mobile, S.A.P.I. de C.V. no es un
-  banco ni una entidad financiera.</p>
-<p>© 2019. Miio. Todos los derechos reservados.</p>
-</div>
-</footer>
-<!-- TERMINA FOOTER -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZSKSXK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="/js/functions.js" charset="utf-8" async></script>
+<script src="js/swiper.js" charset="utf-8" async></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google Tag Manager -->
+<script async>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-TZSKSXK');
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
-<script src="js/functions.js" charset="utf-8"></script>
-<script src="js/swiper.js" charset="utf-8"></script>
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
-
+  gtag('config', 'UA-123153296-1');
+</script>
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper('.swiper-container', {
@@ -683,7 +714,7 @@
 </script>
 
 <!-- Start of miio2018 Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af"> </script>
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af" async> </script>
 <!-- End of miio2018 Zendesk Widget script -->
 
 </html>
