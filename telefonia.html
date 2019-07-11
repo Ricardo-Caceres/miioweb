@@ -9,26 +9,77 @@
   <meta name="robots" content="index">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/master.css" media="all">
-  <link rel="stylesheet" href="css/swiper.min.css" media="screen">
+  <link rel="stylesheet" href="css/swiper.css" media="screen">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="assets/Miio-ico/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
   <title>Cambio: Miio | Plan de telefonía gratis</title>
 </head>
 
 <body class="without-spacing-footer">
   <!-- Empieza Header -->
-  <header>
+  <header class="col fixed-top p-0 text-dark-miio">
+    <div class="row align-items-center bg-white">
+      <div class="col-md-4 col-12">
+        <a class="row col align-items-center text-decoration-none" href="https://miio.mx/">
+          <img class="mx-4" src="assets/logo-MIIO-negro.png" alt="Miio">
+          <p class="m-0 slogan text-dark-miio">MI<br>FUTURO<br>ES <b>Miio</b></p>
+        </a>
+      </div>
+      <div class="col-md-8 col-12 p-0">
+        <div class="col row align-items-center justify-content-end my-2">
+          <!-- <p class="mt-0 mb-0">Siguenos en:</p> -->
+          <a class="m-1" href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/facebook.png" alt="Facebook"></a></a>
+          <a class="m-1" href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/linkedin.png" alt="LinkedIn"></a>
+          <a class="m-1" href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/twitter.png" alt="Twitter"></a>
+          <a class="m-1" href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/Group 3.png" alt="Instagram"></a>
+        </div>
+        <div class="col">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="telefonia.html">Telefonía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-0" href=""><b class="color-text-miio">·</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="dinero.html">Cuenta Financiera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-0" href=""><b class="color-text-miio">·</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="ganancias.html">Ganancias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-0" href=""><b class="color-text-miio">·</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="conocenos.html">Somos Miio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-0" href=""><b class="color-text-miio">·</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <!-- Menu mobil -->
+
     <div id="show" class="container">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
 
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav d-none">
       <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <a class="text-menu" href="about.html" rel="noopener noreferrer">¿Qué es MIIO?</a>
+      <a class="text-menu" href="conocenos.html" rel="noopener noreferrer">¿Qué es MIIO?</a>
       <a class="text-menu" href="">Beneficios</a>
       <li class="submenu-mobile"><a href="dinero.html" rel="noopener noreferrer">Dinero</a></li>
       <li class="submenu-mobile"><a href="ganancias.html" rel="noopener noreferrer">Ganancias</a></li>
@@ -47,1074 +98,362 @@
     </div>
 
     <!-- termina menu mobil -->
-    <div class="social">
-      <p id="Siguenos">Siguenos en: </p>
+    <div class="social d-none">
       <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
       <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
       <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-TW.png" alt="Twitter"></a>
       <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-IG.png" alt="Instagram"></a>
     </div>
 
-    <div class="logo-menu">
-      <a href="index.html">
-        <p><img id="logo" src="assets/logo-MIIO-negro.png" alt="Miio"></p>
-      </a>
-      <h5 id="slogan"><a href="index.html">La app donde puedes<br>tenerlo todo.</a></h5>
-
-
-      <nav class="menu">
-        <ul>
-          <li><a class="text-menu" href="about.html" rel="noopener noreferrer">¿Qué es MIIO?</a></li>
-          <!-- <li><a class="point">·</a></li> -->
-          <li><a class="text-menu" href="" rel="noopener noreferrer">Beneficios</a>
-            <ul class="submenu">
-              <li class="submenu"><a href="dinero.html" rel="noopener noreferrer">Dinero</a></li>
-              <li class="submenu"><a href="ganancias.html" rel="noopener noreferrer">Ganancias</a></li>
-              <li class="submenu"><a href="telefonia.html" rel="noopener noreferrer">Telefonía</a></li>
-            </ul>
-          </li>
-          <!-- <li><a class="point">·<a></li> -->
-          <li><a class="text-menu" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></li>
-          <!-- <li><a class="point">·</a></li> -->
-          <li><a class="text-menu" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a></li>
-          <!-- <li><a class="point">·</a></li> -->
-          <li id="ultimate-li"><a class="contacto" href="contacto.html" rel="noopener noreferrer">Contacto</a></li>
-        </ul>
-      </nav>
     </div>
-    <div id="store-icons">
+    <div class="float-right m-4">
       <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer"><img src="assets/apple-fixed.png" alt="Apple" class="small-icon"></a>
       <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer"><img src="assets/playstore-fixed.png" alt="Android" class="small-icon"></a>
     </div>
   </header>
   <!-- Termina Header -->
 
-
-
-  <!-- <div class="title" id="">
-    <h1>Contacto</h1>
-  </div> -->
-
-  <div class="telephone-module-1">
-    <aside class="left">
-      <h1>TELEFONÍA GRATÍS</h1>
-      <h5>¿Quieres? ¡Ya puedes!</h5>
-      <p class="general">Disfruta de un plan gratis semanal</p>
-
-      <div class="" id="icons">
-        <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
-          <div id="apple"><img src="assets/apple-store.png" alt="Apple"></img>
-        </a></div>
-      <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
-        <div id="android"><img src="assets/play-store.png" alt="Android"></img>
-      </a>
-  </div>
-  </div>
-  </aside>
-  <div class="img-right" id="img-right-mobile">
-    <p class="general"><img src="assets/cobertura-telefonia.png" alt=""></p>
-    <p class="general">Cobertura a <br> nivel nacional</p>
-  </div>
-  </div>
-
-  <aside class="left-mobile">
-    <h1>TELEFONIA <span id="white">GRATÍS</span></h1>
-    <h4>¿Quieres? ¡Ya puedes!</h4>
-    <p class="general">Disfruta de un plan gratis semanal</p>
-
-    <div class="" id="icons">
-      <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
-        <div id="apple"><img src="assets/apple-store.png" alt="Apple"></img>
-      </a></div>
-    <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
-      <div id="android"><img src="assets/play-store.png" alt="Android"></img>
-    </a>
-    </div>
-    </div>
-  </aside>
-  <!-- TERMINA MODULO 1 -->
-
-  <!-- EMPIEZA MODULO 2 -->
-  <div class="telephone-module-2">
-    <div class="content">
-      <h1>MANTÉNTE COMUNICADO CON Miio</h1>
-      <p class="general">Conoce todos los beneficios de la telefonía Miio:</p>
-    </div>
-    <div class="general-icons">
-      <div class="products" id="mobile">
-        <img src="assets/phone.png" alt="">
-        <p class="general" id="text-yellow">Disfruta tu Plan Gratis</p>
+  <!-- EMPIEZA CONTENIDO -->
+  <div class="container-fluid mt-6 p-0">
+    <div id="hero-telefonia" class="row m-0 mt-4">
+      <div class="col-md-4 col-12 p-0">
+        <img class="img" src="img/IMABAN1-04.png" alt="">
       </div>
-      <div class="products" id="mobile">
-        <img src="assets/Icono-pide-chip.png" alt="">
-        <p class="general" id="text-yellow">Pide tu Chip</p>
-      </div>
-      <div class="products" id="mobile">
-        <img src="assets/Icono-Plan.png" alt="">
-        <p class="general" id="text-yellow">Elige tu Plan</p>
-      </div>
-      <div class="products" id="mobile">
-        <img src="assets/ubication.png" alt="">
-        <p class="general" id="text-yellow">Recarga tu Telefonía</p>
-      </div>
-    </div>
-  </div>
-  <!-- TERMINA MODULO 2 -->
-
-  <!-- EMPIEZA MODULO 3 -->
-
-
-  <div class="telephone-module-3">
-    <div id="image"><img src="img/telefonia.png" alt="">
-    </div>
-
-    <div class="content-mobile">
-      <h1><img src="assets/tel.png" alt="">DISFRUTA <br>
-        LOS BENEFICIOS <br> DEL PLAN <br> GRATIS</h1>
-      <p class="general">Abre tu app durante 7 días y <span>¡disfrútalo!</span><br>
-        Si un día lo dejas de hacer, el conteo comenzará de nuevo.</p>
-      <img src="img/phone.png" alt="">
-
-    </div>
-
-  </div>
-
-
-  <!-- Empieza Modulo 4 -->
-  <div class="telephone-module-4">
-
-    <aside class="left-1" id="module-center">
-      <div id="logo-pegado">
-        <p><img src="assets/tel-icon.png" alt=""></p>
-        <h1>Pide tu <br> Chip Miio</h1>
-      </div>
-      <div id="titulo-pegado">
-        <p class="general">Para tener todos los beneficios, <br>
-          ¡sigue este proceso!
-        </p>
-      </div>
-    </aside>
-    <div class="comercial-icons" id="responsive-icons">
-      <div class="comercial-icons" id="responsive-icons">
-        <div class="logotypes-mobile">
-          <h1><img src="assets/Icono-descarga.png" alt="Dish"> <br>
-          </h1> <br>
-          <div class="flex-div">
-            <div>
-              <span class="numeros-grandes">1</span>
-            </div>
-            <div>
-              <p class="general">Descarga la App</p>
-            </div>
-          </div>
-        </div>
-        <div class="logotypes-mobile">
-          <h1><img src="assets/Icono-chip.png" alt=""> <br>
-          </h1> <br>
-          <div class="flex-div">
-            <div>
-              <span class="numeros-grandes">2</span>
-            </div>
-            <div>
-              <p class="general">Solicita tu chip; te regalamos el envío</p>
-            </div>
-          </div>
-        </div>
-        <div class="logotypes-mobile">
-          <h1><img src="assets/portavilidad.png" alt=""> <br>
-          </h1> <br>
-          <div class="flex-div">
-            <div>
-              <span class="numeros-grandes">3</span>
-            </div>
-            <div>
-              <p class="general">Realiza tu Portabilidad y conserva tu número</p>
-            </div>
-          </div>
-        </div>
-        <div class="logotypes-mobile">
-          <h1><img src="assets/cel-miio.png" alt=""> <br>
-          </h1> <br>
-          <div class="flex-div">
-            <div>
-              <span class="numeros-grandes">4</span>
-            </div>
-            <div>
-              <p class="general">Instálalo en tu celular</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="logotypes-mobile">
-          <h1><img src="assets/Icon-user.png" alt=""> <br>
-          </h1> <br>
-          <div class="flex-div">
-            <div>
-              <span class="numeros-grandes">5</span>
-            </div>
-            <div class="center-sub">
-              <p class="general">Regístrate</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="logotypes-mobile">
-          <h1><img src="assets/disfruta.png" alt=""> <br>
-          </h1> <br>
-          <div class="flex-div">
-            <div>
-              <span class="numeros-grandes">6</span>
-            </div>
-            <div>
-              <p class="general">Afíliate <br> </p>
-              <span>* Disfruta los beneficios de la app <b>Miio</b></span>
-            </div>
-          </div>
+      <div class="col-md-8 col-12 m-auto pl-5 text-white text-justify align-self-center pt-4">
+        <u>
+          <h1 class="text-bold-alternative display-5">
+            MI FUTURO ES<br> CONECTARME
+          </h1>
+        </u>
+        <p class="col p-0 font-size-18">Elige tu plan Miio y nunca te quedarás sin conexión</p>
+        <div class="d-flex flex-row justify-content-between col-6 pr-0 align-items-center">
+          <a class="" href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8"><img src="assets/apple-store.png" alt="Apple"></a>
+          <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio"><img src="assets/play-store.png" alt="Android"></a>
         </div>
       </div>
     </div>
-
-  </div>
-
-
-
-  <!-- Termina Modulo 4 -->
-
-  <!-- EMPIEZA MODULO 5 -->
-  <div class="telephone-module-5">
-    <div class="content">
-      <h1><img src="assets/Icono-elige-plan.png" alt="">ELIJE TU PLAN</h1>
-      <p class="general-black">Si necesitas más tiempo aire contamos con <b> diferentes planes </b></p>
+    <div class="container-fluid text-dark-miio border-bottom">
+      <h1 class="text-center text-dark-miio pt-5">¡AHORA Miio te da más!</h1>
+      <h6 class="text-center text-dark-miio font-size-18">
+        Adquiere tu plan móvil y obtén seguro de vida, protección médica, pagos de servicios ilimitados entre beneficios muchos más.</h6>
+      <div class="row justify-content-center">
+        <img src="assets/.png" alt="">
+        <p>Telefonía</p>
+        <img src="assets/.png" alt="">
+        <img src="assets/.png" alt="">
+        <p>Protección</p>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <img src="" alt="">
+          <p>MEGAS</p>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <p>MINUTOS</p>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <p>SMS</p>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <p>MÉDICOS</p>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <p>AMBULANCIA</p>
+        </div>
+        <div class="col">
+          <img src="" alt="">
+          <p>EMERGENCIA</p>
+        </div>
+      </div>
     </div>
-    <table id="table-desktop">
-      <thead>
-        <tr>
-          <th colspan="2">PLAN</th>
-          <th>MEGAS</th>
-          <th>MINUTOS</th>
-          <th>SMS</th>
-          <th>DÍAS</th>
-          <th>COSTO</th>
-        </tr>
-      </thead>
-      <tbody>
-
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-FREE-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan Gratis</td>
-          <td>50</td>
-          <td>100</td>
-          <td>10</td>
-          <td>7</td>
-          <td class="font-price">$0</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-10-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 10</td>
-          <td>30</td>
-          <td>50</td>
-          <td>10</td>
-          <td>5</td>
-          <td class="font-price">$10</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-20-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 20</td>
-          <td>50</td>
-          <td>100</td>
-          <td>50</td>
-          <td>5</td>
-          <td class="font-price">$20</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-30-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 30</td>
-          <td>50</td>
-          <td>Ilimitados</td>
-          <td>50</td>
-          <td>15</td>
-          <td class="font-price">$30</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-50-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 50</td>
-          <td>100</td>
-          <td>Ilimitados</td>
-          <td>50</td>
-          <td>15</td>
-          <td class="font-price">$50</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-100-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 100</td>
-          <td>300</td>
-          <td>Ilimitados</td>
-          <td>50</td>
-          <td>15</td>
-          <td class="font-price">$100</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-150-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 150</td>
-          <td>1000</td>
-          <td>Ilimitados</td>
-          <td>50</td>
-          <td>30</td>
-          <td class="font-price">$150</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-200-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 200</td>
-          <td>1500</td>
-          <td>Ilimitados</td>
-          <td>50</td>
-          <td>30</td>
-          <td class="font-price">$200</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-300-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 300</td>
-          <td>2000</td>
-          <td>Ilimitados</td>
-          <td>50</td>
-          <td>30</td>
-          <td class="font-price">$300</td>
-        </tr>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-500-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan 500</td>
-          <td>3000</td>
-          <td>Ilimitados</td>
-          <td>50</td>
-          <td>30</td>
-          <td class="font-price">$500</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td class="pdf"><a href="pdf/PLAN-PREMIUM-MIIO.pdf" target="_blank" rel="noreferrer"><img src="assets/pdf.png" alt="Plan"></a></td>
-          <td class="border-pdf">Plan Premium</td>
-          <td>8192</td>
-          <td>Ilimitados</td>
-          <td>Ilimitados</td>
-          <td>30</td>
-          <td>$1,000</td>
-        </tr>
-      </tfoot>
-    </table>
-
-  </div>
-
-
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan Gratis</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">100</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt="">
-                  </td>
-                  <td><span class="yellow">10</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 0.00</p>
-              <p class="days">Para 7 días</p>
+    <div class="col">
+      <div class="row justify-content-center mb-4">
+        <div class="pt-5 mr-2">
+          <img src="assets/Icono elige plan.png" alt="">
+        </div>
+        <h1 class="text-center text-dark-miio pt-5">ELIGE TU PLAN</h1>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div id="oculto" class="container-fluid text-center m-3 rounded-radius shadow p-0 overflow-auto" aria-expanded="false">
+              <div class="col rounded-radius-bottom bg-plan-50 p-3 text-white">
+                <h6><b><u>Plan Miio</u></b></h6>
+                <h2>$ 50 MNX.</h2>
+                <h6>incluye</h6>
+              </div>
+              <table class="img mt-4">
+                <thead>
+                  <tr>
+                    <th class="border-right"><img src="assets/icono megas (1).png" alt=""></th>
+                    <th class="border-right"><img src="assets/Icono minutos.png" alt=""></th>
+                    <th><img src="assets/Icono SMS (1).png" alt=""></th>
+                  </tr>
+                </thead>
+                <tbody class="text-footer">
+                  <tr>
+                    <td class="border-right">
+                      <p class="m-0 font-size-14"><span class="font-weight-900 font-size-29 text-plan-50">200</span>MB</p>
+                    </td>
+                    <td class="border-right">
+                      <p class="m-0 font-size-14"><span class="font-weight-900 font-size-29 text-plan-50">50</span>Minutos</p>
+                    </td>
+                    <td>
+                      <p class="m-0 font-size-14"><span class="font-weight-900 font-size-29 text-plan-50">25</span>SMS</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="text-footer font-size-14 mx-3 my-2">
+                <thead>
+                  <tr>
+                    <th class="text-left" colspan="3">
+                      <h6 class="text-left text-plan-50"><b>Protección médica</b></h6>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom">
+                    <td class="text-left">Seguro de vida</td>
+                    <td></td>
+                    <td class="text-plan-50 font-size-29 font-weight-900">$10000</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Créditos <b>(sin intereses)</b></td>
+                    <td><img class="mx-4" src="assets/Group 7 Copy 2.png" alt=""></td>
+                    <td class="font-size-29 font-weight-900">0</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Médico a domicilio</td>
+                    <td><img class="mx-4" src="assets/medico.png" alt=""></td>
+                    <td class="font-size-29 font-weight-900">0</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Translado de ambulancia</td>
+                    <td><img class="mx-4" src="assets/emergency-ambulance-miio.png" alt=""></td>
+                    <td class="font-size-29 font-weight-900">0</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Abonos a cuenta cajero
+                      Bancomer/Banamex gratis</td>
+                    <td></td>
+                    <td class="font-size-29 font-weight-900">&#10005;</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Médico por teléfono</td>
+                    <td></td>
+                    <td class="font-size-29 font-weight-900">&#10005;</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Servicio dental</td>
+                    <td></td>
+                    <td class="font-size-29 font-weight-900">&#10005;</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Descuento en hospitales <br>
+                      y farmacias </td>
+                    <td></td>
+                    <td class="text-plan-50 font-size-20 font-weight-900">&#10003;</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Psicólogo por teléfono </td>
+                    <td></td>
+                    <td class="font-size-29 font-weight-900">&#10005;</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Nutricionista por teléfono</td>
+                    <td></td>
+                    <td class="font-size-29 font-weight-900">&#10005;</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Análisis clinicos</td>
+                    <td><img class="mx-4" src="assets/science-test-tube.png" alt=""></td>
+                    <td class="text-plan-50 font-size-29 font-weight-900">1</td>
+                  </tr>
+                  <tr class="">
+                    <td class="text-center border-pdf border-warning" colspan="3">
+                      <div class="row justify-content-center my-2">
+                        <img class="mr-4" src="assets/pdf copy 3.png" alt="">
+                        <p class="m-0 align-self-end"><b>Plan de protección Miio.pdf</b></p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="" colspan="3"><img src="" alt="">
+                      <h6 class="text-left text-plan-50"><b>Cuenta Miio</b></h6>
+                    </td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Plan de emergencia 24hrs</td>
+                    <td class="p-0"></td>
+                    <td class="text-plan-50 font-size-20 font-weight-900">&#10003;</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Cuenta protegida</td>
+                    <td class="p-0"><img src="assets/shield.png" alt=""></td>
+                    <td class="text-plan-50 font-size-20 font-weight-900">&#10003;</td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td class="text-left">Pagos Miio a Miio</td>
+                    <td class="p-0"></td>
+                    <td class="text-plan-50 font-size-20 font-weight-900">&#10003;</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center border-pdf border-warning" colspan="3">
+                      <div class="row justify-content-center my-2">
+                        <img class="mr-4" src="assets/pdf copy 3.png" alt="">
+                        <p class="m-0 align-self-end"><b>Caracteristicas plan Miio.pdf</b></p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="col mt-5 mb-1">
+                <img src="assets/boton-50.png" alt="">
+              </div>
             </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div class="container-fluid bg-alternative text-center pb-5">
+      <h1 class="text-center text-dark-miio pt-5">MI FUTURO ES CRECER</h1>
+      <h6>Buscamos que cada miembro de nuestra comunidad mejore su bienestar personal y económico.</h6>
+      <div class="row">
+        <div class="col rounded-radius shadow mx-2">
+          <div class="row">
+            <img src="assets/.png" alt="">
+            <h2>CRÉDITOS</h2>
+          </div>
+          <img src="img/.png" alt="">
+        </div>
+        <div class="col rounded-radius shadow mx-2"><img src="img/.png" alt=""></div>
+        <div class="col rounded-radius shadow mx-2">
+          <div class="row">
+            <img src="assets/.png" alt="">
+            <h2>ENVÍA Y RECIBE DINERO</h2>
+          </div>
+          <img src="img/.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row align-items-center justify-content-center">
+        <div class=""><img src="assets/recarga.png" alt=""></div>
+        <div class="">
+          <h1 class="text-center text-dark-miio pt-5">RECARGA TU TELEFONÍA</h1>
+        </div>
+      </div>
+      <h6 class="text-center">Buscamos que cada miembro de nuestra comunidad mejore su bienestar personal y económico.</h6>
+      <div class="row justify-content-center">
+        <img src="assets/miio.png" alt="" class="mx-1 mx-md-4 ">
+        <img src="assets/farmacias-ahorro.png" alt="" class="mx-1 mx-md-4 ">
+        <img src="assets/7-eleven.png" alt="" class="mx-1 mx-md-4 ">
+      </div>
+    </div>
+    <div class="container-fluid p-0 mt-5 text-dark-miio">
+      <div class="col p-0">
+        <img class="img col-11 float-right p-0" id="dudas" src="img/dudas-telefonia.png" alt="">
+      </div>
+      <div class="col-7 position-relative top-less-dudas m-auto">
+        <h2>¿Tienes dudas?</h2>
+        <h3 class="col-12">Ingresa a nuestra sección de <a class="color-text-miio" href="preguntas.html">Preguntas frecuentes</a></h3>
+      </div>
+    </div>
+    <div class="container-fluid my-3">
+      <div class="row bg-plan-50 pt-3">
+        <div class="col-2 align-self-end"><img class="align-self-end" src="img/descarga-telefonia.png" alt=""></div>
+        <div class="col-1"><img src="assets/miio-iconos-03.png" alt=""></div>
+        <div class="col-6 mb-3 text-white">
+          <h3 class="m-0">DESCARGA LA APP</h3>
+          <h4 class="m-0">Y comienza a ganar </h4>
+          <h5 class="m-0">¡No somos banco, Miio es la comunidad que lo tiene todo!</h5>
+        </div>
+        <div class="col-3 align-self-center">
+          <div class="row">
+            <a class="px-1" href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer"><img src="assets/apple-store.png" alt=""></a>
+            <a class="px-1" href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer"><img src="assets/play-store.png" alt=""></a>
           </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 10</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">30</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">10</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 10.00</p>
-              <p class="days">Para 5 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 20</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">100</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 20.00</p>
-              <p class="days">Para 5 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 30</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 30.00</p>
-              <p class="days">Para 15 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 50</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">100</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">15</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 50.00</p>
-              <p class="days">Para 15 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 100</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">300</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 100.00</p>
-              <p class="days">Para 15 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 150</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">1000</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 150.00</p>
-              <p class="days">Para 30 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 200</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">1500</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 200.00</p>
-              <p class="days">Para 30 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 300</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">2000</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 300.00</p>
-              <p class="days">Para 30 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan 500</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">3000</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">50</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 500.00</p>
-              <p class="days">Para 30 días</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="plan">
-          <div id="planes">
-            <p>
-              <img src="assets/phone-small.png" alt=""></p>
-            <pre> </pre>
-            <h2 id="text-yellow">Plan Premium</h2>
-          </div>
-          <div id="items">
-            <table class="mobile-table">
-              <tbody>
-                <tr>
-                  <td><img src="assets/icono-megas.png" alt=""></td>
-                  <td><span class="yellow">8192</span></td>
-                  <td>
-                    <p class="yellow-left">MB</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/Icono-minutos.png" alt=""></td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">minutos</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td><img src="assets/SMS.png" alt="">
-                  </td>
-                  <td><span class="yellow">Ilimitados</span></td>
-                  <td>
-                    <p class="general">sms</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="price-plan">
-            <div class="precio">
-              <p><img src="assets/galleta-02.png" alt=""></p>
-              <p class="black">$ 1000.00</p>
-              <p class="days">Para 30 días</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- <div class="slideshow-container-telefonia">
-      <div class="mySlides3">
-
-      </div>
-
-      <div class="mySlides3">
-
-      </div>
-
-      <div class="mySlides3">
-
-      </div> -->
-
-  <!-- <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a> -->
-
-
-  </div>
-  <!-- TERMINA MODULO 5 -->
-
-
-
-  <!-- EMPIEZA MODULO 6 -->
-  <div class="telephone-module-2" id="telefonia-module-6">
-    <div class="content">
-      <h1><img src="assets/recarga.png" alt=""> RECARGA TU TELEFONÍA</h1>
-      <p class="general">Lo mejor de todo: ¡recarga desde la app ganando dinero extra! <br>
-        O en puntos de recarga sin costo.</p>
-    </div>
-    <div class="general-icons-desktop">
-      <div class="products" id="mobile">
-        <img src="assets/miio.png" alt="">
-      </div>
-      <div class="products" id="mobile">
-        <img src="assets/farmacias-ahorro.png" alt="">
-      </div>
-      <div class="products" id="mobile">
-        <img src="assets/7-eleven.png" alt="">
-      </div>
     </div>
   </div>
+  <!-- TERMINA CONTENIDO -->
 
-
-
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="assets/miio.png" alt=""></div>
-      <div class="swiper-slide"> <img src="assets/farmacias-ahorro.png" alt=""></div>
-      <div class="swiper-slide"> <img src="assets/7-eleven.png" alt=""></div>
-
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- TERMINA MODULO 6 -->
-
-
-
-  <!-- EMPIEZA MODULO 7 -->
-  <div class="telephone-module-7">
-    <div id="dudas-text">
-      <p class="general">¿Tienes dudas? <br>
-        Ingresa a nuestra sección de <a href="preguntas.html" target="_blank" rel="noopener noreferrer"><span>Preguntas frecuentes</span></a></p>
-    </div>
-    <div id="dudas-image">
-      <img src="img/dudas-telefonia.png" alt="">
-    </div>
-    <div id="dudas-image-mobile">
-      <img src="assets/dudas-01.png" alt="">
-    </div>
-  </div>
-  <!-- TERMINA MODULO 7 -->
-
-
-  <!-- EMPIEZA MODULO 8 -->
-
-  <div class="telephone-module-8">
-    <div id="smartphones">
-      <img src="img/descarga-telefonia.png" alt="">
-    </div>
-
-    <div id="smart-logo">
-      <img src="assets/miio-iconos-03.png" alt="">
-    </div>
-
-    <div id="text-center-footer">
-      <h2>DESCARGA LA APP</h2>
-      <h3>Y comienza a ganar </h3>
-      <p class="general">¡No somos banco, Miio es la comunidad que lo tiene todo!</p>
-    </div>
-
-    <div class="" id="icons">
-      <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
-        <div id="apple"><img src="assets/apple-store.png" alt="Apple"></img>
-      </a></div>
-    <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
-      <div id="android"><img src="assets/play-store.png" alt="Android"></img>
-    </a>
-  </div>
-  </div>
-  </div>
-
-  <!-- empieza modulo 8.5 -->
-  <div class="telephone-module-8-mobile">
-
-
-    <div id="text-center-footer">
-      <img src="assets/miio-iconos-03.png" alt="">
-      <h2>DESCARGA LA APP</h2>
-    </div>
-    <div id="smartphones">
-      <img src="img/descarga-telefonia.png" alt="">
-      <h3>Y comienza a ganar </h3>
-    </div>
-
-  </div>
-
-  <div class="icons-mobile-center" id="icons-mobile-center">
-    <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer">
-      <div id="apple"><img src="assets/apple-store.png" alt="Apple"></img>
-    </a></div>
-  <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer">
-    <div id="android"><img src="assets/play-store.png" alt="Android"></img>
-  </a>
-  </div>
-  </div>
-  <!-- termina modulo 8 -->
   <!-- FOOTER -->
-  <footer>
-
-
-    <div class="footer-about">
-      <div class="footer-column">
-        <img id="logo-white" src="assets/logo-MIIO.png" alt="">
-        <p>Oficinas: Iglesia No. 2. Edificio E. <br>
-          Piso 13 Col. Tizapán <br>
-          San Angel. CP. 01090 CDMX</p>
-      </div>
-      <div class="footer-column">
-        <dl>
-          <dt><a href="index.html" rel="noopener noreferrer">Home</a></dt>
-          <dt><a href="about.html" rel="noopener noreferrer">¿Qué es Miio?</a></dt>
-          <dt>Beneficios</dt>
-          <dd><a id="submenu-footer" href="dinero.html" rel="noopener noreferrer">Dinero</a></dd>
-          <dd><a id="submenu-footer" href="ganancias.html" rel="noopener noreferrer">Ganancias</a></dd>
-          <dd><a id="submenu-footer" href="telefonia.html" rel="noopener noreferrer">Telefonía</a></dd>
-          <dt><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>
-        </dl>
-      </div>
-
-      <div class="footer-column">
-        <p><a href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
-          <a href="contacto.html" rel="noopener noreferrer">Contacto</a>
-          <a href="preguntas.html" rel="noopener noreferrer">Preguntas frecuentes</a>
-          <a href="legal.html" rel="noopener noreferrer">Legal</a>
-      </div>
-      <div class="footer-column">
-        <p id="subcribe-text">Suscríbete a nuestro newsletter</p>
-        <!-- EMPIEZA FORMULARIO NEWSLATTER -->
-        <form id="newslatter" action="https://miio.us18.list-manage.com/subscribe/post" method="POST">
-          <input type="hidden" name="u" value="1dde760baa387ec40ebb3a8b3">
-          <input type="hidden" name="id" value="79f76fc945">
-
-          <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
-          <input id="button-submit" type="submit" class="formEmailButton" name="submit" value=">">
-
-          <input type="hidden" name="ht" value="58ec1f35566d6aae1b5fcdc8ffdf120ed33d6769:MTU1MzcyNDA1NC4xMTEx">
-          <input type="hidden" name="mc_signupsource" value="hosted">
-        </form>
-        <!-- TERMINA FORMULARIO NEWSLATTER -->
-
-        <div class="social" id="social-mobile">
-          <p id="Siguenos">Siguenos en: </p>
-          <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
-          <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
-          <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-TW.png" alt="Twitter"></a>
-          <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-IG.png" alt="Instagram"></a>
+  <footer class="bg-dark-miio">
+    <div class="container">
+      <div class="row align-items-center text-white-50 py-5 font-size-14">
+        <div class="col-4"><img src="assets/logo-MIIO.png" alt="">
+          <p>Iglesia No. 2 | Edificio E Piso 13 | Col. Tizapán <br>
+            San Ángel | CP. 01090 | CDMX</p>
+        </div>
+        <div class="col">
+          <dl>
+            <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.mx/">Miio</a></dt>
+            <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="telefonia.html">Telefonía</a></dt>
+            <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="dinero.html">Cuenta financiera</a></dt>
+            <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="ganancias.html">Ganancias</a></dt>
+            <dt class="font-weight-lighter"><a class="text-footer" href="conocenos.html">Somos Miio</a></dt>
+          </dl>
+        </div>
+        <div class="col">
+          <dl>
+            <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>
+            <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a></dt>
+            <dt class="font-weight-lighter"><a class="text-footer" href="contacto.html">Contacto</a></dt>
+            <dt class="font-weight-lighter"><a class="text-footer" href="preguntas.html">Preguntas frecuentes</a></dt>
+            <dt class="font-weight-lighter"><a class="text-footer" href="legal.html">Legal</a></dt>
+          </dl>
+        </div>
+        <div class="col">
+          <div class="row">
+            <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/facebook.png" alt=""></a>
+            <a href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/linkedin.png" alt=""></a>
+            <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/twitter.png" alt=""></a>
+            <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/Group 3.png" alt=""></a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="container-fluid bg-dark-miio-right text-center text-white-50 pt-4 px-5">
+      <p class="small px-5">La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural, S.A. de C.V., Sociedad
+        Financiera Popular, ésta
+        última autorizada para operar y supervisada por la Comisión Nacional Bancaria y de Valores. MIIO es una aplicación para smartphones mediante la cual se pueden administrar las tarjetas bajo la marca "MIIO". King David Mobile, S.A.P.I. de C.V.
+        no es un banco ni una entidad financiera.</p>
+      <hr class="hr">
+      <p class="pb-4 m-0 font-size-14">© 2019. Miio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- TERMINA FOOTER -->
 
-    <!-- Footer de bajo -->
-
-    <div class="footer-below">
 </body>
-<p>La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural, S.A. de C.V., Sociedad Financiera Popular, ésta última
-  autorizada para operar y supervisada por la Comisión Nacional Bancaria y de Valores. MIIO es una aplicación para smartphones mediante la cual se pueden administrar las tarjetas bajo la marca "MIIO". King David Mobile, S.A.P.I. de C.V. no es un
-  banco ni una entidad financiera.</p>
-<p>© 2019. Miio. Todos los derechos reservados.</p>
-</div>
-</footer>
-<!-- TERMINA FOOTER -->
-
-<!-- <script src="js/swar.js" charset="utf-8"></script> -->
-<script src="js/swiper.js" charset="utf-8"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="js/functions.js" charset="utf-8"></script>
+<script src="js/swiper.js" charset="utf-8"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -1126,19 +465,26 @@
 
   gtag('config', 'UA-123153296-1');
 </script>
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-</script>
 <!-- Start of miio2018 Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af"> </script>
 <!-- End of miio2018 Zendesk Widget script -->
 
+<script async>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
 </html>
