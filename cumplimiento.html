@@ -6,95 +6,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
   <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-   gtag('config', 'UA-123153296-1');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-123153296-1');
   </script>
   <title>Cumplimiento</title>
 </head>
 
 <body class="without-spacing-footer">
   <!-- Empieza Header -->
-  <header>
-    <!-- Menu mobil -->
-    <div id="show" class="container">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-
-    <div id="mySidenav" class="sidenav">
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <a class="text-menu" href="about.html" rel="noopener noreferrer">¿Qué es MIIO?</a>
-      <a class="text-menu" href="">Beneficios</a>
-      <li class="submenu-mobile"><a href="dinero.html" rel="noopener noreferrer">Dinero</a></li>
-      <li class="submenu-mobile"><a href="ganancias.html" rel="noopener noreferrer">Ganancias</a></li>
-      <li class="submenu-mobile"><a href="telefonia.html" rel="noopener noreferrer">Telefonía</a></li>
-      <a class="text-menu" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a>
-      <a class="text-menu" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
-      <a class="text-menu" href="contacto.html" rel="noopener noreferrer">Contacto</a>
-      <a class="text-menu" href="preguntas.html" rel="noopener noreferrer">Preguntas Frecuentes</a>
-      <a class="fondo" href="legal.html" rel="noopener noreferrer">Legal</a>
-      <div class="social" id="social-mobile-menu">
-        <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
-        <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
-        <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-TW.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-IG.png" alt="Instagram"></a>
+  <header class="col fixed-top p-0 text-dark-miio">
+    <nav class="row align-items-center bg-white d-none d-lg-flex">
+      <div class="col-md-4">
+        <a class="row col align-items-center text-decoration-none" href="https://miio.mx/">
+          <img class="mx-4" src="assets/logo-MIIO-negro.png" alt="Miio">
+          <p class="m-0 slogan text-dark-miio d-none d-lg-block">MI<br>FUTURO<br>ES <b>Miio</b></p>
+        </a>
       </div>
-    </div>
+      <div class="col-md-8 p-0 d-none d-lg-block">
+        <div class="col row align-items-center justify-content-end mt-2">
+          <!-- <p class="mt-0 mb-0">Siguenos en:</p> -->
+          <a class="m-1" href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/facebook.png" alt="Facebook"></a></a>
+          <a class="m-1" href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/linkedin.png" alt="LinkedIn"></a>
+          <a class="m-1" href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/twitter.png" alt="Twitter"></a>
+          <a class="m-1" href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/Group 3.png" alt="Instagram"></a>
+        </div>
+        <div class="col">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="telefonia.html">Telefonía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-0" href=""><b class="color-text-miio">·</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="dinero.html">Cuenta Financiera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-0" href=""><b class="color-text-miio">·</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="ganancias.html">Ganancias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-0" href=""><b class="color-text-miio">·</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="conocenos.html">Somos Miio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark px-0" href=""><b class="color-text-miio">·</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Menu mobil -->
+    <nav class="row fixed-top navbar bg-white d-flex d-lg-none m-0">
+      <div class="col">
+        <button class="navbar-toggler color-text-miio" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""><img src="assets/menu-hamburguesa.png" alt=""></span>
+        </button>
+      </div>
+      <div class="col text-center">
+        <a class="" href="https://miio.mx/">
+          <img class="" src="assets/logo-MIIO-negro.png" alt="Miio">
+        </a></div>
+      <div class="col">
 
-    <!-- termina menu mobil -->
-    <div class="social">
-      <p id="Siguenos">Siguenos en: </p>
-      <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
-      <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
-      <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-TW.png" alt="Twitter"></a>
-      <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-IG.png" alt="Instagram"></a>
-    </div>
-
-    <div class="logo-menu">
-      <a href="index.html">
-        <p><img id="logo" src="assets/logo-MIIO-negro.png" alt="Miio"></p>
-      </a>
-      <h5 id="slogan"><a href="index.html">La app donde puedes<br>tenerlo todo.</a></h5>
-
-
-      <nav class="menu">
-        <ul>
-          <li><a class="text-menu" href="about.html" rel="noopener noreferrer">¿Qué es MIIO?</a></li>
-          <!-- <li><a class="point">·</a></li> -->
-          <li><a class="text-menu" href="" rel="noopener noreferrer">Beneficios</a>
-            <ul class="submenu">
-              <li class="submenu"><a href="dinero.html" rel="noopener noreferrer">Dinero</a></li>
-              <li class="submenu"><a href="ganancias.html" rel="noopener noreferrer">Ganancias</a></li>
-              <li class="submenu"><a href="telefonia.html" rel="noopener noreferrer">Telefonía</a></li>
-            </ul>
+      </div>
+      <div class="col collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="telefonia.html">Telefonía</a>
           </li>
-          <!-- <li><a class="point">·<a></li> -->
-          <li><a class="text-menu" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></li>
-          <!-- <li><a class="point">·</a></li> -->
-          <li><a class="text-menu" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a></li>
-          <!-- <li><a class="point">·</a></li> -->
-          <li id="ultimate-li"><a class="contacto" href="contacto.html" rel="noopener noreferrer">Contacto</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="dinero.html">Cuenta Financiera</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="ganancias.html">Ganancias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="conocenos.html">Somos Miio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contacto.html">Contacto</a>
+          </li>
         </ul>
-      </nav>
-    </div>
-    <div id="store-icons">
+        <div class="col-12 text-center">
+          <a class="m-1" href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/facebook.png" alt="Facebook"></a></a>
+          <a class="m-1" href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/linkedin.png" alt="LinkedIn"></a>
+          <a class="m-1" href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/twitter.png" alt="Twitter"></a>
+          <a class="m-1" href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/Group 3.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </nav>
+    <!-- ////////////ICONOS FLOTANTES////////////////// -->
+    <div class="float-right mt-4 mr-4 d-none d-md-block">
       <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer"><img src="assets/apple-fixed.png" alt="Apple" class="small-icon"></a>
       <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer"><img src="assets/playstore-fixed.png" alt="Android" class="small-icon"></a>
     </div>
   </header>
   <!-- Termina Header -->
-
 
 
   <div class="title" id="">
@@ -111,7 +143,9 @@
                 <div>
                   <p class="general"><strong>ACEPTACIÓN</strong> <br />
                     <br />
-                    El Usuario de Tarjeta Recargable en este acto se adhiere y obliga a todos y cada uno de los términos y condiciones aquí consignados, sin excepción alguna, respecto del servicio prestado por Servicios KIN DAVID MOBILE S.A.P.I. DE C.V. (en adelante &ldquo;MIIO&rdquo;) al Usuario de Tarjeta Recargable (en adelante el &ldquo;Usuario de Tarjeta Recargable&rdquo;) en relación con la tarjeta física y/o virtual (en adelante indistintamente, la &ldquo;Tarjeta&rdquo;).<br />
+                    El Usuario de Tarjeta Recargable en este acto se adhiere y obliga a todos y cada uno de los términos y condiciones aquí consignados, sin excepción alguna, respecto del servicio prestado por Servicios KIN DAVID MOBILE S.A.P.I. DE
+                    C.V. (en adelante &ldquo;MIIO&rdquo;) al Usuario de Tarjeta Recargable (en adelante el &ldquo;Usuario de Tarjeta Recargable&rdquo;) en relación con la tarjeta física y/o virtual (en adelante indistintamente, la
+                    &ldquo;Tarjeta&rdquo;).<br />
                     <br />
                     <strong>ACTIVACIÓN Y USO</strong><br />
                     <br />
@@ -119,14 +153,16 @@
                     <br />
                     <strong>Uso de la Tarjeta</strong><br />
                     <br />
-                    MIIO no será responsable del mal uso de la Tarjeta por parte del Usuario de Tarjeta Recargable o de terceros, incluso si se ha hecho un mal uso con anterioridad al reporte de pérdida de la Tarjeta. Adicionalmente, en ningún caso MIIO será responsable de los daños y perjuicios que se le causen al Usuario de Tarjeta Recargable, salvo que dichos daños y perjuicios sean consecuencia del dolo, la mala fe o la negligencia inexcusable de MIIO.<br />
+                    MIIO no será responsable del mal uso de la Tarjeta por parte del Usuario de Tarjeta Recargable o de terceros, incluso si se ha hecho un mal uso con anterioridad al reporte de pérdida de la Tarjeta. Adicionalmente, en ningún caso
+                    MIIO será responsable de los daños y perjuicios que se le causen al Usuario de Tarjeta Recargable, salvo que dichos daños y perjuicios sean consecuencia del dolo, la mala fe o la negligencia inexcusable de MIIO.<br />
                     <br />
                     <strong>COMPRA</strong><br />
                     con la que puedes realizar compras en internet y en los más de 20 millones de establecimientos que aceptan tarjetas Mastercard.<br />
                     <br />
                     <strong>AFILIACIÓN</strong> <br />
                     <br />
-                    Para que el Usuario tenga acceso a ciertos servicios, deberá de ampliar la información y documentación que haya proporcionado y se convertirá en un Usuario de segundo nivel. El usuario será el único responsable de adquirir todas las autorizaciones/aprobaciones necesarias relacionadas con su actividad en la Plataforma.<br />
+                    Para que el Usuario tenga acceso a ciertos servicios, deberá de ampliar la información y documentación que haya proporcionado y se convertirá en un Usuario de segundo nivel. El usuario será el único responsable de adquirir todas
+                    las autorizaciones/aprobaciones necesarias relacionadas con su actividad en la Plataforma.<br />
                     <br />
                     <strong>Comisiones</strong><br />
                     <br />
@@ -137,13 +173,20 @@
                     <br />
                     <strong>REGISTRO Y CREACIÓN DEL PERFIL; SEGURIDAD DEL SITIO</strong><br />
                     <br />
-                    Con el fin de que el usuario pueda acceder a ciertas características de la Plataforma, se le solicitará afiliación de la misma y proporcionará la información de perfil y de contacto. Asimismo, deberá proporcionar información veraz, precisa y actual, bajo pena de incurrir en responsabilidad penal. Es importante recordar que hacerse pasar por otra persona o entidad o falsear la identidad o afiliación con cualquier persona o entidad, incluyendo el uso de nombre de usuario de otra persona, contraseña u otra información de la cuenta o el nombre, imagen, voz, o fotografía de otra persona, puede significar la comisión de un delito. En caso de existir razones suficientes para sospechar que la información proporcionada no es propia, correcta, actual o completa, es posible que, entre otras acciones, deneguemos el acceso a la Plataforma o de cualquiera de sus recursos sin previo aviso.<br />
+                    Con el fin de que el usuario pueda acceder a ciertas características de la Plataforma, se le solicitará afiliación de la misma y proporcionará la información de perfil y de contacto. Asimismo, deberá proporcionar información
+                    veraz, precisa y actual, bajo pena de incurrir en responsabilidad penal. Es importante recordar que hacerse pasar por otra persona o entidad o falsear la identidad o afiliación con cualquier persona o entidad, incluyendo el uso de
+                    nombre de usuario de otra persona, contraseña u otra información de la cuenta o el nombre, imagen, voz, o fotografía de otra persona, puede significar la comisión de un delito. En caso de existir razones suficientes para sospechar
+                    que la información proporcionada no es propia, correcta, actual o completa, es posible que, entre otras acciones, deneguemos el acceso a la Plataforma o de cualquiera de sus recursos sin previo aviso.<br />
                     <br />
-                    Para cualquier aclaración o reporte de mal funcionamiento ponemos a su disposición nuestra línea de atención al cliente 01-800-444-4652 Opción 8, en un horario de lunes a viernes de 8:00 a 18:00 horas, nuestro chat de ayuda con acceso directo desde tu APP MIIO y el correo electrónico hola@miio.com.mx las 24 horas del día, los 365 días del año.<br />
+                    Para cualquier aclaración o reporte de mal funcionamiento ponemos a su disposición nuestra línea de atención al cliente 01-800-953-0319 Opción 2, Horarios de atención de Lunes a Domingo de 8am a 11pm en Call Center, nuestro chat
+                    de ayuda con acceso directo desde tu En App Miio y pagina WEB al correo electrónico <a class="color-text-miio" href="mailto:hola@miio.mx?subject=cumplimiento">hola@miio.mx</a> las 24 horas del día, los 365 días del año.<br />
                     <br />
                     <strong>Cancelación por robo o extravío</strong><br />
                     <br />
-                    En caso de deterioro, pérdida, robo o clonación de la tarjeta física el Usuario de Tarjeta Recargable deberá dar el aviso a través de las líneas telefónicas a su disposición. Una vez reportado, se asignará un número de referencia. En todo caso los cargos ya realizados y todos los autorizados por el Usuario de Tarjeta Recargable serán válidos. Bajo ninguna circunstancia, MIIO será responsable de los cargos hechos con anterioridad al reporte de robo, aun cuando dichos cargos se hayan realizado por el tercero que haya cometido el delito. El Usuario de Tarjeta Recargable, podrá bloquear el uso de su Tarjeta a través de la Plataforma para evitar lo estipulado en el párrafo anterior, en el entendido que eso no lo exime de la obligación de dar el aviso correspondiente vía telefónica.<br />
+                    En caso de deterioro, pérdida, robo o clonación de la tarjeta física el Usuario de Tarjeta Recargable deberá dar el aviso a través de las líneas telefónicas a su disposición. Una vez reportado, se asignará un número de referencia.
+                    En todo caso los cargos ya realizados y todos los autorizados por el Usuario de Tarjeta Recargable serán válidos. Bajo ninguna circunstancia, MIIO será responsable de los cargos hechos con anterioridad al reporte de robo, aun
+                    cuando dichos cargos se hayan realizado por el tercero que haya cometido el delito. El Usuario de Tarjeta Recargable, podrá bloquear el uso de su Tarjeta a través de la Plataforma para evitar lo estipulado en el párrafo anterior,
+                    en el entendido que eso no lo exime de la obligación de dar el aviso correspondiente vía telefónica.<br />
                     <br />
                     <strong>Cancelación de la Tarjeta</strong><br />
                     <br />
@@ -154,16 +197,32 @@
                     <strong>Mecanismos para consulta de Saldo Tarjeta Recargable Miio:</strong><br />
                     <br />
                     1) En tu APP Miio disponible Android y IOS<br />
-                    2) Marcando al 01-800-444-4652 Opción 8, te atenderá nuestro ejecutivo para la validación de identidad y comunicación de saldos.<br />
+                    2) Marcando al 01-800-953-0319 Opción 8, te atenderá nuestro ejecutivo para la validación de identidad y comunicación de saldos.<br />
                     <br />
                     <strong>Para obtener la devolución de los recursos en caso de cancelación o termino de vigencia de la tarjeta:</strong><br />
-                    1) Comunícate al 01-800-444-4652 Opción 8, te atenderá nuestro ejecutivo para la validación de identidad.<br />
+                    1) Comunícate al 01-800-953-0319 Opción 8, te atenderá nuestro ejecutivo para la validación de identidad.<br />
                     2) Te solicitará confirmación de datos de contacto: e-mail y número celular.<br />
                     3) Recibirás por correo electrónico el historial de movimientos con el saldo a devolver.<br />
                     4) Deberás enviar vía e-mail a soporte@miio.com.mx la confirmación de aceptación de saldo y la cuenta CLABE destino para la transacción de la devolución.<br />
                     5) Recibirás de nuestro equipo la confirmación de recepción en 24 horas.<br />
                     6) Recibirás en 48 horas la confirmación de devolución del saldo.<br />
-                    En cualquier momento puedes contactarnos al 01-800-444-4652 Opción 8 para cualquier duda.</p>
+                    En cualquier momento puedes contactarnos al 01-800-953-0319 Opción 8 para cualquier duda. <br><br>
+
+                    <strong>Las Indicaciones para Portabilidad son:</strong>
+                    <br><br>
+                    <b>Para realizar tu portabilidad necesitas información muy sencilla como:</b>
+                    <br><br>
+                    -Nombre completo <br>
+                    -Dirección y Comprobante de Domicilio <br>
+                    -Número a portar y compañía del mismo <br>
+                    -NIP de portabilidad ( Para conseguir tu NIP de portabilidad es necesario mandar un SMS al 051 con la palabra NIP o realizar una llamada igualmente al 051 y ahí te indicaran tu NIP y con eso podrás realizar tu portabilidad) <br>
+                    -Número de contacto <br>
+                    -Fecha de nacimiento o CURP <br>
+                    -Correo
+                    <br>
+                    <br>
+                    Una vez que solicitas tu portabilidad por email a <a class="color-text-miio" href="mailto:hola@miio.mx?subject=cumplimiento">hola@miio.mx</a> con los datos antes mencionados, en 24 horas podrás disfrutar de los beneficios de la telefonía MIIO
+                  </p>
                 </div>
               </div>
             </div>
@@ -239,87 +298,64 @@
   </div>
   </div>
   <!-- termina modulo 8 -->
-
-
   <!-- FOOTER -->
-  <footer>
+  <footer class="container-fluid bg-dark-miio p-0">
 
-
-    <div class="footer-about">
-      <div class="footer-column">
-        <img id="logo-white" src="assets/logo-MIIO.png" alt="">
-        <p>Oficinas: Iglesia No. 2. Edificio E. <br>
-          Piso 13 Col. Tizapán <br>
-          San Angel. CP. 01090 CDMX</p>
+    <div class="row align-items-center text-white-50 py-5 font-size-14 m-0">
+      <div class="col-12 col-md-4">
+        <img src="assets/logo-MIIO.png" alt="">
+        <p>Iglesia No. 2 | Edificio E Piso 13 | Col. Tizapán <br>
+          San Ángel | CP. 01090 | CDMX</p>
       </div>
-      <div class="footer-column">
-          <dl>
-            <dt><a href="index.html" rel="noopener noreferrer">Home</a></dt>
-            <dt><a href="about.html" rel="noopener noreferrer">¿Qué es Miio?</a></dt>
-            <dt>Beneficios</dt>
-            <dd><a id="submenu-footer" href="dinero.html" rel="noopener noreferrer">Dinero</a></dd>
-            <dd><a id="submenu-footer" href="ganancias.html" rel="noopener noreferrer">Ganancias</a></dd>
-            <dd><a id="submenu-footer" href="telefonia.html" rel="noopener noreferrer">Telefonía</a></dd>
-            <dt><a href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>
-          </dl>
+      <div class="col-12 col-md">
+        <dl>
+          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.mx/">Miio</a></dt>
+          <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="telefonia.html">Telefonía</a></dt>
+          <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="dinero.html">Cuenta financiera</a></dt>
+          <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="ganancias.html">Ganancias</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="conocenos.html">Somos Miio</a></dt>
+        </dl>
       </div>
-
-      <div class="footer-column">
-        <p><a href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
-          <a href="contacto.html" rel="noopener noreferrer">Contacto</a>
-          <a href="preguntas.html" rel="noopener noreferrer">Preguntas frecuentes</a>
-          <a href="legal.html" rel="noopener noreferrer">Legal</a>
+      <div class="col-12 col-md">
+        <dl>
+          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="contacto.html">Contacto</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="preguntas.html">Preguntas frecuentes</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="legal.html">Legal</a></dt>
+        </dl>
       </div>
-      <div class="footer-column">
-        <p id="subcribe-text">Suscríbete a nuestro newsletter</p>
-        <!-- EMPIEZA FORMULARIO NEWSLATTER -->
-        <form id="newslatter" action="https://miio.us18.list-manage.com/subscribe/post" method="POST">
-          <input type="hidden" name="u" value="1dde760baa387ec40ebb3a8b3">
-          <input type="hidden" name="id" value="79f76fc945">
-
-          <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
-          <input id="button-submit" type="submit" class="formEmailButton" name="submit" value=">">
-
-          <input type="hidden" name="ht" value="58ec1f35566d6aae1b5fcdc8ffdf120ed33d6769:MTU1MzcyNDA1NC4xMTEx">
-          <input type="hidden" name="mc_signupsource" value="hosted">
-        </form>
-        <!-- TERMINA FORMULARIO NEWSLATTER -->
-
-        <div class="social" id="social-mobile">
-          <p id="Siguenos">Siguenos en: </p>
-          <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
-          <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
-          <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-TW.png" alt="Twitter"></a>
-          <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-IG.png" alt="Instagram"></a>
+      <div class="col-12 col-md">
+        <div class="row justify-content-center">
+          <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/facebook.png" alt=""></a>
+          <a href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/linkedin.png" alt=""></a>
+          <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/twitter.png" alt=""></a>
+          <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/Group 3.png" alt=""></a>
         </div>
       </div>
     </div>
-
-    <!-- Footer de bajo -->
-
-    <div class="footer-below">
+    <div class="container-fluid bg-gris-miio text-center text-white-50 pt-4 px-md-5">
+      <p class="small px-md-5 text-left text-md-center">La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural,
+        S.A. de C.V., Sociedad
+        Financiera Popular, ésta
+        última autorizada para operar y supervisada por la Comisión Nacional Bancaria y de Valores. MIIO es una aplicación para smartphones mediante la cual se pueden administrar las tarjetas bajo la marca "MIIO". King David Mobile, S.A.P.I. de C.V.
+        no es un banco ni una entidad financiera.</p>
+      <hr class="hr">
+      <p class="pb-4 m-0 font-size-14">© 2019. Miio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- TERMINA FOOTER -->
 </body>
-<p>La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural, S.A. de C.V., Sociedad Financiera Popular, ésta última
-  autorizada para operar y supervisada por la Comisión Nacional Bancaria y de Valores. MIIO es una aplicación para smartphones mediante la cual se pueden administrar las tarjetas bajo la marca "MIIO". King David Mobile, S.A.P.I. de C.V. no es un
-  banco ni una entidad financiera.</p>
-<p>© 2019. Miio. Todos los derechos reservados.</p>
-</div>
-</footer>
-<!-- TERMINA FOOTER -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 <script src="js/swiper.js" charset="utf-8"></script>
 <script src="js/functions.js" charset="utf-8"></script>
-Jesús Ismael Ramírez Ledesma <ismael@miio.mx>
-
-vie., 25 ene. 12:11
-
-para mí, Israel, America
-
-Traducir mensaje
-Desactivar para: inglés
-Comparto
 
 <!-- Start of miio2018 Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af"> </script>
 <!-- End of miio2018 Zendesk Widget script -->
+
 </html>

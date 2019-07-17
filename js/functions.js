@@ -45,14 +45,14 @@ $(document).ready(function() {
     enviar()
   });
 
-  $("#show").click(function() {
-    let width = $("#mySidenav").width()
-    let total = (width > 0) ? 0 : 250
-    $("#show").toggleClass("change");
-    $("#mySidenav").animate({
-      width: total.toString() + "px"
-    }, "fast");
-  });
+  // $("#show").click(function() {
+  //   let width = $("#mySidenav").width()
+  //   let total = (width > 0) ? 0 : 250
+  //   $("#show").toggleClass("change");
+  //   $("#mySidenav").animate({
+  //     width: total.toString() + "px"
+  //   }, "fast");
+  // });
 
 
   var acc = document.getElementsByClassName("accordion");
@@ -69,6 +69,13 @@ $(document).ready(function() {
       }
     });
   }
+
+  $("#vermas, #vermas-1").click(function() {
+   $('html, body').animate({
+   scrollTop: $("#section").offset().top + (-80)
+ }, 1000);
+  });
+
 
 
 

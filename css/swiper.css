@@ -222,7 +222,7 @@
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 0px;
   left: 0;
   width: 100%;
 }
@@ -268,8 +268,8 @@
   transform: scale(0.33);
 }
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   border-radius: 100%;
   background: #000;
@@ -290,7 +290,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #007aff;
+  background: #934BA4;
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 10px;

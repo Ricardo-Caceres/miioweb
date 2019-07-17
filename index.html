@@ -3,11 +3,12 @@
 
 <head>
   <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#993CBA">
+  <meta name="theme-color" content="#934BA4">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Una sola App: telefonía celular, cuenta financiera digital, tarjeta MasterCard, envía y recibe dinero y paga tus servicios de forma fácil y segura. ¡Descárgala!">
   <meta name="robots" content="index">
+  <meta http-equiv="refresh" content="300">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/master.css" media="all">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,15 +22,15 @@
 <body>
   <!-- Empieza Header -->
   <header class="col fixed-top p-0 text-dark-miio">
-    <div class="row align-items-center bg-white">
-      <div class="col-md-4 col-12">
+    <nav class="row align-items-center bg-white d-none d-lg-flex shadow-bottom">
+      <div class="col-md-4">
         <a class="row col align-items-center text-decoration-none" href="https://miio.mx/">
           <img class="mx-4" src="assets/logo-MIIO-negro.png" alt="Miio">
-          <p class="m-0 slogan text-dark-miio">MI<br>FUTURO<br>ES <b>Miio</b></p>
+          <p class="m-0 slogan text-dark-miio d-none d-lg-block">MI<br>FUTURO<br>ES <b>Miio</b></p>
         </a>
       </div>
-      <div class="col-md-8 col-12 p-0">
-        <div class="col row align-items-center justify-content-end my-2">
+      <div class="col-md-8 p-0 d-none d-lg-block">
+        <div class="col row align-items-center justify-content-end mt-2">
           <!-- <p class="mt-0 mb-0">Siguenos en:</p> -->
           <a class="m-1" href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/facebook.png" alt="Facebook"></a></a>
           <a class="m-1" href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/linkedin.png" alt="LinkedIn"></a>
@@ -68,45 +69,53 @@
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
     <!-- Menu mobil -->
-
-    <div id="show" class="container">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-
-    <div id="mySidenav" class="sidenav d-none">
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-      <a class="text-menu" href="conocenos.html" rel="noopener noreferrer">¿Qué es MIIO?</a>
-      <a class="text-menu" href="">Beneficios</a>
-      <li class="submenu-mobile"><a href="dinero.html" rel="noopener noreferrer">Dinero</a></li>
-      <li class="submenu-mobile"><a href="ganancias.html" rel="noopener noreferrer">Ganancias</a></li>
-      <li class="submenu-mobile"><a href="telefonia.html" rel="noopener noreferrer">Telefonía</a></li>
-      <a class="text-menu" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a>
-      <a class="text-menu" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
-      <a class="text-menu" href="contacto.html" rel="noopener noreferrer">Contacto</a>
-      <a class="text-menu" href="preguntas.html" rel="noopener noreferrer">Preguntas Frecuentes</a>
-      <a class="fondo" href="legal.html" rel="noopener noreferrer">Legal</a>
-      <div class="social" id="social-mobile-menu">
-        <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
-        <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
-        <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-TW.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-IG.png" alt="Instagram"></a>
+    <nav class="row fixed-top navbar bg-white d-flex d-lg-none m-0 shadow-bottom">
+      <div class="col">
+        <button class="navbar-toggler color-text-miio" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""><img src="assets/menu-hamburguesa.png" alt=""></span>
+        </button>
       </div>
-    </div>
+      <div class="col text-center">
+        <a class="" href="https://miio.mx/">
+          <img class="" src="assets/logo-MIIO-negro.png" alt="Miio">
+        </a></div>
+      <div class="col">
 
-    <!-- termina menu mobil -->
-    <div class="social d-none">
-      <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-FB.png" alt="Facebook"></a></a>
-      <a href="https://www.youtube.com/channel/UCh9TCv_4Ktxc15sVNEHTNUQ" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/YT-icon.png" alt="Youtube"></a>
-      <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-TW.png" alt="Twitter"></a>
-      <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/icon-IG.png" alt="Instagram"></a>
-    </div>
+      </div>
+      <div class="col collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="telefonia.html">Telefonía</a>
+          </li>
 
-    </div>
-    <div class="float-right m-4">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="dinero.html">Cuenta Financiera</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="ganancias.html">Ganancias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="conocenos.html">Somos Miio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <div class="col-12 text-center">
+          <a class="m-1" href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/facebook.png" alt="Facebook"></a></a>
+          <a class="m-1" href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/linkedin.png" alt="LinkedIn"></a>
+          <a class="m-1" href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/twitter.png" alt="Twitter"></a>
+          <a class="m-1" href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="icons-size" src="assets/Group 3.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </nav>
+    <!-- ////////////ICONOS FLOTANTES////////////////// -->
+    <div class="float-right mt-4 mr-4 d-none d-md-block">
       <a href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8" target="_blank" rel="noopener noreferrer"><img src="assets/apple-fixed.png" alt="Apple" class="small-icon"></a>
       <a href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio" target="_blank" rel="noopener noreferrer"><img src="assets/playstore-fixed.png" alt="Android" class="small-icon"></a>
     </div>
@@ -114,179 +123,441 @@
   <!-- Termina Header -->
 
   <!-- EMPIEZA CONTENIDO -->
-  <div class="container-fluid mt-6 p-0">
-    <div id="hero-home" class="row m-0 mt-4">
-      <div class="col-md-6 col-12 p-0">
-        <img class="img" src="img/IMABAN1-04.png" alt="">
+  <div class="container-fluid mt-2 p-0">
+    <!-- /////////////////////Contenido 1 //////////////////////////////////// -->
+    <div id="hero-home" class="row m-0 mt-4 pt-5 d-none d-sm-flex justify-content-end">
+      <div class="col-12">
+        <div class="col"></div>
       </div>
-      <div class="col-md-6 col-12 m-auto pl-5 text-white text-justify align-self-center pt-4">
-        <u>
-          <h1 class="text-bold-alternative display-4">MI <br>
-          PLAN <br>
-          MÁS <br>
-          COMPLETO</h1>
-        </u>
-        <p class="col-6 p-0">Disfruta de megas, llamadas y SMS, una tarjeta
-          MasterCard y beneficios médicos. Todo esto en
-          un plan celular a precios accesibles.</p>
-        <div class="d-flex flex-row justify-content-between col-6 pr-0 align-items-center">
-          <a class="text-white" href=""><b><u>VER MÁS</u></b></a>
-          <a href=""><button type="button" id="radius-17" class="btn btn-outline-light">¡LO QUIERO YA!</button></a>
-        </div>
+      <div class="col col-md-6 text-white py-4">
+        <h1 class="text-bold-alternative display-4 text-left"><u>CREEMOS <br>
+            EN UN <br>
+            FUTURO <br>
+            MEJOR </u> ¿y tú? </h1>
+        <h4 class="col py-3">Miio, la app que te hace dueñ@ de tu futuro.</45>
+          <div class="row justify-content-center col py-3 align-items-center">
+            <a id="vermas" class="text-white font-size-14 px-3" href="#"><b><u>VER MÁS</u></b></a>
+            <a class="px-3" target="_blank" rel="noopener noreferrer" href="https://go.onelink.me/oEks/dd084188"><button type="button" id="radius-17" class="btn-2 btn-outline-light"><b>DESCARGA LA APP</b></button></a>
+          </div>
       </div>
     </div>
-    <div class="container-fluid bg-alternative text-dark-miio">
-      <h1 class="text-center text-dark-miio pt-5">CONOCE NUESTROS PLANES MIIO</h1>
-      <div class="row mx-4 align-item-center position-relative top">
-        <div class="col-3 text-center"><img src="assets/Group 14.png" alt=""></div>
-        <div class="col"></div>
-        <div class="col-3 text-center"><img src="assets/Group 15.png" alt=""></div>
-        <div class="col"></div>
-        <div class="col-3 text-center"><img src="assets/Group 22.png" alt=""></div>
+    <div id="hero-home-mobile" class="row m-0 mt-4 d-flex d-sm-none pt-5">
+
+      <div class=" col-12 col-lg-6 text-white align-self-center flex-nowrap">
+        <h1 class="text-bold-alternative display-4 text-left"><u>CREEMOS <br>
+            EN UN <br>
+            FUTURO <br>
+            MEJOR</u> ¿y tú? </h1>
+        <h4 class="col py-3">Miio, la app que te hace dueñ@ de tu futuro.</45>
+          <div class="row justify-content-center col py-3 align-items-center">
+            <a id="vermas-1" class="text-white font-size-14 px-3 my-2" href="#"><b><u>VER MÁS</u></b></a>
+            <a class="px-3" target="_blank" rel="noopener noreferrer" href="https://go.onelink.me/oEks/dd084188"><button type="button" id="radius-17" class="btn-2 btn-outline-light my-2"><b>DESCARGA LA APP</b></button></a>
+          </div>
       </div>
-      <div class="row mx-4 align-items-center pb-4 position-relative top-less">
-        <div class="col-3 bg-white rounded-radius pt-10 shadow">
-          <table class="col">
-            <thead>
-              <tr>
-                <th colspan="2">
-                  <h2 class="text-center color-text-telefonia">Telefonía</h2>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/icono megas.png" alt=""></td>
-                <td class=""><b>MEGAS</b></td>
-              </tr>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/minutosIcono-SMS.png" alt=""></td>
-                <td class="">MINUTOS</td>
-              </tr>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/Icono-SMS.png" alt=""></td>
-                <td class="">SMS</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col text-center"><img src="assets/Group 2.png" alt=""></div>
-        <div class="col-3 bg-white rounded-radius pt-10 shadow">
-          <table class="col">
-            <thead>
-              <tr>
-                <th colspan="2">
-                  <h2 class="text-center color-text-proteccion">Protección</h2>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/medico copy.png" alt=""></td>
-                <td class=""><b>MÉDICO</b></td>
-              </tr>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/emergency-ambulance.png" alt=""></td>
-                <td class="">AMBULANCIA</td>
-              </tr>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/siren.png" alt=""></td>
-                <td class="">EMERGENCIA</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col text-center"><img src="assets/Group 2.png" alt=""></div>
-        <div class="col-3 bg-white rounded-radius pt-10 shadow">
-          <table class="col">
-            <thead>
-              <tr>
-                <th colspan="2">
-                  <h2 class="text-center color-text-financiera">Cuenta <br> financiera</h2>
-                  <br>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/Tarjeta.png" alt=""></td>
-                <td class="">TARJETA <b>MASTERCARD</b></td>
-              </tr>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/creditos.png" alt=""></td>
-                <td class="">CRÉDITOS</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <h6 class="text-center text-dark-miio"><b>Nuestros servicios financieros digitales y de telefonía celular</b>
-        permiten que cada miembro <br> de nuestra comunidad mejore su bienestar personal y económico.
-      </h6>
-      <div class="row justify-content-center p-5">
-        <button type="button" class="btn btn-lg btn-outline-light mx-5 shadow">
-          <h3 class="color-text-miio m-0 px-5 py-2"><b>¡Ver planes!</b></h3>
-        </button>
-        <button type="button" class="btn btn-lg btn-outline-light mx-5 shadow">
-          <h3 class="color-text-miio m-0 px-5 py-2"><b>¡Lo quiero ya!</b></h3>
-        </button>
+
+      <div class="col-12 col-lg-6 p-0 align-self-end">
+        <img class="img" src="img/IMA_1 banner.png" alt="">
       </div>
     </div>
-    <div class="col">
-      <h1 class="text-center text-dark-miio pt-5">MI FUTURO ES BIENESTAR</h1>
-      <h6 class="text-center text-dark-miio">En Miio conectamos con un mundo de oportunidades que antes no teníamos acceso, de una <br> manera segura, simple, rápida y segura</h6>
-      <div class="row rounded-radius bg-warning m-4 my-5 shadow-sm">
-        <div class="col-md-2 col">
-          <div class="col position-alternative top-less">
-            <img src="assets/cruz.png" alt="">
+    <!-- /////////////////////Contenido 2 PLANES PARA UN FUTURO MEJOR //////////////////////////////////// -->
+    <div id="section" class="container-fluid text-dark-miio">
+      <h1 class="text-center text-dark-miio pt-5">PLANES PARA UN FUTURO MEJOR</h1>
+      <H4 class="text-center">¡Miio te da más!</H4>
+      <div class="row mx-md-4 align-items-center">
+        <div class="col-12 col-lg">
+          <div class="d-none d-md-flex row justify-content-center position-relative top">
+            <img src="assets/Group 14.png" alt="">
+          </div>
+          <div class="d-flex d-md-none row justify-content-center position-relative top">
+            <img src="assets/Group 14.png" alt="">
+            <h4 class="text-center text-plan-50 font-weight-normal align-self-end mb-4 ml-3">Telefonía</h4>
+          </div>
+          <div class="col bg-white rounded-radius pt-10 shadow position-relative top-less-6">
+            <table class="col p-0">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    <h4 class="text-center text-plan-50 font-weight-normal d-none d-md-block">Telefonía <br> Miio</h4>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right" src="assets/icono megas.png" alt=""></td>
+                  <td class="font-weight-bolder"><b>MEGAS</b></td>
+                </tr>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right pr-2" src="assets/minutos.png" alt=""></td>
+                  <td class="">MINUTOS</td>
+                </tr>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right" src="assets/Icono-SMS.png" alt=""></td>
+                  <td class="">SMS</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="text-center pb-2"><a class="text-plan-50" href="telefonia.html" target="_blank" rel="noopener noreferrer"><u>Y más</u></a></p>
           </div>
         </div>
-        <div class="col-md-3 col my-4 py-4">
-          <table class="col text-white">
-            <thead>
-              <tr>
-                <th colspan="2">
-                  <h1 class="text-left text-white font-weight-bold">GANANCIAS</h1>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/icono recargar.png" alt=""></td>
-                <td class="">RECARGAS</td>
-              </tr>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/icono pagar servicios.png" alt=""></td>
-                <td class="">ENVÍO DE <b>DINERO</b></td>
-              </tr>
-              <tr>
-                <td class="p-3"><img class="float-right" src="assets/icono compra.png" alt=""></td>
-                <td class="">COMPRA DE ENTRETENIMIENTO</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="col col-lg-1 text-center mt-md-5 pt-md-5">
+          <img src="assets/Group 2.png" alt="">
         </div>
-        <div class="col-sm-4 align-botton-flex"><img class="img" src="img/banners-05.png" alt=""></div>
-        <div class="col-sm-3 my-4 py-4">
-          <h2 class="text-white"><b><u>MI</u></b></h2>
-          <h2 class="text-white"><b><u>DINERO</u></b></h2>
-          <h2 class="text-white"><b><u>SE</u></b></h2>
-          <h2 class="text-white"><b><u>MULTIPLICA</u></b></h2>
+        <div class="col-12 col-lg">
+          <div class="d-none d-md-flex col justify-content-center position-relative top">
+            <img src="assets/Tarjeta MC.png" alt="">
+          </div>
+          <div class="d-flex d-md-none row justify-content-center position-relative top">
+            <img src="assets/Tarjeta MC.png" alt="">
+            <h4 class="text-center color-text-miio font-weight-normal align-self-end mb-4 ml-3">Tarjeta <br> Miio MasterCard</h4>
+          </div>
+          <div class="col bg-white rounded-radius pt-10 shadow px-0 position-relative top-less-6">
+            <table class="col p-0">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    <h4 class="text-center color-text-miio font-weight-normal d-none d-md-block">Tarjeta<br>
+                      Miio MasterCard</h4>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right" src="assets/no-stopping_MC.png" alt=""></td>
+                  <td class="font-weight-bolder"><b>SIN COMISIONES</b></td>
+                </tr>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right" src="assets/Tarjeta-morado.png" alt=""></td>
+                  <td class="">PAGOS EN TODOS LOS COMERCIOS</td>
+                </tr>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right" src="assets/Icono enviar dinero.png" alt=""></td>
+                  <td class="">TRANSFERENCIAS Y SPEI GRATIS</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="text-center pb-2"><a class="color-text-miio" href="dinero.html" target="_blank" rel="noopener noreferrer"><u>Y más</u></a></p>
+          </div>
+        </div>
+        <div class="col col-lg-1 text-center mt-md-5 pt-md-5"><img src="assets/Group 2.png" alt=""></div>
+        <div class="col-12 col-lg">
+          <div class="d-none d-md-flex col justify-content-center position-relative top"><img src="assets/Group 15.png" alt=""></div>
+          <div class="d-flex d-md-none row justify-content-center position-relative top">
+            <img src="assets/Group 15.png" alt="">
+            <h4 class="text-center text-azul-miio font-weight-normal align-self-end mb-4 ml-3">Protección</h4>
+          </div>
+          <div class="col bg-white rounded-radius pt-10 shadow position-relative top-less-6">
+            <table class="col p-0">
+              <thead>
+                <tr>
+                  <th colspan="2">
+                    <h4 class="text-center text-azul-miio font-weight-normal d-none d-md-block">Protección <br> Miio</h4>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right" src="assets/medico copy.png" alt=""></td>
+                  <td class="font-weight-bolder"><b>MÉDICO</b></td>
+                </tr>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right" src="assets/emergency-ambulance.png" alt=""></td>
+                  <td class="">AMBULANCIA</td>
+                </tr>
+                <tr>
+                  <td class="p-3 p-md-2 p-lg-3"><img class="float-right" src="assets/discount_P.png" alt=""></td>
+                  <td class="">DESCUENTOS EN
+                    FARMACIAS </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="text-center pb-2"><a class="text-azul-miio" href="telefonia.html" target="_blank" rel="noopener noreferrer"><u>Y más</u></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3 align-items-center">
+        <a class="color-text-miio font-size-18 px-5 my-2" href="telefonia.html" target="_blank" rel="noopener noreferrer"><b><u>VER MÁS</u></b></a>
+        <a class="px-5 my-2" target="_blank" rel="noopener noreferrer" href="https://go.onelink.me/oEks/dd084188"><button type="button" id="radius-17" class="btn-3 color-text-miio font-size-18"><b>DESCARGA LA APP</b></button></a>
+      </div>
+    </div>
+    <hr>
+    <!-- /////////////////////Contenido 3 MI FUTURO ESTA EN MIS MANOS //////////////////////////////////// -->
+    <div class="container">
+      <h1 class="text-center text-dark-miio pt-5">MI FUTURO ESTÁ EN MIS MANOS</h1>
+      <h5 class="text-center text-dark-miio font-weight-light">Conecta con un mundo de oportunidades de una manera segura, simple y rápida.</h5>
+      <div class="row text-white px-3">
+        <div class="col col-lg-4 order-1 order-md-0 px-0 px-md-2 mx-2 mx-lg-0 rounded-radius">
+          <div class="position-relative top-70 col text-center z-index">
+            <img src="assets/Paga tus servicios.png" alt="">
+          </div>
+          <div class="col text-center bg-yellow rounded-radius p-5 shadow">
+            <h2 class="pt-8">PAGA TUS <br>
+              SERVICIOS</h2>
+
+            <p>Paga tu luz, el gas, y todos
+              tus servicos.</p>
+          </div>
+        </div>
+        <div class="order-0 order-md-1 col col-lg-4 text-center bg-yellow rounded-radius pt-3 align-self-end mx-2 mx-lg-0 px-0 px-md-2 shadow">
+          <div class="">
+            <h2 class="">TODO TE GENERA <br>
+              UNA GANANCIA</h2>
+            <div class="">
+              <img class="" src="img/IMG_ganancias.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4 order-2 px-0 px-md-2 mx-2 mx-lg-0 rounded-radius">
+          <div class="position-relative top-70 col text-center z-index">
+            <img src="assets/Compra y vende.png" alt="">
+          </div>
+          <div class="col text-center bg-yellow rounded-radius p-5 shadow">
+            <h2 class="pt-5">COMPRA
+              Y VENDE
+              RECARGAS</h2>
+
+            <p>Recarga a
+              Telcel, Movistar, Unefon, AT&T y más…</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3 align-items-center">
+        <a class="color-text-miio font-size-18 px-5 my-2" href="ganancias.html" target="_blank" rel="noopener noreferrer"><b><u>VER MÁS</u></b></a>
+        <a class="px-5 my-2" target="_blank" rel="noopener noreferrer" href="https://go.onelink.me/oEks/dd084188"><button type="button" id="radius-17" class="btn-3 color-text-miio font-size-18"><b>DESCARGA LA APP</b></button></a>
+      </div>
+    </div>
+    <!-- /////////////////////Contenido 4 MI FUTURO ES CONECTARME//////////////////////////////////// -->
+    <div class="container-fluid bg-alternative px-md-5">
+      <h1 class="text-center text-dark-miio pt-5">MI FUTURO ES CONECTARME</h1>
+      <h5 class="text-center text-dark-miio font-weight-light">Creemos que siempre debes estar conectado y en cualquier lugar.</h5>
+      <div class="row">
+        <div class="col text-center m-3 p-4 rounded-radius shadow">
+          <h2 class="color-text-miio p-4"><u>COBERTURA <br>
+              EN TODO <br>
+              EL PAÍS</u></h2>
+          <img src="img/IMG_cobertura.png" alt="">
+        </div>
+        <div class="col text-center m-3 p-4 rounded-radius shadow">
+          <h2 class="color-text-miio p-4"><u>PLAN <br>
+              GRATIS</u></h2>
+          <p>Con sólo entrar a la app, todos los días te regalamos un Plan semanal.</p>
+          <img src="img/IMG_plan gratis.png" alt="">
+          <p class="text-right">Sin costo</p>
+        </div>
+        <div class="col text-center m-3 p-4 rounded-radius shadow">
+          <h2 class="text-rojo-miio p-4"><u>PLAN <br>
+              DE EMERGENCIA</u></h2>
+          <p>Con la compra de tu Plan Miio
+            nunca te quedarás sin datos.</p>
+          <img src="img/PLAN EMERGENCIA.png" alt="">
+          <p class="text-right">Sin costo</p>
         </div>
       </div>
     </div>
-    <div class="container-fluid bg-alternative">
-      <div class="row justify-content-center my-4 p-5 align-items-center">
-        <div class="col-4 text-dark-miio">
-          <h1 class="font-weight-900"><u>¡QUIERO</u></h1>
-          <h1 class="font-weight-900"><u>SER</u></h1>
-          <h1 class="font-weight-900"><u>PARTE</u></h1>
-          <h1 class="font-weight-900"><u>DE LA</u></h1>
-          <h1 class="font-weight-900"><u>COMUNIDAD</u></h1>
-          <h1 class="font-weight-900"><u>Miio!</u></h1>
+    <!-- /////////////////////Contenido 5 VER DERCARGAR APP DE LA SECCION DE ARRIBA //////////////////////////////////// -->
+    <div class="container-fluid m-0 py-5 bg-alternative px-0">
+      <div class="row m-0">
+        <div class="col-12 col-md-8">
+          <div class="row justify-content-center justify-content-md-end py-3 align-items-center m-0">
+            <a class="color-text-miio font-size-18 px-5 my-2" href="telefonia.html" target="_blank" rel="noopener noreferrer"><b><u>VER MÁS</u></b></a>
+            <a class="px-5 my-2" target="_blank" rel="noopener noreferrer" href="https://go.onelink.me/oEks/dd084188"><button type="button" id="radius-17" class="btn-3 color-text-miio font-size-18"><b>DESCARGA LA APP</b></button></a>
+          </div>
         </div>
-        <div class="col-4">
-          <div class="col-11 bg-miio rounded-radius  mx-auto text-center text-white pt-4 z-index">
+        <div class="col-12 col-md">
+          <div class="row justify-content-end">
+            <img src="assets/Path 3.png" alt="">
+            <div class="bg-miio text-center px-3 py-2">
+              <h5 class="text-white font-weight-normal">¿Cuántos MEGAS necesitas? </h5>
+              <a class="text-white" target="_blank" rel="noopener noreferrer" href="telefonia.html"><u><b>Conoce nuestros planes</b></u></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////Contenido 6 MI FUTURO ES CRECER //////////////////////////////////// -->
+    <div class="container-fluid">
+      <h1 class="text-center text-dark-miio pt-5">MI FUTURO ES CRECER</h1>
+      <h5 class="text-center text-dark-miio font-weight-light">Mejora tu bienestar personal y económico.</h5>
+      <div class="row text-dark-miio align-items-center">
+        <div class="col-12 col-md-5 px-5 mt-5"><img src="img/IMA_tarjeta Miio.png" alt="" class="img"></div>
+        <div class="col-12 col-md-7 p-0 px-4">
+          <h4 class="my-4 font-weight-light"><b>Abre tu cuenta financiera digital en minutos <br>
+              y sin papeleo:</b></h4>
+          <div class="col">
+            <div class="row align-items-center m-2 flex-nowrap">
+              <span class="bg-miio rounded-circle text-white mr-2 px-2">1</span>
+              <p class="m-0 font-size-18 font-weight-light">
+                Recibe tu tarjeta
+              </p>
+            </div>
+            <div class="row align-items-center m-2 flex-nowrap">
+              <span class="bg-miio rounded-circle text-white mr-2 px-2">2</span>
+              <p class="m-0 font-size-18 font-weight-light">
+                Realiza transferencias a cualquier persona, gratis y al instante
+              </p>
+            </div>
+            <div class="row align-items-center m-2 flex-nowrap">
+              <span class="bg-miio rounded-circle text-white mr-2 px-2">3</span>
+              <p class="m-0 font-size-18 font-weight-light">
+                Obtén créditos instantáneos
+              </p>
+            </div>
+          </div>
+          <div class="position-relative top-more-7"><img src="assets/galleta-cuentaf.png" alt=""></div>
+          <div class="row bg-alternative p-2 px-3 rounded-radius align-items-center justify-content-center">
+            <img class="" src="assets/shield-3d.png" alt="">
+            <div class="col-12 col-md m-2">
+              <h5 class="font-weight-normal">Protegida y privada</h5>
+              <ol class="m-0 pl-3">
+                <li class="m-0">Todos tus fondos están protegidos por la PROSOFIPO.</li>
+                <li class="m-0">Tu cuenta está regulada por la Comision Nacional Bancaria
+                  y de Valores.</li>
+                <li class="m-0">Todos tus datos están encriptados de punta a punta.</li>
+              </ol>
+              <p class="color-text-miio m-0">No los compartimos con nadie.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3 align-items-center">
+        <a class="color-text-miio font-size-18 px-5 my-2" href="dinero.html" target="_blank" rel="noopener noreferrer"><b><u>VER MÁS</u></b></a>
+        <a class="px-5 my-2" target="_blank" rel="noopener noreferrer" href="https://go.onelink.me/oEks/dd084188"><button type="button" id="radius-17" class="btn-3 color-text-miio font-size-18"><b>DESCARGA LA APP</b></button></a>
+      </div>
+    </div>
+    <!-- /////////////////////Contenido 7 MI FUTURO ES PLENO //////////////////////////////////// -->
+    <div class="container-fluid bg-alternative pl-4 text-dark-miio">
+      <h1 class="text-center text-dark-miio pt-5">MI FUTURO ES PLENO</h1>
+      <h5 class="text-center text-dark-miio font-weight-light">Tus créditos son aprobados y depósitados al instante.</h5>
+      <div class="row align-items-center mt-5 justify-content-center">
+        <div class="col-12 col-lg-4 my-3 text-center">
+          <h2 class="color-text-miio text-left pl-5 pl-md-0"><u>CREEMOS <br>
+              QUE <br>
+              TODOS <br>
+              DEBEN <br>
+              TENER
+              LAS <br>
+              MISMAS <br>
+              OPORTUNIDADES
+            </u></h2>
+        </div>
+        <div class="col-12 col-lg-4 my-3 text-center">
+          <img class="d-none d-md-block m-auto" src="img/IMA_CREDITOS.png" alt="">
+          <img class="d-block d-md-none img" src="img/IMA_CREDITOS.png" alt="">
+        </div>
+        <div class="col-12 col-lg-4 my-3 p-0 text-dark-miio">
+          <div class="row align-items-center my-2 mx-0">
+            <img src="assets/flecha_creditos.png" alt="">
+            <p class="m-0 ml-2">Completa tu quincena. <br>
+              <i>Miio</i> te tiene respaldado</p>
+          </div>
+          <div class="row align-items-center my-2 mx-0">
+            <img src="assets/no-stopping_MC.png" alt="">
+            <p class="m-0 ml-2">No necesitas historial crediticio</p>
+          </div>
+          <div class="row align-items-center my-2 flex-nowrap mx-0">
+            <img src="assets/no-stopping_MC.png" alt="">
+            <p class="m-0 ml-2">No pedimos comprobante de ingresos</p>
+          </div>
+          <div class="col-12 col-md my-5 mx-0 p-0-">
+            <div class="row justify-content-end mt-5 mx-0 flex-nowrap">
+              <img src="assets/Path 3.png" alt="">
+              <div class="bg-miio text-center px-3 py-2">
+                <h5 class="text-white font-weight-normal">Si adquieres tu <a class="text-white" href="telefonia.html" target="_blank" rel="noopener noreferrer"><u><b>Plan Miio,</b></u></a> <br>
+                  <b>¡no te cobramos intereses!</b></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////Contenido 8 MI FUTURO ES BIENESTAR//////////////////////////////////// -->
+    <div class="container">
+      <h1 class="text-center text-dark-miio pt-5">MI FUTURO ES BIENESTAR</h1>
+      <h5 class="text-center text-dark-miio font-weight-light">Cuenta con protección médica, asesoría legal y un seguro de vida para ti y tus seres queridos.
+        <b>Con Miio nunca estás sol@ </b></h5>
+      <div class="row">
+        <div class="col d-none d-md-block">
+          <img class="" src="img/IMA_proteccion.png" alt="">
+        </div>
+        <div class="col-12 d-block d-md-none">
+          <img class="img" src="img/IMA_proteccion.png" alt="">
+        </div>
+        <div class="col">
+          <h4></h4>
+          <div class="col py-3 text-center ml-0 ml-md-5 px-md-5">
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Seguro de vida hasta $100k
+              </p>
+            </div>
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Médico a domicilio
+              </p>
+            </div>
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Servicio de ambulancias
+              </p>
+            </div>
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Descuentos en farmacias y hospitales
+              </p>
+            </div>
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Asistencia médica por teléfono
+              </p>
+            </div>
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Servicio dental por urgencia
+              </p>
+            </div>
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Análisis clínicos
+              </p>
+            </div>
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Asesoría nutricional
+              </p>
+            </div>
+            <div class="row align-items-center my-3 text-dark-miio font-weight-light">
+              <img src="assets/F_1.png" alt="">
+              <p class="m-0 ml-1 ml-md-3">
+                Asesoría legal
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center py-3 align-items-center">
+        <a class="color-text-miio font-size-18 px-5 my-2" href="telefonia.html" target="_blank" rel="noopener noreferrer"><b><u>VER MÁS</u></b></a>
+        <a class="px-5 my-2" target="_blank" rel="noopener noreferrer" href="https://go.onelink.me/oEks/dd084188"><button type="button" id="radius-17" class="btn-3 color-text-miio font-size-18"><b>DESCARGA LA APP</b></button></a>
+      </div>
+    </div>
+    <!-- /////////////////////Contenido 9 FORMULARIO MI FUTURO ES MIIO //////////////////////////////////// -->
+    <div id="formulario-miio" class="container-fluid bg-alternative pt-5 m">
+      <div class="row my-4 p-lg-5">
+        <div class="col text-dark-miio justify-self-center align-self-end px-5 pb-4">
+          <h1 class="font-weight-900 color-text-miio pl-4"><u>
+              MI <br class="d-none d-md-block">
+              FUTURO <br>
+              ES</u> <br class="d-none d-md-block"> <img src="assets/Logo Miio-02.png" alt="">
+          </h1>
+        </div>
+        <div class="col text-center">
+          <div class="col-10 col-xl-7 m-auto bg-miio mx-xl-4 rounded-radius text-center text-white pt-4 z-index">
             <h6 class="font-weight-900">Quiero recibir más información</h6>
             <div class="col pb-4 pt-2">
               <a class="m-1" href="https://www.facebook.com/miiomex/"><img src="assets/FB-icon.png" alt=""></a>
@@ -295,91 +566,98 @@
               <a class="m-1" href="https://www.instagram.com/miio_mx/"><img src="assets/insta.png" alt=""></a>
             </div>
           </div>
-          <form class="bg-white rounded-radius px-5 pt-8 shadow position-relative top-less text-center">
+          <form class="col col-xl-8 bg-white rounded-radius px-2 px-5 pt-8 shadow position-relative top-less text-center">
             <fieldset class="form-group">
-              <input type="text" class="form-control-miio  input-gray border-bottom pl-0" id="formGroupExampleInput" placeholder="NOMBRE:">
+              <input type="text" class="form-control-miio border-bottom pl-0" id="nombre" placeholder="NOMBRE:">
             </fieldset>
             <fieldset class="form-group">
-              <input type="text" class="form-control-miio  input-gray border-bottom pl-0" id="formGroupExampleInput2" placeholder="CORREO ELECTRÓNICO:">
+              <input type="text" class="form-control-miio border-bottom pl-0" id="email" placeholder="CORREO ELECTRÓNICO:">
             </fieldset>
             <fieldset class="form-group">
-              <input type="text" class="form-control-miio  input-gray border-bottom pl-0" id="formGroupExampleInput3" placeholder="CELULAR:">
+              <input type="text" class="form-control-miio border-bottom pl-0" id="asunto" placeholder="CELULAR:">
             </fieldset>
             <fieldset class="form-group">
-              <textarea id="formGroupExampleInpu4" class="form-control-area input-gray pl-0 border-0 border-bottom" rows="6" cols="35" placeholder="MENSAJE"></textarea>
+              <textarea id="comentarios" class="form-control-area input-gray pl-0 border-0 border-bottom" rows="6" cols="35" placeholder="MENSAJE"></textarea>
             </fieldset>
-            <button type="button" class="btn m-5 m-3"><img src="assets/enviar-form.png" alt=""></button>
+            <button id="submit" type="button" class="btn m-3"><img src="assets/enviar-form.png" alt=""></button>
           </form>
         </div>
       </div>
     </div>
+    <!-- /////////////////////Contenido 10 //////////////////////////////////// -->
     <div class="container my-5">
       <div class="row justify-content-center align-items-center">
-        <div class="col-4 mr-5">
-          <img src="img/cel-06.png" alt="" class="">
+        <div class="col-12 col-md">
+          <img class="d-none d-lg-block" src="img/cel-06.png" alt="">
+          <img class="d-block d-lg-none img" src="img/cel-06.png" alt="">
         </div>
-        <div class="col-4 ml-5">
-          <h2 class="text-uppercase color-text-miio">Descarga la app <br>
-            y sé dueño de tu <br>
-            <b>futuro</b> hoy
+        <div class="col-12 col-md py-4">
+          <h2 class="text-uppercase color-text-miio font-weight-light"><u>Descarga la app <br>
+              y sé dueño de tu <br>
+              <b>futuro</b> hoy</u>
           </h2>
-          <div class="row justify-content-between mt-5 ml-1">
-            <a href=""><img src="assets/apple-store.png" alt=""></a>
-            <a href=""><img src="assets/play-store.png" alt=""></a>
+          <div class="row mt-5 ml-1">
+            <a target="_blank" rel="noopener noreferrer" class="pr-3" href="https://itunes.apple.com/us/app/miio/id1401507730?mt=8"><img src="assets/apple-store.png" alt=""></a>
+            <a target="_blank" rel="noopener noreferrer" class="pl-3" href="https://play.google.com/store/apps/details?id=com.kdm.apps.miio"><img src="assets/play-store.png" alt=""></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid p-0 mt-5 text-dark-miio">
-      <div class="col p-0">
-        <img class="img col-11 float-right p-0" id="dudas" src="img/dudas-telefonia.png" alt="">
-      </div>
-      <div class="col-7 position-relative top-less-dudas m-auto">
-        <h2>¿Tienes dudas?</h2>
-        <h3 class="col-12">Ingresa a nuestra sección de <a class="color-text-miio" href="preguntas.html">Preguntas frecuentes</a></h3>
+    <!-- /////////////////////Contenido 11 //////////////////////////////////// -->
+    <div class="container-fluid p-0 mt-5 text-dark-miio mx-0 my-4">
+      <div class="row m-0">
+        <div class="col-4 col-md-3 col-lg-2 z-index px-0 text-right">
+          <img class="position-relative right-2" src="assets/gordis_web1.png" alt="">
+          <!-- <img class="d-block d-lg-none" src="assets/gordis_web1.png" alt=""> -->
+        </div>
+        <div class="col-8 col-md-9 col-lg-10 bg-alternative mx-0 py-5 text-center text-lg-left pl-lg-5">
+          <h2>¿Tienes dudas?</h2>
+          <h3 class="font-weight-normal">Ingresa a nuestra sección de <a class="color-text-miio" href="preguntas.html" target="_blank" rel="noopener noreferrer">Preguntas frecuentes</a></h3>
+        </div>
       </div>
     </div>
   </div>
   <!-- TERMINA CONTENIDO -->
 
   <!-- FOOTER -->
-  <footer class="bg-dark-miio">
-    <div class="container">
-      <div class="row align-items-center text-white-50 py-5 font-size-14">
-        <div class="col-4"><img src="assets/logo-MIIO.png" alt="">
-          <p>Iglesia No. 2 | Edificio E Piso 13 | Col. Tizapán <br>
-            San Ángel | CP. 01090 | CDMX</p>
-        </div>
-        <div class="col">
-          <dl>
-            <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.mx/">Miio</a></dt>
-            <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="telefonia.html">Telefonía</a></dt>
-            <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="dinero.html">Cuenta financiera</a></dt>
-            <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="ganancias.html">Ganancias</a></dt>
-            <dt class="font-weight-lighter"><a class="text-footer" href="conocenos.html">Somos Miio</a></dt>
-          </dl>
-        </div>
-        <div class="col">
-          <dl>
-            <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>
-            <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a></dt>
-            <dt class="font-weight-lighter"><a class="text-footer" href="contacto.html">Contacto</a></dt>
-            <dt class="font-weight-lighter"><a class="text-footer" href="preguntas.html">Preguntas frecuentes</a></dt>
-            <dt class="font-weight-lighter"><a class="text-footer" href="legal.html">Legal</a></dt>
-          </dl>
-        </div>
-        <div class="col">
-          <div class="row">
-            <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/facebook.png" alt=""></a>
-            <a href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/linkedin.png" alt=""></a>
-            <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/twitter.png" alt=""></a>
-            <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/Group 3.png" alt=""></a>
-          </div>
+  <footer class="container-fluid bg-dark-miio p-0">
+
+    <div class="row align-items-center text-white-50 py-5 font-size-14 m-0">
+      <div class="col-12 col-md-4">
+        <img src="assets/logo-MIIO.png" alt="">
+        <p>Iglesia No. 2 | Edificio E Piso 13 | Col. Tizapán <br>
+          San Ángel | CP. 01090 | CDMX</p>
+      </div>
+      <div class="col-12 col-md">
+        <dl>
+          <dt class="font-weight-lighter"><a target="_blank" rel="noopener noreferrer" class="text-footer" href="https://miio.mx/">Miio</a></dt>
+          <dt class="font-weight-lighter text-secondary"><a target="_blank" rel="noopener noreferrer" class="text-footer" href="telefonia.html">Telefonía</a></dt>
+          <dt class="font-weight-lighter text-secondary"><a target="_blank" rel="noopener noreferrer" class="text-footer" href="dinero.html">Cuenta financiera</a></dt>
+          <dt class="font-weight-lighter text-secondary"><a target="_blank" rel="noopener noreferrer" class="text-footer" href="ganancias.html">Ganancias</a></dt>
+          <dt class="font-weight-lighter"><a target="_blank" rel="noopener noreferrer" class="text-footer" href="conocenos.html">Somos Miio</a></dt>
+        </dl>
+      </div>
+      <div class="col-12 col-md">
+        <dl>
+          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="contacto.html">Contacto</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="preguntas.html">Preguntas frecuentes</a></dt>
+          <dt class="font-weight-lighter"><a class="text-footer" href="legal.html">Legal</a></dt>
+        </dl>
+      </div>
+      <div class="col-12 col-md">
+        <div class="row justify-content-center">
+          <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/facebook.png" alt=""></a>
+          <a href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/linkedin.png" alt=""></a>
+          <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/twitter.png" alt=""></a>
+          <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/Group 3.png" alt=""></a>
         </div>
       </div>
     </div>
-    <div class="container-fluid bg-dark-miio-right text-center text-white-50 pt-4 px-5">
-      <p class="small px-5">La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural, S.A. de C.V., Sociedad
+    <div class="container-fluid bg-gris-miio text-center text-white-50 pt-4 px-md-5">
+      <p class="small px-md-5 text-left text-md-center">La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural,
+        S.A. de C.V., Sociedad
         Financiera Popular, ésta
         última autorizada para operar y supervisada por la Comisión Nacional Bancaria y de Valores. MIIO es una aplicación para smartphones mediante la cual se pueden administrar las tarjetas bajo la marca "MIIO". King David Mobile, S.A.P.I. de C.V.
         no es un banco ni una entidad financiera.</p>
@@ -389,14 +667,14 @@
   </footer>
   <!-- TERMINA FOOTER -->
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZSKSXK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <script src="/js/functions.js" charset="utf-8" async></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- Google Tag Manager -->
 <script async>
