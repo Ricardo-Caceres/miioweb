@@ -82,7 +82,6 @@ $(document).ready(function() {
   $( "#right" ).hide();
 
   $(window).scroll(function() {
-
     if ($(window).scrollTop() > 700 && $(window).scrollTop() < 1900) {
       $("#left").fadeIn(100);
       $("#right").fadeIn(100);
@@ -92,11 +91,5 @@ $(document).ready(function() {
     }
   });
 
-
-
-  //
-  // $("plan").scroll(function() {
-  //   $("span").text(count = count + 1);
-  // });
 
 });
