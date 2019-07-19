@@ -253,7 +253,7 @@ textarea {
 }
 
 #hero-telefonia {
-  background: #26CE7B;
+  background-image: linear-gradient(to right, #26CE7B , #4EE9B2);
 }
 
 #formulario-miio {
@@ -268,12 +268,22 @@ textarea {
   background-size: cover;
 }
 
+#conocenos {
+  background-image: url("../img/Banner-about.wdp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mt-6 {
   margin-top: 70px;
 }
 
 #radius-17 {
   border-radius: 0.85rem;
+}
+
+.mt-8 {
+  margin-top: 80px;
 }
 
 .bg-alternative {
@@ -296,6 +306,11 @@ textarea {
 
 .top-70 {
   top: 70px;
+  z-index: 20;
+}
+
+.top-40 {
+  top: 50px;
   z-index: 20;
 }
 
@@ -359,6 +374,11 @@ textarea {
 
   .top-less-6 {
     top: -60px;
+  }
+
+  .top-40 {
+    top: 80px;
+    z-index: 20;
   }
 }
 
@@ -427,4 +447,8 @@ textarea {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+ul{
+	list-style-image: url("../assets/Oval.png");
 }

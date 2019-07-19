@@ -8,9 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Una sola App: telefonía celular, cuenta financiera digital, tarjeta MasterCard, envía y recibe dinero y paga tus servicios de forma fácil y segura. ¡Descárgala!">
   <meta name="robots" content="index">
-  <meta http-equiv="refresh" content="300">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/master.css" media="all">
+  <link rel="stylesheet" href="css/master.css?v=3" media="all">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="assets/Miio-ico/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
@@ -123,9 +122,9 @@
   <!-- Termina Header -->
 
   <!-- EMPIEZA CONTENIDO -->
-  <div class="container-fluid mt-2 p-0">
+  <div class="container-fluid mt-5 p-0">
     <!-- /////////////////////Contenido 1 //////////////////////////////////// -->
-    <div id="hero-home" class="row m-0 mt-4 pt-5 d-none d-sm-flex justify-content-end">
+    <div id="hero-home" class="row m-0 mt-5 pt-5 d-none d-sm-flex justify-content-end">
       <div class="col-12">
         <div class="col"></div>
       </div>
@@ -330,25 +329,27 @@
       <h1 class="text-center text-dark-miio pt-5">MI FUTURO ES CONECTARME</h1>
       <h5 class="text-center text-dark-miio font-weight-light">Creemos que siempre debes estar conectado y en cualquier lugar.</h5>
       <div class="row">
-        <div class="col text-center m-3 p-4 rounded-radius shadow">
+        <div class="col bg-white text-center m-3 p-4 rounded-radius shadow">
           <h2 class="color-text-miio p-4"><u>COBERTURA <br>
               EN TODO <br>
               EL PAÍS</u></h2>
           <img src="img/IMG_cobertura.png" alt="">
         </div>
-        <div class="col text-center m-3 p-4 rounded-radius shadow">
+        <div class="col bg-white text-center m-3 p-4 rounded-radius shadow">
           <h2 class="color-text-miio p-4"><u>PLAN <br>
               GRATIS</u></h2>
           <p>Con sólo entrar a la app, todos los días te regalamos un Plan semanal.</p>
-          <img src="img/IMG_plan gratis.png" alt="">
+          <img class="d-none d-md-block" src="img/IMG_plan gratis.png" alt="">
+          <img class="img d-block d-md-none" src="img/IMG_plan gratis.png" alt="">
           <p class="text-right">Sin costo</p>
         </div>
-        <div class="col text-center m-3 p-4 rounded-radius shadow">
+        <div class="col bg-white text-center m-3 p-4 rounded-radius shadow">
           <h2 class="text-rojo-miio p-4"><u>PLAN <br>
               DE EMERGENCIA</u></h2>
           <p>Con la compra de tu Plan Miio
             nunca te quedarás sin datos.</p>
-          <img src="img/PLAN EMERGENCIA.png" alt="">
+          <img class="d-none d-md-block" src="img/PLAN EMERGENCIA.png" alt="">
+          <img class="img d-block d-md-none" src="img/PLAN EMERGENCIA.png" alt="">
           <p class="text-right">Sin costo</p>
         </div>
       </div>
@@ -560,24 +561,27 @@
           <div class="col-10 col-xl-7 m-auto bg-miio mx-xl-4 rounded-radius text-center text-white pt-4 z-index">
             <h6 class="font-weight-900">Quiero recibir más información</h6>
             <div class="col pb-4 pt-2">
-              <a class="m-1" href="https://www.facebook.com/miiomex/"><img src="assets/FB-icon.png" alt=""></a>
-              <a class="m-1" href="https://mx.linkedin.com/company/miio"><img src="assets/Shape.png" alt=""></a>
-              <a class="m-1" href="https://twitter.com/miio_mx"><img src="assets/twit.png" alt=""></a>
-              <a class="m-1" href="https://www.instagram.com/miio_mx/"><img src="assets/insta.png" alt=""></a>
+              <a rel="nofollow noopener noreferrer" class="m-1" href="https://www.facebook.com/miiomex/"><img src="assets/FB-icon.png" alt=""></a>
+              <a rel="nofollow noopener noreferrer" class="m-1" href="https://mx.linkedin.com/company/miio"><img src="assets/Shape.png" alt=""></a>
+              <a rel="nofollow noopener noreferrer" class="m-1" href="https://twitter.com/miio_mx"><img src="assets/twit.png" alt=""></a>
+              <a rel="nofollow noopener noreferrer" class="m-1" href="https://www.instagram.com/miio_mx/"><img src="assets/insta.png" alt=""></a>
             </div>
           </div>
           <form class="col col-xl-8 bg-white rounded-radius px-2 px-5 pt-8 shadow position-relative top-less text-center">
             <fieldset class="form-group">
-              <input type="text" class="form-control-miio border-bottom pl-0" id="nombre" placeholder="NOMBRE:">
+              <input type="hidden" class="form-control-miio border-bottom pl-0" id="asunto" value="WEB MIIO">
             </fieldset>
             <fieldset class="form-group">
-              <input type="text" class="form-control-miio border-bottom pl-0" id="email" placeholder="CORREO ELECTRÓNICO:">
+              <input type="text" class="form-control-miio border-bottom pl-0" id="nombre" placeholder="NOMBRE:" required>
             </fieldset>
             <fieldset class="form-group">
-              <input type="text" class="form-control-miio border-bottom pl-0" id="asunto" placeholder="CELULAR:">
+              <input type="text" class="form-control-miio border-bottom pl-0" id="email" placeholder="CORREO ELECTRÓNICO:" required>
             </fieldset>
             <fieldset class="form-group">
-              <textarea id="comentarios" class="form-control-area input-gray pl-0 border-0 border-bottom" rows="6" cols="35" placeholder="MENSAJE"></textarea>
+              <input type="text" class="form-control-miio border-bottom pl-0" id="numero" placeholder="CELULAR:">
+            </fieldset>
+            <fieldset class="form-group">
+              <textarea id="comentarios" class="form-control-area input-gray pl-0 border-0 border-bottom" rows="6" cols="35" placeholder="MENSAJE" required></textarea>
             </fieldset>
             <button id="submit" type="button" class="btn m-3"><img src="assets/enviar-form.png" alt=""></button>
           </form>
@@ -673,7 +677,7 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZSKSXK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<script src="/js/functions.js" charset="utf-8" async></script>
+<script src="js/functions.js" charset="utf-8" async></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- Google Tag Manager -->

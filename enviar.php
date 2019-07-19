@@ -14,10 +14,11 @@ require 'vendor/autoload.php'; // If you're using Composer (recommended)
 // which is included in the download:
 // https://github.com/sendgrid/sendgrid-php/releases
 
-if(isset($_POST) && isset($_POST['nombre']) && isset($_POST['asunto']) && isset($_POST['correo']) && isset($_POST['comentarios'])) {
+if(isset($_POST) && isset($_POST['nombre']) && isset($_POST['asunto']) && isset($_POST['correo']) && isset($_POST['numero']) && isset($_POST['comentarios'])) {
   $nombre       = $_POST['nombre'];
   $asunto       = $_POST['asunto'];
   $correo       = $_POST['correo'];
+  $numero       = $_POST['numero'];
   $comentarios  = $_POST['comentarios'];
 
   $emailTo      = "hola@miio.mx";  //<-- este es el correo a donde lo vas a enviar, en este caso la cuenta donde lo vas a recibir
@@ -36,7 +37,7 @@ if(isset($_POST) && isset($_POST['nombre']) && isset($_POST['asunto']) && isset(
   $email->addTo($emailTo, $nameTo);
   $email->addContent("text/plain",$comentarios); // <-- este campo no sé qué pedo porque no se manda al correo
   $email->addContent(
-      "text/html", "<strong>" . $comentarios . " </strong>"
+      "text/html", "<strong>" . $numero  . " </strong>" ."<br>" . $comentarios
   ); // <-- AMBOS SON OBLIGATORIOS!!!
 
   $sendgrid = new \SendGrid($API_KEY);

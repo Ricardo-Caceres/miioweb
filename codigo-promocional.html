@@ -2,33 +2,27 @@
 <html lang="en">
 
 <head>
+  <meta name="theme-color" content="#934BA4">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una sola App: telefonía celular, cuenta financiera digital, tarjeta MasterCard, envía y recibe dinero y paga tus servicios de forma fácil y segura. ¡Descárgala!">
+  <meta name="robots" content="index">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/master.css" media="all">
   <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="stylesheet" href="css/swiper.css" media="screen">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-123153296-1');
-  </script>
-  <title>Promocional</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/Miio-ico/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <title>Cambio: Miio | Plan de telefonía gratis</title>
 </head>
 
-<body>
+<body class="without-spacing-footer">
   <!-- Empieza Header -->
   <header class="col fixed-top p-0 text-dark-miio">
-    <nav class="row align-items-center bg-white d-none d-lg-flex">
+    <nav class="row align-items-center bg-white d-none d-lg-flex shadow-bottom">
       <div class="col-md-4">
         <a class="row col align-items-center text-decoration-none" href="https://miio.mx/">
           <img class="mx-4" src="assets/logo-MIIO-negro.png" alt="Miio">
@@ -77,7 +71,7 @@
       </div>
     </nav>
     <!-- Menu mobil -->
-    <nav class="row fixed-top navbar bg-white d-flex d-lg-none m-0">
+    <nav class="row fixed-top navbar bg-white d-flex d-lg-none m-0 shadow-bottom">
       <div class="col">
         <button class="navbar-toggler color-text-miio" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class=""><img src="assets/menu-hamburguesa.png" alt=""></span>
@@ -127,61 +121,78 @@
     </div>
   </header>
   <!-- Termina Header -->
-  <div>
-    <div class="banner-center">
-      <img src="img/Impulsamos tu bienestar.jpg" alt="Banner Promocional">
-    </div>
-    <div class="CLABE">
-      <div class="text-center">
-        <h4>CODIGOS PROMOCIONALES MIIO</h4>
+
+  <!-- EMPIEZA CONTENIDO -->
+  <div class="">
+      <div class="banner-center">
+        <img class="img" src="img/que esperas ok.png" alt="Banner Promocional">
       </div>
-      <p class="general">En Miio siempre impulsaremos tu bienestar. <br><br>
-        Participa en nuestra dinámica: </p>
-      <div class="text-center">
-        <h4>Códigos Miio</h4>
-      </div>
-      <p class="general">
-        Invita a tus amigos y gana <b>$30.00</b> por cada contacto que obtenga su cuenta financiera Miio. <br><br>
-        ¡Hoy inicia a las 14:00 horas!</p>
-      <h4 class="h3-black">Instrucciones:</h4>
-        <ol>
-          <li class="general">Ingresa a tu perfil y da click en "Invita y gana".</li>
-          <div class="img-clabe">
-            <img src="img/Perfil sin foto (1).png" alt="">
-          </div>
-          <li class="general">Comparte tu código con tus amigos y familiares para que registren su cuenta financiera Miio.</li>
-          <div class="img-clabe">
-            <img src="img/amigos-15 (1).png" alt="">
-          </div>
-        </ol>
-      </p>
-      <div class="text-clabe">
-        <p class="general">
-          Por cada uno de tus contactos que registren su cuenta financiera Miio, ganas $30.00, y tus invitados ganarán también otros $30.00, que serán abonados a su nueva cuenta.
-        </p>
-        <div class="text-center">
-          <h4>¡Con Miio todos ganan!</h4>
+      <div class="CLABE">
+        <div class="text-center color-li">
+          <h4>GANA $30 POR CADA AMIGO O FAMILIAR QUE SE REGISTRE EN MIIO </h4>
         </div>
-        <p class="general">Esta dinámica estará vigente por 24 horas, no dejes pasar la oportunidad de ganar.</p>
-        <h4 class="h3-black">Reglas de la dinámica:</h4>
+        <p class="general">¡Motívalos a que bajen la app y obtengan su tarjeta Miio MasterCard!
+          <br><br>
+          ¿Cómo ganar?</p>
+        <div class="text-center">
+          <h4 class="color-li">¡SÚPER FÁCIL!</h4>
+        </div>
+        <ol>
+          <li class="general">Ingresa a Miio</li>
+          <li class="general">Entra a tu perfil y da <i>click</i> en "Invita y gana".</li>
+          <li class="general">Obtén y comparte tu <b>código</b> con tus amigos y familiares para que se registren y obtengan su tarjeta Miio MasterCard.</li>
+        </ol>
 
-          <ol>
-            <li class="general">Se deberá terminar la creación de cuenta financiera Miio durante la vigencia de la promoción.</li>
-            <li class="general">Se deberá ingresar de forma correcta y verás, la documentación solicitada para la creación de cuenta financiera Miio.</li>
-            <li class="general">Cada usuario tendrá un código de invitación y podrá enviarlo a sus contactos para que accedan a la dinámica y completen su cuenta financiera Miio.</li>
-            <li class="general">Vigencia de las 14:00 horas del 18 de junio del 2019 a las 14:00 horas del 19 de junio del 2019.</li>
-            <li class="general">Total de códigos a redimir: 1,700.</li>
+        <div class="img-clabe">
+          <img src="img/Imagen1.png" alt="">
+        </div>
+
+        <div class="text-clabe">
+          <p class="general">
+            Además: <br><br>
+            Tus invitados ganarán también <b><span>$30.00</span></b> que serán abonados a su nueva cuenta. </p>
+          <div class="text-center">
+            <h4 class="color-li">¡Con Miio todos ganan!</h4>
+          </div>
+          <p class="general-center">
+            <b><span class="azul-miio">¡No dejes pasar la oportunidad de ganar!</span></b> <br><br>
+            <p><b>Del 17 de julio a las 13:00 horas hasta el 23 de julio a las 23:00 horas.</b></p>
+            <b><span class="amarillo-miio">#IMPORTANTE #PREMIOFINAL #PLANMIIO850</span></b> <br><br>
+
+            Quien obtenga el <b><span class="color-li">mayor número de usuarios</span></b> registrados en Miio con tarjeta MasterCard ganará <br><br>
+            <b><span class="color-li">UN PLAN MIIO 850 CON ACTIVACIÓN POR UN AÑO <br>
+                Telefonía + protección + cuenta financiera digital</span></b>
+          </p>
+
+          <div class="img-clabe my-4">
+            <img src="img/850.jpg" alt="">
+          </div>
+          <p class="color-li general-right"><b>Porque creemos que cada persona debe ser dueña de su futuro. <br><br>
+              Mi Futuro es Miio</b>
+          </p>
+          <hr>
+          <h4>Términos y condiciones:</h4>
+          <ol style="font-size: 12px;">
+            <li>Los usuarios Miio con cuenta financiera digital podrán compartir códigos promocionales para invitar a personas a que obtengan su cuenta financiera digital y su tarjeta Miio MasterCard.</li>
+            <li>Se entiende por cuenta financiera digital, la obtención de la cuenta CLABE en la app.</li>
+            <li>Cada usuario Miio con cuenta financiera digital obtendrá un solo código.</li>
+            <li>Cada usuario ganará $30.00 (treinta pesos 00/100 MN) por cada contacto que se afilie a Miio.</li>
+            <li>Al compartir un código el usuario acepta términos y condiciones de la promoción.</li>
+            <li>Las ganancias serán aplicadas directamente a la cuenta del usuario.</li>
+            <li>Cada nuevo usuario que obtenga su cuenta financiera digital Miio ganará $30.00 (treinta pesos 00/100 MN).</li>
+            <li>Se deberá terminar la creación de cuenta financiera Miio durante la vigencia de la promoción para obtener los $30.00 (treinta pesos 00/100 MN).</li>
+            <li>Se deberá ingresar de forma correcta y veraz, la documentación solicitada para la creación de cuenta financiera Miio.</li>
+            <li>Al aceptar un código y generar su cuenta financiera el usuario acepta términos y condiciones de la promoción.</li>
+            <li>Vigencia de las 13:00 horas del 17 de julio del 2019 a las 23:00 horas del 23 de julio del 2019 o hasta agotar existencias de códigos compartidos.</li>
+            <li>Al finalizar la dinámica, Miio otorgará a quien obtenga mayor número de usuarios afiliados a Miio la activación de un Plan Miio 850 por un año sin costo.</li>
+            <li>El premio será aplicado directamente a la cuenta del usuario.</li>
+            <li>Esta promoción es personal e intransferible.</li>
+            <li>No acumulable con otras promociones.</li>
           </ol>
-          <dl class="general">
-            <dd>Escríbenos para dudas o comentarios a <a href="mailto:hola@miio.mx">hola@miio.mx</a></dd>
-            <br>
-            <dd>Saludos,</dd> <br>
-            <dd><img src="assets/logo-MIIO-negro.png" alt=""></dd>
-          </dl>
-
+        </div>
       </div>
     </div>
-  </div>
+  <!-- TERMINA CONTENIDO -->
 
   <!-- FOOTER -->
   <footer class="container-fluid bg-dark-miio p-0">
@@ -230,14 +241,46 @@
     </div>
   </footer>
   <!-- TERMINA FOOTER -->
+
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script src="js/functions.js" charset="utf-8"></script>
+<script src="js/swiper.js" charset="utf-8"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153296-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123153296-1');
+</script>
 <!-- Start of miio2018 Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af"> </script>
 <!-- End of miio2018 Zendesk Widget script -->
+
+<script async>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
 </html>

@@ -6,6 +6,7 @@ $(document).ready(function() {
     const nombre = $('#nombre').val(),
       asunto = $('#asunto').val(),
       correo = $('#email').val(),
+      numero = $('#numero').val(),
       comentarios = $('#comentarios').val()
 
 
@@ -13,6 +14,7 @@ $(document).ready(function() {
       nombre,
       asunto,
       correo,
+      numero,
       comentarios
     })
     // console.log(nombre);
@@ -71,12 +73,30 @@ $(document).ready(function() {
   }
 
   $("#vermas, #vermas-1").click(function() {
-   $('html, body').animate({
-   scrollTop: $("#section").offset().top + (-80)
- }, 1000);
+    $('html, body').animate({
+      scrollTop: $("#section").offset().top + (-80)
+    }, 1000);
+  });
+
+  $( "#left" ).hide();
+  $( "#right" ).hide();
+
+  $(window).scroll(function() {
+
+    if ($(window).scrollTop() > 700 && $(window).scrollTop() < 1900) {
+      $("#left").fadeIn(100);
+      $("#right").fadeIn(100);
+    } else {
+      $("#left").fadeOut(100);
+      $("#right").fadeOut(100);
+    }
   });
 
 
 
+  //
+  // $("plan").scroll(function() {
+  //   $("span").text(count = count + 1);
+  // });
 
 });

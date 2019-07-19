@@ -209,7 +209,8 @@ textarea {
   background-image: linear-gradient(to right, #AAEDF6, #3FC2CC); }
 
 #hero-telefonia {
-  background: #26CE7B; }
+  background-image: -webkit-gradient(linear, left top, right top, from(#26CE7B), to(#4EE9B2));
+  background-image: linear-gradient(to right, #26CE7B, #4EE9B2); }
 
 #formulario-miio {
   background-image: url("../img/FONDO_formulario.png");
@@ -221,11 +222,19 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover; }
 
+#conocenos {
+  background-image: url("../img/Banner-about.wdp");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .mt-6 {
   margin-top: 70px; }
 
 #radius-17 {
   border-radius: 0.85rem; }
+
+.mt-8 {
+  margin-top: 80px; }
 
 .bg-alternative {
   background: #F5F5F5; }
@@ -243,6 +252,10 @@ textarea {
 
 .top-70 {
   top: 70px;
+  z-index: 20; }
+
+.top-40 {
+  top: 50px;
   z-index: 20; }
 
 .z-index {
@@ -291,7 +304,11 @@ textarea {
     z-index: 20; }
 
   .top-less-6 {
-    top: -60px; } }
+    top: -60px; }
+
+  .top-40 {
+    top: 80px;
+    z-index: 20; } }
 .li {
   margin-left: 0; }
 
@@ -346,5 +363,8 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+ul {
+  list-style-image: url("../assets/Oval.png"); }
 
 /*# sourceMappingURL=master.css.map */
