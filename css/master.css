@@ -192,6 +192,9 @@ textarea {
 .bg-yellow {
   background: #FDC526; }
 
+.bg-gray {
+  background: #DEDEDE; }
+
 .color-text-telefonia {
   color: #8B572A; }
 
@@ -212,6 +215,14 @@ textarea {
   background-image: -webkit-gradient(linear, left top, right top, from(#26CE7B), to(#4EE9B2));
   background-image: linear-gradient(to right, #26CE7B, #4EE9B2); }
 
+#hero-dinero {
+  background-image: -webkit-gradient(linear, left top, right top, from(#F94B41), to(#FD938D));
+  background-image: linear-gradient(to right, #F94B41, #FD938D); }
+
+#hero-ganancias {
+  background-image: -webkit-gradient(linear, left top, right top, from(#F49C0C), to(#FAD961));
+  background-image: linear-gradient(to right, #F49C0C, #FAD961); }
+
 #formulario-miio {
   background-image: url("../img/FONDO_formulario.png");
   background-repeat: no-repeat;
@@ -227,6 +238,18 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover; }
 
+#entretenimiento {
+  background-image: url("../img/IIMG_entre.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px; }
+
+@media only screen and (max-width: 768px) {
+  #entretenimiento {
+    background-image: url("../img/IIMG_entre_p.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px; } }
 .mt-6 {
   margin-top: 70px; }
 
