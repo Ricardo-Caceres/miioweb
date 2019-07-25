@@ -205,7 +205,7 @@ textarea {
   background-image: url("../img/banner-home.png"), -webkit-gradient(linear, left top, right top, from(#AAEDF6), to(#3FC2CC));
   background-image: url("../img/banner-home.png"), linear-gradient(to right, #AAEDF6, #3FC2CC);
   background-repeat: no-repeat;
-  background-size: container; }
+  background-size: contain; }
 
 #hero-home-mobile {
   background-image: -webkit-gradient(linear, left top, right top, from(#AAEDF6), to(#3FC2CC));
@@ -234,9 +234,10 @@ textarea {
   background-size: cover; }
 
 #conocenos {
-  background-image: url("../img/Banner-about.wdp");
+  background-image: url("../img/back.png"), -webkit-gradient(linear, left bottom, left top, from(#934BA4), to(#C582D1));
+  background-image: url("../img/back.png"), linear-gradient(to top, #934BA4, #C582D1);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
 
 #entretenimiento {
   background-image: url("../img/IIMG_entre.png");
@@ -244,12 +245,47 @@ textarea {
   background-size: cover;
   height: 800px; }
 
+#credito-instantaneo {
+  background-image: url("../img/IMG_credit.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px; }
+
 @media only screen and (max-width: 768px) {
   #entretenimiento {
     background-image: url("../img/IIMG_entre_p.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px; } }
+    height: 800px; }
+
+  #formulario-miio {
+    background-image: url("../img/FONDO_formulario.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; }
+
+  #portabilidad {
+    background-image: url("../img/IMG_Cnumero Copy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left; }
+
+  #credito-instantaneo {
+    background-image: url("../img/IMG_credit.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px; }
+
+  #conocenos {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#934BA4), to(#C582D1));
+    background-image: linear-gradient(to top, #934BA4, #C582D1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left; } }
 .mt-6 {
   margin-top: 70px; }
 

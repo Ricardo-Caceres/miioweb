@@ -38,7 +38,7 @@ $(document).ready(function() {
     })
 
     request.fail((error) => {
-      alert("Error, intentalo mas tarde");
+      alert("Favor de llenar los campos");
     })
   }
 
