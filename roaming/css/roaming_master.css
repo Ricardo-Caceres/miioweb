@@ -1,0 +1,523 @@
+$enable-responsive-font-sizes: true;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #4A4A4A;
+  font-weight: 300;
+}
+
+.text-bold-alternative {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.height-auto {
+  height: auto;
+}
+
+.hr {
+  width: 50%;
+}
+
+.td {
+  font-size: calc(100% - 16px);
+}
+
+
+.btn-2 {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+.btn-3 {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid #993CBA;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/*//chilaquil classes*/
+.uppercase{
+    text-transform: uppercase
+}
+
+.under-line {
+    text-decoration: underline;
+}
+
+.no-border-top{
+    border-top: 0 !important;
+}
+
+.no-border-bottom{
+    border-bottom: 0 !important;
+}
+
+.no-border-left{
+    border-left: 0 !important;
+}
+
+.no-border-right{
+    border-right: 0 !important;
+}
+
+.text-yellow{color: #F1A443 !important;}
+.text-purple{color: #9151A0 !important;}
+.text-blue{color: #47C2CB !important;}
+.text-grey{color: #9B9B9B !important;}
+.text-black{color: #000 !important;}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+.margin-bottom-table{margin-bottom: -100px;}
+.for-web{display: block;}
+.for-mobile{display: none;}
+
+.margin-top-80{margin-top: 80px;}
+.margin-bottom-40{margin-bottom: -40px;}
+.width-100{
+    width: 100%;
+}
+
+.padding-right-5{padding-right: 5%;}
+.padding-left-5{padding-left: 5%;}
+.img-for-store{width: auto;}
+thead tr th, tbody tr td{	font-family: Roboto;}
+thead tr th{border-bottom: 1px !important; font-weight: 400 !important; color: #212529;}
+.vertical-middle {vertical-align: middle !important;}
+/*end chilaquil classes*/
+
+.img {
+  width: 100%;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-29 {
+  font-size: 1.3rem;
+}
+
+.font-size-22 {
+  font-size: 2.4rem;
+}
+
+.font-size-20 {
+  font-size: 1.9rem;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.bg-dark-miio {
+  background: #323232;
+}
+
+.bg-azul-miio {
+  background: #009BBC;
+}
+
+.text-azul-miio {
+  color: #009BBC;
+}
+
+.border-pdf {
+  border-bottom: 3px solid;
+}
+
+.border-azul-miio {
+  border-color: #009BBC;
+}
+
+.bg-verde-miio {
+  background: #2AC664;
+}
+
+.text-verde-miio {
+  color: #2AC664;
+}
+
+.border-verde-miio {
+  border-color: #2AC664;
+}
+
+.bg-rojo-miio {
+  background: #F94B41;
+}
+
+.text-rojo-miio {
+  color: #F94B41;
+}
+
+.border-rojo-miio {
+  border-color: #F94B41;
+}
+
+.bg-gris-miio {
+  background: #4A4A4A;
+}
+
+.text-dark-miio {
+  color: #4A4A4A;
+}
+
+.border-gris-miio {
+  border-color: #4A4A4A;
+}
+
+.bg-gold-miio {
+  background: #C89541;
+}
+
+.text-gold-miio {
+  color: #C89541;
+}
+
+.border-gold-miio {
+  border-color: #C89541;
+}
+
+.bg-black-miio {
+  background: #000000;
+}
+
+.text-black-miio {
+  color: #000000;
+}
+
+.border-black-miio {
+  border-color: #000000;
+}
+
+.text-footer {
+  color: #9B9B9B;
+}
+
+.align-botton-flex {
+  align-self: flex-end;
+}
+
+.slogan {
+  line-height: 1rem;
+  font-size: 14px;
+}
+
+.color-text-miio {
+  color: #934BA4;
+}
+
+.bg-miio {
+  background: #934BA4;
+}
+
+.border-miio {
+  border-color: #934BA4;
+}
+
+.bg-plan-50 {
+  background: #F5A623;
+}
+
+.text-plan-50 {
+  color: #F5A623;
+}
+
+.bg-yellow {
+  background: #FDC526;
+}
+
+.color-text-telefonia {
+  color: #8B572A;
+}
+
+.color-text-financiera {
+  color: #0E5444;
+}
+
+#hero-home {
+  background-image: url("../img/banner-home.png"), linear-gradient(to right, #AAEDF6 , #3FC2CC);
+  background-repeat: no-repeat;
+  background-size: container;
+}
+
+#hero-home-mobile {
+  background-image: linear-gradient(to right, #AAEDF6 , #3FC2CC);
+}
+
+#hero-telefonia {
+  background-image: linear-gradient(to right, #26CE7B , #4EE9B2);
+}
+
+#formulario-miio {
+  background-image: url("../img/FONDO_formulario.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portabilidad {
+  background-image: url("../img/IMG_Cnumero Copy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#conocenos {
+  background-image: url("../assets/Mapa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mt-6 {
+  margin-top: 70px;
+}
+
+#radius-17 {
+  border-radius: 0.85rem;
+}
+
+.mt-8 {
+  margin-top: 80px;
+}
+
+.bg-alternative {
+  background: #F5F5F5;
+}
+
+.rounded-radius {
+  border-radius: 20px;
+}
+
+.rounded-radius-bottom {
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.top {
+  top: 90px;
+  z-index: 20;
+}
+
+.top-70 {
+  top: 70px;
+  z-index: 20;
+}
+
+.top-40 {
+  top: 50px;
+  z-index: 20;
+}
+
+.z-index {
+  z-index: 20;
+}
+
+.pt-10 {
+  padding: 140px 0 0;
+}
+
+.pt-8 {
+  padding: 80px 0 0;
+}
+
+.pl-10 {
+  padding: 100px;
+}
+
+.top-less {
+  top: -40px;
+}
+
+.top-less-7 {
+  top: -70px;
+}
+
+.top-less-dudas {
+  top: -130px;
+}
+
+.top-less-futuro {
+  top: -160px;
+  left: 60px;
+}
+
+.top-less-4 {
+  top: -300px;
+}
+
+.top-more-7 {
+  top: 7px;
+}
+
+.top-less-3 {
+  top: -270px;
+}
+
+.right-2 {
+  right: -20px;
+}
+@media only screen and (max-width: 768px) {
+/*chilaquil classes  */
+    .for-web{display: none;}
+    .for-mobile{display: block;}
+    
+    #conocenos {
+  background-image: url("../assets/mapa_p.png");
+        background-color: #55E7B3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    
+    .margin-bottom-table{margin-bottom: -50px;}
+    .img-for-store{width: 100px;}
+    .font-size-for-mobile{font-size: 27px;	font-family: Roboto;	font-weight: 300;}
+/*chilaquil classes  */
+    
+.pt-10 {
+    padding: 100px 0 0;
+  }
+
+  .top {
+    top: 20px;
+    z-index: 20;
+  }
+
+  .top-less-6 {
+    top: -60px;
+  }
+
+  .top-40 {
+    top: 80px;
+    z-index: 20;
+  }
+}
+
+.li {
+  margin-left: 0;
+}
+
+.shadow-bottom {
+  box-shadow: 0px 0px 4px #000000;
+}
+
+.form-control-miio {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.90rem;
+  font-weight: 400;
+  line-height: 1.5;
+  // color: #C2C2C2;
+  background-color: #fff;
+  background-clip: padding-box;
+  // border-radius: 0.25rem;
+  border: 0;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.form-control-area {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.90rem;
+  font-weight: 400;
+  line-height: 1.5;
+  // color: #C2C2C2;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  border-bottom: 1px solid #C2C2C2;
+}
+
+.img-110 {
+  width: 110%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+ul{
+	list-style-image: url("../assets/Oval.png");
+}
