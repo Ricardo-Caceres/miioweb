@@ -20,6 +20,7 @@
    gtag('config', 'UA-123153296-1');
   </script>
   <title>Términos y Condiciones de la app Miio</title>
+
 </head>
 
 <body class="without-spacing-footer">
@@ -313,61 +314,7 @@
       </div>
     </div>
   <!-- FOOTER -->
-  <footer class="container-fluid bg-dark-miio p-0">
-
-    <div class="row align-items-center text-white-50 py-5 font-size-14 m-0">
-      <div class="col-12 col-md-4">
-        <img src="assets/logo-MIIO.png" alt="">
-        <p>Iglesia No. 2 | Edificio E Piso 13 | Col. Tizapán <br>
-          San Ángel | C.P. 01090 | CDMX</p>
-      </div>
-      <div class="col-12 col-md">
-        <dl>
-          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.mx/">Miio</a></dt>
-          <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="telefonia.html">Telefonía</a></dt>
-          <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="dinero.html">Cuenta financiera</a></dt>
-          <dt class="font-weight-lighter text-secondary"><a class="text-footer" href="ganancias.html">Ganancias</a></dt>
-          <dt class="font-weight-lighter"><a class="text-footer" href="conocenos.html">Somos Miio</a></dt>
-<!--            <dt class="font-weight-lighter"><a class="text-footer" href="roaming.html">Roaming</a></dt>-->
-        </dl>
-      </div>
-      <div class="col-12 col-md">
-        <dl>
-<!--          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>-->
-          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/blog/" target="_blank" rel="noopener noreferrer">Blog</a></dt>
-          <dt class="font-weight-lighter"><a class="text-footer" href="contacto.html">Contacto</a></dt>
-          <dt class="font-weight-lighter"><a class="text-footer" href="preguntas.html">Preguntas frecuentes</a></dt>
-          <dt class="font-weight-lighter"><a class="text-footer" href="roaming/roaming.html">Roaming</a></dt>
-        </dl>
-      </div>
-        <div class="col-12 col-md">
-        <dl>
-<!--          <dt class="font-weight-lighter"><a class="text-footer" href="https://miio.com.mx/boom/" target="_blank" rel="noopener noreferrer">BOOM</a></dt>-->
-          <dt class="font-weight-lighter"><a class="text-footer" href="aviso-de-privacidad.html" target="_blank" rel="noopener noreferrer">Aviso de Privacidad</a></dt>
-          <dt class="font-weight-lighter"><a class="text-footer" href="legal.html">Términos y condiciones</a></dt>
-          <dt class="font-weight-lighter"><a class="text-footer" href="colaboracion-con-la-justicia.html">Colaboración con la justicia</a></dt>
-          <dt class="font-weight-lighter"><a class="text-footer" href="legal.html">Legal</a></dt>
-        </dl>
-      </div>
-      <div class="col-12 col-md">
-        <div class="row justify-content-center">
-          <a href="https://www.facebook.com/miiomex/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/facebook.png" alt=""></a>
-          <a href="https://mx.linkedin.com/company/miio" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/linkedin.png" alt=""></a>
-          <a href="https://twitter.com/miio_mx" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/twitter.png" alt=""></a>
-          <a href="https://www.instagram.com/miio_mx/" target="_blank" rel="noopener noreferrer"><img class="p-2" src="assets/Group 3.png" alt=""></a>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid bg-gris-miio text-center text-white-50 pt-4 px-md-5">
-      <p class="small px-md-5 text-left text-md-center">La tarjeta Mastercard bajo la marca “MIIO”, es emitida por Cacao Paycard Solutions, S.A.P.I. de C.V., y la tarjeta de débito Carnet es emitida por Financiera Mexicana para el Desarrollo Rural,
-        S.A. de C.V., Sociedad
-        Financiera Popular, ésta
-        última autorizada para operar y supervisada por la Comisión Nacional Bancaria y de Valores. MIIO es una aplicación para smartphones mediante la cual se pueden administrar las tarjetas bajo la marca "MIIO". King David Mobile, S.A.P.I. de C.V.
-        no es un banco ni una entidad financiera.</p>
-      <hr class="hr">
-      <p class="pb-4 m-0 font-size-14">© 2019. Miio. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+  <div id="footer_include"></div>
   <!-- TERMINA FOOTER -->
 </body>
 
@@ -377,7 +324,11 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/swiper.js" charset="utf-8"></script>
 <script src="js/functions.js" charset="utf-8"></script>
-
+<script> 
+$(function(){
+  $("#footer_include").load("footer.html"); 
+});
+</script> 
 <!-- Start of miio2018 Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=366ae5ff-41ea-4ac5-b332-6776bc9b30af"> </script>
 <!-- End of miio2018 Zendesk Widget script -->
