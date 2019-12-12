@@ -1,0 +1,27 @@
+/*body*/
+body{background: #924EA2 !important;}
+/*body*/
+/*section promociones*/
+.no-margin-top{margin: 0 !Important;}
+.rounded-radius{border-radius: 20px !Important}
+.shadow-white{box-shadow: 0 .5rem 1rem rgba(255,255,255,.35)!important;}
+.card-header{background-color: #FFF !important; padding-top: 33px !Important;border-bottom: 0px !important;}
+.card-body{border-top: 1px solid #969696;border-bottom: 1px solid #969696;}
+.p-44{padding-bottom: 44px !Important; padding-top: 44px!Important;}
+.p-15{padding-bottom: 15px !important; padding-top: 15px !important;}
+.text-bold{font-weight: 500;}
+h3 b{font-size: 40px}
+.no-border-bottom{border-bottom: 0 !important;}
+/*section promociones*/
+/*section regalos*/
+#section-regalos{padding-top: 100px;padding-bottom: 40px}
+#img-regalos{margin-bottom: 30px}
+#p-tycs{font-size: 30px;}
+#p-text{font-weight: 100;}
+/*section regalos*/
+
+/*responsive*/
+@media only screen and (max-width: 720px) {
+    #text-comprando{font-size: 15px}
+}
+/*fin responsive*/
